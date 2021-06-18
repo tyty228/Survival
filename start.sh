@@ -1,6 +1,6 @@
     #!/bin/sh
          BINDIR=$(dirname "$(readlink -fn "$0")")
-         cd "/root/Survival/Survival-1.17"
+         cd "/root/Survival/Survival"
          while true
          do
 java -server -Xms2G -Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC -XX:ShenandoahGCMode=iu -XX:+UseNUMA -XX:+AlwaysPreTouch -XX:-UseBiasedLocking -XX:+DisableExplicitGC -jar server.jar nogui
