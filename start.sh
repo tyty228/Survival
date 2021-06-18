@@ -11,5 +11,5 @@ java -server -Xms2G -Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC
                echo "$i..."
                sleep 1
             done
-            echo "Перезагрука!"
+            echo "Перезагрука! TEST"
          done
