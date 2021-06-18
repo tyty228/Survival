@@ -1,0 +1,54 @@
+# Check out the default messages: https://bitbucket.org/Prunt/restrictedcreative/wiki/Default%20messages
+# Messages explanation: https://bitbucket.org/Prunt/restrictedcreative/wiki/Home#markdown-header-messages
+prefix: '&2&lCreative > '
+reloaded: '&aConfig reloaded!'
+no-permission: '&cYou don''t have enough permissions to do that!'
+no-console: '&cThis command can only be used in-game.'
+not-found: '&cPlayer %player% is not online!'
+disabled:
+  general: '&cYou can''t do that in creative mode.'
+  drops: '&cThis block didn''t drop anything, because it was placed in creative mode.'
+  interact: '&cYou can''t do that, because that was modified in creative mode.'
+  region: '&cYou can''t do that outside the allowed region.'
+  creature: '&cYou can''t do that, because a part of the creature was placed in creative
+    mode.'
+database:
+  load: '&ePlease wait! Loading data from database...'
+  loaded: '&eLoaded %blocks% blocks in %chunks% chunks from database!'
+  save: '&eSaving data to database...'
+  added: '&eAdded %blocks% new blocks to database.'
+  removed: '&eDeleted %blocks% old blocks from database.'
+  deleted: '&eDeleted database. Full restart is required for changes to take effect.'
+  done: '&aDone! Took %mills%ms'
+  incorrect-type: '&cYou can only choose between MySQL and SQLite!'
+gamemodes:
+  creative:
+    me: '&aSwitched to creative mode!'
+    other: '&aSwitched %player% to creative mode!'
+  survival:
+    me: '&aSwitched to survival mode!'
+    other: '&aSwitched %player% to survival mode!'
+  adventure:
+    me: '&aSwitched to adventure mode!'
+    other: '&aSwitched %player% to adventure mode!'
+  spectator:
+    me: '&aSwitched to spectator mode!'
+    other: '&aSwitched %player% to spectator mode!'
+usage:
+  block: '&cCorrect usage: /rc block <add|remove|info|stats>'
+block:
+  add:
+    add: '&aRight-click a block/entity you want to add to the database. Type "/rc
+      block add" again to cancel.'
+    added: '&aAdded %material% to the database!'
+  remove:
+    remove: '&aRight-click a block/entity you want to remove from the database. Type
+      "/rc block remove" again to cancel.'
+    removed: '&aRemoved %material% from the database!'
+  info:
+    info: '&aRight-click a block/entity you want to know more about. Type "/rc block
+      info" again to cancel.'
+    'true': '&aBlock/entity %material% was placed in creative mode!'
+    'false': '&aBlock/entity %material% was not placed in creative mode.'
+  stats: '&eTotal creative placed blocks: %total%'
+  cancel: '&cCancelled!'

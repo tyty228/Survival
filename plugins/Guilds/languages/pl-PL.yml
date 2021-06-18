@@ -1,0 +1,457 @@
+descriptions:
+  accept: Zaakceptuj zaproszenie do gildi
+  admin-addplayer: Komenda administratora aby zaprosić gracza do gildii
+  admin-bank-balance: Komenda administratorska by przejrzeć balans gildii.
+  admin-bank-deposit: Komenda administratorska by dodać pieniądze do banku gildii.
+  admin-bank-withdraw: Komenda administratorska by zabrać pieniądze z banku gildii
+  admin-claim: Komenda administratorska by przejąć ziemie gildii
+  admin-delhome: Komenda administratora by usunąć dom gildii
+  admin-home: Komenda administratora by teleportować się do domu gildii
+  admin-motd: Komenda administratora by wyświetlić MOTD gildii
+  admin-motd-set: Komenda administratora do ustawienia motta gildii
+  admin-motd-remove: Komenda administratora do usunięcia motta gildii
+  admin-prefix: Komenda administratora aby zmienić prefix gildi
+  admin-rename: Komenda administratora aby zmienić nazwę gildi
+  admin-remove: Komenda administratora aby usunąć gildie z serwera
+  admin-removeplayer: Komenda administratora aby usunąć gracza z gildii
+  admin-score-resetall: Komenda administratora do resetowania punktów gildii
+  admin-score-setloses: Komenda administratora do ustawienia ilości przegranych dla
+    gildii
+  admin-score-setwins: Komenda administratora do ustawienia ilości wygranych dla gildii
+  admin-sethome: Komenda administratora do ustawienia domu gildii
+  admin-status: Komenda administratora aby zmienić status gildii
+  admin-spy: Komenda administratora aby podglądać chat gildii
+  admin-transfer: Komenda administratora do przeniesienia praw gildii na inną osobę
+  admin-unclaim: Komenda administratora do usunięcia ziemi gildii
+  admin-upgrade: Komenda administratora aby ulepszyć tier gildii
+  admin-vault: Komenda administratora aby pokazać skarbiec gildii
+  ally-accept: Zaakceptowanie sojuszu od innej gildii
+  ally-add: Dodanie gildii jako sojusznika
+  ally-decline: Odrzucenie zaproszenia do sojuszu od innej gildii
+  ally-list: Lista wszystkich sojuszów z twoją gildią
+  ally-remove: Usunięcie gildii jako sojusznika
+  arena-challenger: Ustaw lokalizację konkurenta na arenie
+  arena-create: Stwórz nową arenę
+  arena-defender: Ustaw lokalizację obrońcy na arenie
+  arena-delete: Usuń arenę
+  arena-list: Lista stworzonych aren
+  arena-tp: Teleportuj na arenę
+  bank-balance: Stan konta twojej gildii
+  bank-deposit: Wpłać pieniądze do banku gildii
+  bank-withdraw: Wypłać pieniądze z banku gildii
+  buff: Otwiera gildyjne wspomagacze w GUI
+  cancel: Anuluje akcje
+  chat: Przełącza chat gildi
+  check: Sprawdź oczekujące zaproszenia do gildii
+  claim: Zajmij teren gildii
+  code-create: Stwórz kod zaproszeniowy dla swojej gildii
+  code-delete: Usuń kod zaproszeniowy dla swojej gildii
+  code-info: Pokaż informacje o kodzie zaproszeniowym
+  code-list: Pokaż wszystkie kody zaproszeniowe swojej gildii
+  code-redeem: Użyj kodu zaproszeniowego aby dołączyć do gildii
+  confirm: Potwierdź akcje
+  console-backup: Kopia zapasowa
+  console-migrate: Migrowanie danych
+  console-unclaim-all: Komenda konsoli do usunięcia wszystkich ziemi gildii
+  console-update-languages: Komenda konsoli do aktualizacji plików językowych
+  create: Stwórz gildię
+  decline: Anuluj zaproszenie gildii
+  delete: Usuń swoją gildię
+  delhome: Usuń dom gildii
+  demote: Degraduj gracza w gildii
+  give: Daj graczu bilet ulepszeń
+  help: Pokaż menu pomocy
+  home: Teleport do domu gildyjnego
+  info: Otwiera okno informacji w GUI
+  invite: Zaproś gracza do gildii
+  kick: Wyrzuć gracza z gildii
+  language: Zmień język wiadomości wtyczek dla siebie
+  leave: Wyjdź z gildii
+  list: Lista wszystkich gildii
+  members: Otwiera GUI z listą członków gildii
+  motd: Zobacz motto gildii
+  motd-set: Ustaw motto gildii
+  motd-remove: Usuń motto gildii
+  prefix: Zmień prefix gildii
+  promote: Awansuj gracza w gildii
+  reload: Przeładuj plik konfiguracyjny pluginu
+  rename: Zmień nazwę gildii
+  request: Prośba o dołączenie do gildii
+  sethome: Ustaw dom gildii
+  status: Zmień status gildii
+  transfer: Przekaż gildie innemu użytkownikowi
+  unclaim: Usuń teren swojej gildii
+  upgrade: Ulepsz tier gildii!
+  vault: Otwórz skarbiec gildii
+  version: Informacje o pluginie
+  war-accept: Zaakceptuj wyzwanie na wojnę gildii
+  war-challenge: Wyślij wyzwanie na wojnę gildii
+  war-deny: Odrzuć wyzwanie na wojnę gildii
+  war-join: Dołącz do istniejącej wojny gildii
+create:
+  guild-name-taken: '&cTa nazwa jest już w użyciu!'
+  warning: '&cStworzenie gildii kosztuje: {amount}. Wpisz /guilds confirm aby stworzyć
+    gildię, lub /guilds cancel aby anulować.'
+  successful: '&aGildia ''{guild}&r&a'' została stworzona pomyślnie!'
+  cancelled: '&cTworzenie gildii anulowane!'
+  requirements: '&cTwoja gildia nie spełnia wymagań! Możesz używać tylko znaków alfanumerycznych
+    oraz długość gildii nie może przekraczać 64 znaki'
+  name-too-long: '&cNie podałeś przedrostka, z tego powodu twoja nazwa nie mogła zostać
+    sprawdzona na podstawie wymagań. Spróbuj użyć krótszej nazwy lub dodaj przedrostek
+    przy tworzeniu prefixu.'
+  prefix-too-long: '&cPodany prefix gildii nie spełnia wymagań! Możliwe że ma zbyt
+    wiele znaków?'
+chat:
+  disabled: Chat Gildii wyłączony
+  enabled: Chat Gildii włączony
+request:
+  success: '&aPomyślnie wysłano prośbę o dołączenie do {guild}'
+  incoming-request: '&a{player} chcę dołączyć do gildii. Wyślij mu zaproszenie używając
+    /guild invite {player}!'
+  cooldown: Nie możesz wysłać kolejnej prośby poczekaj {time} sekund.
+error:
+  already-in-guild: '&cJesteś już w gildii!'
+  no-guild: '&cNie jesteś w gildii!'
+  role-no-permission: '&cTwoja rola w gildii nie jest wystarczająco wysoka!'
+  tier-no-permission: '&cTwój poziom gildii nie jest wystarczająco wysoki, aby to
+    zrobić!'
+  guild-no-exist: '&cNie znaleziono takiej gildii! (Jeśli otrzymujesz to z powodu
+    dołączenia do gildii o nazwie niestandardowego koloru, możesz to zrobić używając
+    /join guild <gracz, który cię zaprosił> aby również dołączyć!'
+  player-not-found: '&cGracz ''{player}&r&c'' jest niedostępny!'
+  player-not-in-guild: '&c{player} nie jest w twojej gildii!'
+  not-officer: '&cGracz musi być oficerem w twojej gildii!'
+  blacklist: '&cJedno lub więcej słów w nazwie lub prefixie twojej gildii jest zabroniona!'
+  not-enough-money: '&cNie masz wystarczająco pieniędzy aby to zrobić'
+  economy-required: '&cAby to działało, wymagana jest wtyczka ekonomiczna. Skontaktuj
+    się z administratorem serwera'
+  buff-cooldown: Przepraszamy, twoja gildia niedawno kupiła buffa. Możesz spróbować
+    ponownie za {amount} sekund.
+  buff-no-permission: '&cPrzepraszamy, nie masz uprawień, aby kupić ten bonus!'
+  no-pending-invites: '&cPrzepraszamy, obecnie nie masz żadnych oczekujących zaproszeń
+    do gildii!'
+  migrating: '&cPrzepraszamy, ta akcja nie może zostać zakończona. Dane są obecnie
+    migrowane! Spróbuj ponowie za parę minut.'
+  console-command: '&cPrzepraszamy, to polecenie może być egzekwowane tylko przez
+    konsole.'
+  transfer-same-person: '&cPrzepraszamy, nie możesz przekazać gildii osobie która
+    jest już leaderem tej gildii!'
+  player-no-exist: '&cPrzepraszamy, wygląda na to że tego gracza nie było jeszcze
+    na serwerze!'
+bank:
+  balance: '&aPieniądze gildii: {amount}.'
+  deposit-success: '&a{player} własnie wpłacił {amount} z Banku Gildii. Wasz nowy
+    balans to {total}.'
+  withdrawal-success: '&a{player} własnie wypłacił {amount} z Banku Gildii! Wasz nowy
+    balans to {total}.'
+  not-enough-bank: '&cZa mało pieniędzy w banku gildii aby to zrobić'
+  over-max: Wybacz, nie możesz tyle wpłacić ponieważ wykroczył byś poza swój limit
+    konta!
+admin:
+  delete-warning: '&cUsuwanie gildi {guild}. Wpisz /guilds confirm aby usunąć gildie,
+    lub /guilds cancel aby anulować.'
+  delete-success: '&aPomyślnie usunięto gildie {guild}.'
+  guild-vault-sign: '&aUtworzono Globalny Skarbiec Gildii!'
+  player-added: '&aZostałeś dodany do gildi {guild} przez Admina!'
+  admin-player-added: '&aDodałeś {player} do gildi {guild}!'
+  admin-guild-add: '&a{player} został dodany do gildii przez Admina!'
+  player-removed: '&cZostałeś usunięty z gildii {guild} przez Admina!'
+  admin-player-removed: '&aUsunąłeś {player} z gildii {guild}!'
+  admin-guild-remove: '&a{player} został usunięty z twojej gildii przez Admina!'
+  admin-upgrade: '&aUlepszyłeś tier gilii {guild}!'
+  admin-guild-upgrade: '&aTwój tier gildii został ulepszony przez Admina!'
+  spy-on: '&aPodgląd Chatu gildii włączony!'
+  spy-off: '&cPodgląd Chatu gildii wyłączony!'
+  motd: '&aMOTD gildii {guild} jest: {motd}'
+  motd-success: '&aPomyślnie ustawiłeś MOTD guildii {guild} na {motd}.'
+  motd-remove: '&cPomyślnie usunąłeś MOTD guildii {guild}.'
+  bank-balance: '&aSaldo bankowe {guild} wynosi {balance}.'
+  bank-deposit: '&aPomyślnie wplaciłes {amount} do banku {guild}. Ich nowy balans
+    wynosi {total}.'
+  bank-withdraw: '&aPomyślnie zabrałeś {amount} z banku {guild}. Ich nowy balans wynosi
+    {total}.'
+  score-resetall: '&aPomyślnie zresetowano ilości wygranych/przegranych dla wszystkich
+    gildii.'
+  score-setloses: '&aPomyślnie ustawiono ilość przegranych na {amount} dla gildii
+    {guild}.'
+  score-setwins: '&aPomyślnie ustawiono ilość wygranych na {amount} dla gildii {guild}.'
+  sethome: '&aPomyślnie ustawiono nowy dom dla gildii {guild}.'
+  home: '&aPomyślnie przeniesiono do domu gildii {guild}.'
+  delhome: '&aPomyślnie usunięto dom gildii {guild}.'
+boot:
+  player-kicked: '&cGracz ''{player}'' został wyrzucony z gildii przez {kicker}!'
+  successful: '&aPomyślnie wyrzuciłeś gracza {player} z twojej gildii!'
+  kicked: '&cZostałeś wyrzucony z gildii przez {kicker}!'
+decline:
+  success: '&aAnulowano zaproszenie gildii!'
+demote:
+  cant-demote: '&cGracz nie może zostać zdegradowany!'
+  demote-successful: '&aGracz {player} został zdegradowany z {old} do {new}'
+  you-were-demoted: '&cZostałeś zdegradowany z {old} do {new}'
+promote:
+  cant-promote: '&cTen gracz nie może zostać awansowany!'
+  promote-successful: '&aGracz {player} został awansowany z {old} do {new}'
+  you-were-promoted: '&aZostałeś awansowany z {old} do {new}'
+delete:
+  successful: '&aUsunięto gildie ''{guild}&r&a'' pomyślnie!'
+  cancelled: '&cAnulowano usuwanie gildii!'
+  warning: '&cWpisz /guilds confirm aby usunąć gildie lub /guilds cancel aby anulować.'
+  notify-allies: '{guild} już nie jest twoim sojusznikiem ponieważ została usunięta.'
+leave:
+  cancelled: '&cAnulowano opuszczanie gildii!'
+  successful: '&aWyszedłeś z gildii!'
+  player-left: '&cGracz ''{player}'' wyszedł z gildii!'
+  guildmaster-left: '&cMistrz Gildii, ''{player}'' opuścił gildię. Gildia została
+    rozwiązana.'
+  warning: Wpisz /guilds confirm aby wyjść z gildii lub /guilds cancel aby anulować.
+  warning-guildmaster: Jesteś mistrzem gildii tej gildii, wyjście z gildii równoważy
+    się z jej usunięciem. Wpisz /guilds confirm aby wyjść i usunąć gildie lub /guilds
+    cancel aby anulować.
+transfer:
+  newmaster: Jesteś nowym mistrzem gildii swojej gildii!
+  success: Gildia została przeniesiona!
+invite:
+  already-invited: Użytkownik został już zaproszony do twojej gildii
+  message: "{player} zaprosił cię do swojej gildii {guild} \nWpisz /guild join {guild}\
+    \ aby dołączyć!"
+  successful: Pomyślnie zaprosiłeś gracza {player} do swojej gildii!
+  already-in-guild: '&cGracz {player}, należy już do innej gildii!'
+upgrade:
+  tier-max: Nie można znowu ulepszyć! Posiadasz maksymalny poziom!
+  money-warning: Próbujesz przekazać {amount} aby ulepszyć gildie. (Wpisz /guilds
+    confirm aby kontynuować)
+  cancel: Ulepszenie anulowane!
+  success: Pomyślnie ulepszyłeś/-aś gildie!
+  not-enough-money: Przykro nam! Nie masz wystarczających środków a y ulepszyć gildie!
+    Potrzebujesz jeszcze {needed}!
+  not-enough-members: Przykro nam! Potrzebujesz co najmniej {amount} członków aby
+    zwiększyć poziom gildii!
+prefix:
+  successful: Przedrostek gildii został pomyślnie zmieniony na {prefix}!
+  disabled: '&cMożliwość używania prefiksów jest obecnie wyłączona.'
+status:
+  successful: Status gildii został ustawiony na {status}!
+rename:
+  successful: Nazwa gildii została zmieniona na {name}!
+home:
+  no-home-set: Dom nie został ustawiony! Użyj /guild sethome aby ustawić dom!
+  teleported: Zostałeś teleportowany do domu gildii!
+  cooldown: Musisz poczekać co najmniej {amount} sekund aby zrobić to ponownie
+  warmup: Zostaniesz teleportowany za {amount} sekund. Nie ruszaj się!
+  cancelled: Poruszyłeś się! Teleportacja anulowana!
+sethome:
+  successful: Ustawiłeś dom gildii!
+  deleted: '&aPomyślnie usunąłeś swój dom gildii!'
+  cooldown: Musisz poczekać co najmniej {amount} sekund aby zrobić to ponownie
+reload:
+  reloaded: Plik konfiguracyjny przeładowany!
+cancel:
+  error: Nie masz akcji do anulowania!
+  success: Akcja anulowana!
+confirm:
+  error: Nie masz żadnych akcji do potwierdzenia!
+  success: Akcja potwierdzona!
+ally:
+  none: Nie masz sojuszników!
+  list: 'Twoja gildia ma następujących sojuszników: {ally-list}'
+  current-declined: Prośba o sojusz gildii {guild} została odrzucona!
+  target-declined: Twoja prośba o sojusz do gildii {guild} została odrzucona!
+  current-accepted: Akceptowałeś sojusz od gildii {guild}
+  target-accepted: Twoja prośba o sojusz do gildii {guild} została zatwierdzona!
+  invite-sent: Pomyślnie wysłałeś prośbę o sojusz do gildii {guild}!
+  incoming-invite: Masz przychodzącą prośbę o sojusz od gildii {guild}!
+  current-remove: Usunąłeś gildie {guild} he swojej listy sojuszników!
+  target-remove: '{guild} usunęła was ze swojej listy sojuszników!'
+  already-ally: '&cTa gildia już jest twoim sojusznikiem!'
+  same-guild: '&cNie możesz wysłać prośby o sojusz do samego siebie!'
+  not-allied: '&cNie możesz usunąć gildii która nie jest twoim sojusznikiem!'
+  already-requested: '&cPosiadasz już prośbę o sojusz dla tej gildii która nie została
+    jeszcze rozpatrzona!'
+  max-allies: '&cNie możesz wysłać lub zaakceptować zgłoszeń sojuszu, ponieważ osiągnięto
+    maksymalną liczbę dla aktualnego tieru.'
+accept:
+  not-invited: '&cTa gildia jest prywatna / Nie otrzymałeś zaproszenia do tej gildii.'
+  guild-full: '&cTa gildia jest pełna!'
+  player-joined: '&a{player} dołączył do twojej gildii!'
+  successful: '&aDołączyłeś do gildii {guild}'
+  cooldown: '&cJesteś na odnowieniu od dołączenia do gildii. Spróbuj ponownie za {amount}
+    sekund.'
+claim:
+  already-exists: '&cJuż posiadasz claim. Usuń poprzedni claim aby stworzyć nowy'
+  overlap: '&cTwój claim nie mógł zostać stworzony ponieważ w pobliżu już istnieje
+    inny claim'
+  success: '&aNowy claim został stworzony! Rozprzestrzenia się od {loc1} do {loc2}!'
+  hook-disabled: '&cProszę włączyć claimy w pliku konfiguracji aby użyć tej funkcji'
+  sign-not-enabled: '&cFunkcja jest niedostępna. Aby jej użyć, musisz ją włączyć w
+    konfiguracji.'
+  sign-no-permission: '&cNie posiadasz uprawnień do stworzenia, znaku ziemi dla Gidlii.'
+  sign-invalid-format: '&cNieprawidłowy format znaku ziemi gildii! Spróbuj ponownie!'
+  sign-invalid-region: '&cNieprawidłowy region WorldGuard!'
+  sign-placed: '&aPomyślnie stworzono znak ziemi dla gildii dla regionu {region} o
+    cenie {price}.'
+  sign-not-enough: '&cNie posiadasz wystarczającej ilości pieniędzy w Banku Gildii,
+    aby dokonać zakupu Ziemi Gildii.'
+  sign-forced: '&cMożesz kupić ziemię gildii jedynie poprzez tabliczki. Poproś administrację
+    o pomoc!'
+  sign-buy-success: '&aSuper! Udało Ci się kupić ziemię gildii!'
+unclaim:
+  success: '&aUsunąłeś zajęty teren gildii!'
+  not-found: '&cNie możesz usunąć terenu, który nie jest twój!'
+  all-warning: '&bWażne! &cZamierasz usunąć wszystkie ziemie gildii. Czy chcesz kontynuować?
+    Wpisz /guilds confirm, aby kontynuować lub /guilds cancel, aby anulować!'
+  all-cancelled: '&aPomyślnie anulowałeś usunięcie wszystkich ziemi gildiii na serwerze.'
+  all-success: '&aPomyślnie usunąłeś wszystkie ziemie gildii na serwerze!'
+pending:
+  invites: '&aMasz {number} zaproszeń do gildii: &e{guilds}&r&a . Użyj /guild accept
+    <name> albo /guild deny <name> aby dołączyć albo odrzucić!'
+codes:
+  created: 'Stworzyłeś nowy kod zaproszeniowy: {code} z {amount} użyć!'
+  empty: O nie! Nie mam kodów, najpierw spróbuj jeden stworzyć!
+  list-header: '&aOto następujące kody aktywnych zaproszeń dla twojej gildii:'
+  list-item: '&aID: &6{code} &f| &aMoże nadal być używany: &6{amount} &f| &aTwórca:
+    &6{creator}'
+  deleted: '&aTen kod zaproszenia został usunięty z twojej gildii!'
+  invalid-code: '&cTen kod zaproszenia nie istnieje. Proszę spróbuj ponownie!'
+  joined: '&aPomyślnie dołączyłeś &6{guild} &aużywając kodu zaproszenia!'
+  guild-message: '&6{player} &adołączył do gildii za pomocą kodu zaproszenia z &6{creator}&a!'
+  out: '&cTen kod zaproszenia jest nieużywany! Spróbuj innego!'
+  info: |-
+    &aInformacje o kodzie zaproszenia:
+    &aID: &6{code}
+    &aUżywa: &6{amount}
+    &aTwórca: &6{creator}
+    &aOdkupiciele: &6{redeemers}
+  max: '&cMasz już za dużo aktywnych kodów zaproszeń w swojej gildii!'
+vaults:
+  maxed: '&cNie możesz otworzyć tego skarbca, ponieważ masz już maksymalną liczbę
+    skarbców dla swojego Poziomu Gildii!'
+  blacklisted: '&cNie możesz umieścić tego przedmiotu w skarbcu gildii, ponieważ jest
+    on na czarnej liście!'
+languages:
+  set: '&aUdało ci się ustawić język na {language}'
+  warning: '&cZamierzasz zaktualizować wszystkie pliki językowe. Spowoduje to usunięcie
+    wszystkich bieżących plików językowych i ich ponowne utworzenie. Użyj /guilds
+    confirm aby potwierdzić usunięcie tej gildi, użyj /guilds cancel aby anulować.'
+  updated: '&aPliki językowe zostały utworzone i ponownie załadowane!'
+backup:
+  started: '&aTworzenie kopii zapasowej danych Gildii!'
+  finished: '&aKopia zapasowa danych Gildii została utworzona i umieszczone w folderze
+    pluginu.'
+  warning: '&cZamierzasz utworzyć kopię zapasową wszystkich danych dla pluginu. Upewnij
+    się, że nie robisz nic obciążającego serwer. Wpisz /guilds confirm,aby kontynuować,
+    wpisz /guilds cancel, aby anulować.'
+  cancelled: '&aPomyślnie anulowano tworzenie kopii zapasowej.'
+help:
+  header: <c3>=== </c3><c1>Pokazuje pomoc dla </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  detailed-header: <c3>=== </c3><c1>Wyświetlenie szczegółowej pomocy dla </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  command-format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  parameter-format: '<c2>{syntaxorname}</c2>: <c3>{description}</c3>'
+  page-info: Pokazuje stronę <c2>{page}</c2> z <c2>{totalpages}</c2> (<c3>{results}</c3>
+    wynik).
+  search-header: <c3>=== </c3><c1>Wyniki wyszukiwania dla </c1><c2>{commandprefix}{command}
+    {search}</c2><c3> ===</c3>
+motd:
+  success: '&aPomyślnie ustawiono motoo gildii na {motd}.'
+  remove: '&aPomyślnie usunięto motoo gildii.'
+  motd: '&7[&aMotto Gilldii&7] {motd}'
+  not-set: '&cTwoja gildia nie ma ustawionego motta.'
+arena:
+  created: '&aUdało Ci się utworzyć arenę o nazwie &c{arena}&a! Nie zapomnij ustawić
+    punktów spawnu! Dowiedz się więcej pisząc /guild arena'
+  deleted: '&aPomyślnie usunięto arenę o nazwie &c{arena}&a'
+  no-exist: '&cArena o tej nazwie nie istnieje.'
+  challenger-set: '&aPomyślnie ustawiłeś lokalizację Wyzwania dla &c{arena}&ana bierzącą
+    lokalizację!'
+  defender-set: '&aPomyślnie ustawiłeś lokazlizację Obrońcy dla &c{arena}&ana bierzącą
+    lokalizację!'
+  list: '&aNastępujące areny na serwerze to &c{arenas}&a.'
+  list-empty: '&cThere are currently no arenas created on the server.'
+  position-not-set: '&cLokalizacja dla tego zespołu nie została jeszcze ustawiona.
+    Spróbuj ustawić ją przed teleportacją!'
+  teleported-to-selection: '&aWoooosh! Przeteleportowałeś się na Spawn gildii &c{team}&a
+    na &c{arena}&a.'
+  all-full: '&cWybacz, wszystkie areny są aktualnie zajęte. Spróbuj później!'
+  location-issue-challenger: '&cThere seems to be a problem with the &achallenger
+    &clocation for arena &a{arena}&c. Please inform your server administrator.'
+  location-issue-defender: '&cThere seems to be a problem with the &adefender &clocation
+    for arena &a{arena}&c. Please inform your server administrator.'
+war:
+  no-defenders: '&cMocna gildia, którą wyzwałeś, nie ma nikogo wystarczającego aby
+    ją zaakceptować.'
+  challenge-sent: '&aWyzwanie wojenne zostało wysłane do &b{guild}&a! Będą mieli &b{amount}
+    &asekund aby je zaakceptować!'
+  incoming-challenge: '&aUważaj! Gildia &b{guild} &awłaśnie wysłała Ci wyzwanie wojenne!
+    Pokaż im, że jesteś najlepszy na wszystkich ziemiach, wykonując /guild war accept
+    lub jeśli jesteś trochę cukrem, wpisz /guild war deny! Masz &b{amount} &aczasu
+    aby zdecydować!'
+  no-pending-challenge: '&cPrzepraszamy! Nie masz oczekującego wyzwania wojennego
+    do zaakceptowania.'
+  already-challenging: '&cPrzepraszamy, masz już oczekujące wyzwanie. Anuluj to zadanie
+    lub poczekaj aż wygasnie.'
+  no-self-challenge: '&cSłuchaj odważny wojowniku, nie możesz rzucić wyzwania wojennego
+    samemu sobie!'
+  guild-expired-challenge: '&cTwoje wyzwanie przeciwko &b{guild} &aprzekroczyło limit
+    czasu, ponieważ nie zaakceptowali go na czas.'
+  target-expired-challenge: '&cWygląda na to, że twoi słabi poddani byli zbyt przestraszeni,
+    aby podjąć decyzję na czas. Wyzwanie zostało anulowane.'
+  challenge-denied-defender: '&aRozumiemy, że wojny nie są dla każdego. Odmówiłeś
+    wyzwania od &b{guild}&a.'
+  challenge-denied-challenger: '&aMusisz być zbyt potężny na walkę z &b{guild}&a,
+    odmówili walki z tobą w ten biały dzień.'
+  not-enough-on: '&aTwoja lub gildia którą próbujesz wyzwać nie ma wystarczającej
+    ilości osób online, aby rozpocząć wojnę.'
+  challenger-war-accepted: '&aPrzgotuj się na wojnę! Gildia &b{guild} &azaakceptowała
+    wyzwanie twojej gildii! Masz &b{amount} &asekund, aby dołączyć do wojny wpisując
+    &b/guild war join'
+  defender-war-accepted: '&aPrzygotuj się, właśnie zaakceptowałeś wyzwanie przeciwko
+    &b{guild}&a! Wyposaż się i przygotuj! Masz &b{amount} &aseconds by dołączyć do
+    wojny &b/guild war dołącza do wojny'
+  action-bar-join: '&aPośpiesz się zostało ci &b{amount} &asekund! Wpisz &b/guild
+    war join, aby dołaczyć do walki!'
+  not-joinable: '&cPrzepraszamy, ale nie możesz dołączyć do wojny w tym momencie.'
+  not-enough-joined: '&cTwoja gildia lub inna gildia nie miała wystarczającej ilości
+    ludzi. Anulowanie wojny.'
+  already-at-max: '&cPrzepraszamy, twoja gildia ma już maksymalną liczbę graczy w
+    twojej drużynie w wojnie!'
+  war-joined: '&b{player} &adołączył do wojny gildii!'
+  action-bar-ready: '&b{amount} &aseconds pozostało aż rozpocznie się wojna! Przygotuj
+    się!'
+  winner: '&aBitwa była szorstka... krew została rozlana... łzy były wylane... ale
+    w końcu potężni wojownicy &b{guild} &awygrali bitwę!'
+  already-accepted: '&cNie możesz zaakceptować wyzwania, które już zaakceptowałeś!
+    Bądź cierpliwy!'
+  already-joined: '&cJuż dołączyłeś do tej wojny! Poczekaj, aż wystartuje!'
+  removed-for-size: '&aNastępujący gracze zostali usunięci z wojny w celu utrzymania
+    każdej ze stron: {players}'
+  defend-cooldown: '&b{guild} &cjuż niedawno broniła się na arenie. Pozwól im odzyskać
+    swoją siłę i wyzwij ją innym razem!'
+  commands-blocked: '&cPrzepraszamy! Nie możesz wpisywać komend podczas wojny!'
+  player-killed-player: '&b{player} &azostał zabity przez &b{killer}&a!'
+  player-killed-other: '&b{player} &azostał zabity z nieznanych powodów.'
+  player-killed-quit: '&b{player} &azostał zabity z powodu opuszczenia serwera.'
+  teleported-back: '&aWalczyłeś ciężko! Niestety, nie każdy może być najlepszy. Zostałeś
+    przeteleportowany z powrotem do swojej początkowej lokalizacji!'
+acf-core:
+  help_header: <c3>=== </c3><c1>Wyświetlenie szczegółowej pomocy dla </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  invalid_syntax: 'Użycie: <c2>{command}</c2> <c3>{syntax}</c3>'
+  permission_denied: Przepraszam, ale nie masz uprawnień do wykonania tego polecenia.
+  unknown_command: Nieznana komenda, wpisz <c2>/help</c2>
+  error_performing_command: Wystąpił błąd podczas wykonywania tej komendy.
+  help_format: <c1>/{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+migrate:
+  invalid-backend: '&cZaplecze które próbowałeś przenieść jest nieprawidłowe.'
+  connection-failed: '&cPołączenie z nowym backendem nie powiodło się! Upewnij się,
+    że twoje uwierzytelnianie jest poprawnie skonfigurowane!'
+  same-backend: '&cNie możesz przenieść na ten sam backend, którego już używasz!'
+  complete: '&aMigracja danych ({amount} gildii) została zakończona i będzie nadal
+    używać tego nowego backendu do czasu ponownego uruchomienia. Upewnij się, że zmienisz
+    swój backend w konfiguracji na to, do czego przeniosłeś przed ponownym uruchomieniem!'
+  warning: '&bWażne! &cZamierzasz zmigrować WSZYSTKIE dane wtyczek. Przed wykonaniem
+    tego chcesz wykonać kopię zapasową WSZYSTKICH danych. Jeśli zgubisz swoje dane,
+    NIE będzie można go odzyskać. Czy na pewno chcesz kontynuować? Wpisz /guilds potwierdź,
+    aby kontynuować lub /guilds anuluj aby anulować!'
+  cancelled: '&aPomyślnie anulowałeś migrację danych!'

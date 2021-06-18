@@ -1,0 +1,48 @@
+# [~] OptEco auto-generated plugin.yml
+# [-]  More help at https://github.com/PlayerNguyen/OptEco/wiki
+# [-]  Any issue at https://github.com/PlayerNguyen/OptEco/issues
+
+Update:
+  CheckForUpdate: true
+Debug: false
+Settings:
+  CurrencySymbol: ps
+  Storage:
+    Type: sqlite
+  Preferences:
+    BeginPoint: 0.0
+    MinimumReachPoint: -15.0
+    MinimumCanTransact: 0.1
+    UseDouble: false
+    LimitTopCommand: 5
+    Cache:
+      RefreshTime: 5
+    Language: language.yml
+    TabExecutor: true
+  SQL:
+    SQLite:
+      File: account.sqlite
+    MySQL:
+      Host: localhost
+      Database: dbname
+      Port: '3306'
+      Username: root
+      Password: ''
+      Parameter: useSSL=false
+    Table:
+      Accounts: opteco
+      Transactions: opteco_transaction
+  Payment:
+    Pending:
+      Duration: 15
+      Countdown:
+        Enable: true
+        Type: message
+  Effect:
+    TitleCounter:
+      Limit: 10000
+    TittleCounter:
+      Enable: true
+      Stay: 20
+      FadeOut: 100
+      Speed: 5

@@ -1,0 +1,17 @@
+#
+# Allows for modifying certain aspects of vanilla enchantments
+#
+enabled: false # There may be potential conflicts if modifying vanilla enchantments.
+
+# Set custom max levels for vanilla enchantments.
+# To do this, add each enchantment like this:
+# - "<key>:4"
+# For example, to allow efficiency 6 and protection 5, you would do this:
+# max-levels:
+#   - "efficiency:6"
+#   - "protection:5"
+#
+# Currently, it is *not* possible to modify the enchantment levels from enchanting tables.
+# It will work with anvils however, but since it is still possible to get enchantments at their vanilla
+# max levels, then it isn't recommended to lower the max level of a vanilla enchantment, only to raise it.
+max-levels: []

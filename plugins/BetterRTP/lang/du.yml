@@ -1,0 +1,64 @@
+# Translation author: OasisAkari (GitHub)
+Messages:
+  Locked: '&cеЇ№дёЌиµ·пјЊ&7дЅ е·Із»Џз”Ёе®Њдє†дЅ зљ„йљЏжњєдј йЂЃж¬Ўж•°дє†пјЃ'
+  Edit:
+    Error: '&cй”™иЇЇпјЊ&7жЏђдѕ›зљ„еЏ‚ж•°ж— ж•€пјЃ'
+    Set: '&bж€ђеЉџпјЊ&7%type%и®ѕзЅ®дёє%value%гЂ‚'
+    Remove: '&cе·Із§»й™¤пјЊ&7дЅ з§»й™¤дє†и‡Єе®љд№‰дё–з•Њ%world%гЂ‚'
+  Prefix: '&7[&6BetterRTP&7] '
+  Success:
+    Loading: '&aе®‰е…ЁдЅЌзЅ®е·Іе®љдЅЌпјЃ&7еЉ иЅЅеЊєеќ—дё­вЂ¦вЂ¦'
+    Teleport: '&aдј йЂЃдё­вЂ¦вЂ¦&fз›ґе€°ж€‘д»¬ж‰ѕе€°е®‰е…Ёзљ„дЅЌзЅ®д№‹е‰ЌиЇ·з­‰дёЂдё‹пјЃ'
+    Paid: '&aJe bent getp''d naar&7 x=%x% y=%y% z=%z% for &c$%price%&7 in &f%attempts%
+      &7attempts!'
+    Bypass: '&aJe bent getp''d naar&7 x=%x% y=%y% z=%z%'
+  Failed:
+    Hunger: '&7дЅ е¤ЄйҐїдє†пјЊ&cдј йЂЃд№‹е‰Ќе…€еђѓз‚№дёњиҐїе†ЌиЇґпјЃ'
+    Price: '&cKan niet rtpen vanwege onvoldoende saldo! &7Je moet minstens $%price%
+      &7hebben om te rtpen!'
+    NotSafe: '&cKon geen veilige plek vinden, Probeer opnieuw! &7Je bent niet ge tp''d!'
+  Other:
+    Success: '&a%player% is getp''d naar&7 x=%x% y=%y% z=%z% in &f%attempts% &7pogingen!'
+    NotSafe: '&cKon geen veilige plek binnenin %attempts% pogingen! &7%player% is
+      niet gertp''d!'
+    Biome: '&cHet lijkt er naar dat de biome&7 %biome%&c niet bestaat! &7Probeer de
+      tab list te gebruiken!'
+  Reload: '&eConfig succesvol herladen!'
+  NoPermission:
+    Basic: '&cSorry! &7U heeft geen toestemming om deze command te gebruiken!'
+    World: '&cSorry! &7Je mag niet rtpen in de %world% wereld!'
+  DisabledWorld: '&cUitgeschakeld %world%! &7Kon niet RTPen!'
+  Cooldown: '&cSorry! &7Je kan niet rtpen voor &c%time% &7seconden!'
+  Invalid: '&cOngeldig argument. probeer ''/%command% help'''
+  NotOnline: '&cDe speler &7%player% &cis niet online!'
+  Delay: '&aTeleportering in &f%time% &aseconden! Niet bewegen!'
+  Moved: '&cJe hebt bewogen! &7RTP was afgelast!'
+  NotExist: '&cLijkt dat de wereld &7%world% &cniet bestaat!'
+  Already: '&cOepsie! &7Het lijkt erop dat je al aan het rtpen bent, heb wat geduld!'
+  Sign: '&7Commando bordje is aangemaakt! &7Commando is... ''&f/rtp %command%&7'''
+Help:
+  Prefix: '&e&m-----&6&l BetterRTP &8| её®еЉ©иЏњеЌ• &e&m-----'
+  Edit: ' &7- &e/%command% edit <й»�и®¤/дё–з•Њ> [еЏ‚ж•°...] &7- дї®ж”№жЏ’д»¶и®ѕзЅ®гЂ‚'
+  Info: ' &7- &e/%command% info [world/particles/shapes/potion_effects] &7- жџҐзњ‹жњ‰е…іжЏ’д»¶еЏ‚ж•°зљ„з‰№е®љдїЎжЃЇгЂ‚'
+  Settings: ' &7- &e/%command% settings &7- ж‰“ејЂGUIи®ѕзЅ®гЂ‚'
+  Test: ' &7- &e/%command% test &7- жµ‹иЇ•дј йЂЃеђЋзљ„жЏ’д»¶ж•€жћњгЂ‚'
+  Version: ' &7- &e/%command% version &7- ж�ѕз¤єз›®е‰ЌдЅїз”Ёзљ„жЏ’д»¶з‰€жњ¬гЂ‚'
+  Main: ' &7- &e/%command% &7- Teleporteert jou naar een random locatie!'
+  Biome: ' &7- &e/%command% biome <biome1, biome2...> &7- Random teleport in deze
+    biome'
+  Help: ' &7- &e/%command% help &7- Toont help lijst.'
+  Player: ' &7- &e/%command% player <player> [world] [biome1, biome2...] &7- Random
+    teleport een andere speler'
+  Reload: ' &7- &e/%command% reload &7- Herlaad de plugin'
+  World: ' &7- &e/%command% world <world> [biome1, biome2...] &7- Random teleport
+    in een andere wereld'
+Usage:
+  Edit:
+    Base: '&cз”Ёжі•&7пјљ/%command% edit <default/дё–з•Њ> [еЏ‚ж•°...]'
+    Default: '&cз”Ёжі•&7пјљ/%command% edit default <max/min/useworldborder/center>
+      <еЂј>'
+    World: '&cз”Ёжі•&7пјљ/%command% edit world <world> <max/min/useworldborder/center>
+      <еЂј>'
+  Player: '&cUsage&7: /%command% player <player> [world] [biome1, biome2]'
+  World: '&cUsage&7: /%command% world <world> [biome1, biome2...]'
+  Biome: '&cUsage&7: /%command% biome <biome1, biome2...>'

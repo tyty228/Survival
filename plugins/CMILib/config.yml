@@ -1,0 +1,7 @@
+# Language file you want to use
+Language: EN
+# When enabled plugin will try to keep CMILib up to date automatically
+AutoUpdate: true
+GlobalGui:
+  # Defines item type in empty fields in GUI when its needed to be filled up
+  EmptyField: BLACK_STAINED_GLASS_PANE

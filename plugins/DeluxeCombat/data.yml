@@ -1,0 +1,471 @@
+recipes:
+- dcr-gold_apple!GOLDEN_APPLE!1&GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!APPLE!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT
+- dcr-god_apple!ENCHANTED_GOLDEN_APPLE!1&GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!APPLE!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK
+language: en_EN
+disabled-potions: []
+disabled-enchantments: []
+commands_on_rejoin_players: []
+signs: []
+Rewards:
+  enable: false
+  break-after-first-success: false
+  tagging-check: false
+Combat:
+  tagger:
+    punishment:
+      commands:
+        enable: true
+        commands_on_rejoin: []
+        commands_on_quit: []
+      broadcast: true
+      broadcast_items_location: true
+      entity:
+        ai: false
+        type: ZOMBIE
+      enable: true
+      remove_inventory_block: 30
+      inventory_action: CLEAR
+      inventory_block: STONE
+    block_all_commands: true
+    display-time:
+      enable: true
+      color: RED
+      type: ACTIONBAR
+    enable: true
+    combat_time: 15
+    allowed_commands: []
+    damage-indicator:
+      enable: false
+      mobs:
+        enable: false
+      keep-item-time: 3
+      damage-item:
+        subid: 3
+        material: ORANGE_DYE
+      critical-item:
+        subid: 3
+        material: RED_DYE
+      disabled-worlds: []
+    ignore-kick: false
+    glow-on-tag: false
+    ban-potions-only-during-combat: false
+    command_list_blacklist_mode: false
+    keep-tagged-after-kill: false
+    mode: SIMPLE
+    prevent-kill-steal: false
+    prevent-building-during-combat: false
+    refresh-on-bow-boost: false
+    ban-enchantments-only-during-combat: false
+    entities:
+      enable: false
+      combat-time: 10
+      whitelisted-entities: []
+      disabled-worlds: []
+    disable-block-interaction: []
+    punishments:
+      commands_on_npc_kill: []
+    deny-teleport-causes: []
+  commands_on_combat_leave: []
+  commands_on_combat: []
+  disabled-worlds: []
+Death:
+  corpses:
+    enable: true
+    remove_after: 30
+    despawn-in-lava: false
+    despawn-empty-inventory: false
+    allowed-gamemode:
+      enable: false
+      gamemode: SURVIVAL
+    only-open-sneak-rightclick: false
+    corpses-do-drop-items: false
+    force-load-chunk: false
+    drop-items-after-removal: false
+    inventory-name: '&4#%player%'
+  custom_death_messages: true
+  instant_respawn: false
+  respawn_at_nearest_spawnpoint: false
+  drop_head:
+    enable: false
+    percentage: 100
+    transfer-to-killer: false
+    commands: []
+  ghost-players:
+    enable: false
+    max-live-time: 10
+    npc-type: ZOMBIE
+    only-spawn-in-pvp-allow-rgn: false
+    ai: true
+    whitelisted-regions: []
+    disabled-worlds: []
+  respawn-protection:
+    deny-items-pickup: false
+    enable: false
+    duration: 10
+  death-location:
+    randomize:
+      enable: false
+      min-x: 10
+      max-x: 20
+      min-z: 10
+      max-z: 20
+    not-possible-in-combat: false
+    teleport-only-one-time: true
+  custom_death_messages_only2victim: false
+  kill-recaps:
+    broadcast-only-to-victim: false
+    fill_recap_inv: true
+    broadcast: true
+    enable: true
+    remove-back-item: false
+    broadcast-only-to-victim-assists: false
+  custom_death_messages_prefix: true
+  lightning-on-kill:
+    enable: false
+  respawn_at_random_spawnpoint: false
+  use-respawn-listener: false
+  void-tp-to-nearest-spawnpoint: false
+  commands-when-no-bed-placed: []
+PvP_Settings:
+  disable_fly: false
+  modified_knockback:
+    enable: false
+    ground:
+      x-multiplier: 0.0
+      y-multiplier: 0.0
+      z-multiplier: 0.0
+    air:
+      x-multiplier: 0.0
+      y-multiplier: 0.0
+      z-multiplier: 0.0
+    netherite-knockback: false
+    sprint:
+      x-multiplier: 3.0
+      y-multiplier: 3.0
+      yaw-multiplier: 1.0
+  deny_gamemode: false
+  enderpearls:
+    disable:
+      only_in_combat: false
+      general_disabled: false
+    anti-glitch: false
+    regions-whitelist-mode: false
+    deny-tp-between-two-blocks: false
+    refund-on-deny: true
+    roof-check: false
+    disabled-worlds: []
+    blacklisted-regions: []
+  chorus_fruits:
+    disable:
+      only_in_combat: false
+      general_disabled: false
+    enderpearls: 0
+    chorus_fruits: 0
+    regions-whitelist-mode: false
+    disabled-worlds: []
+    blacklisted-regions: []
+  hit_delay: 0
+  anti-kill-abuse:
+    enable: false
+    kill-amount: 2
+    banned-time: 10
+    run-commands-on-abuse: []
+    enable-kill-disable-rewards: false
+    do-no-count-killstreaks: false
+    disabled-worlds: []
+  pvptogglecommand:
+    cooldown-on-kill: false
+    save-on-quit: true
+    enable: true
+    show-in-scoreboard: false
+    use-scoreboard-groups: false
+    cooldown: 1800
+    scoreboard-colors:
+      enabled: a
+      disabled: c
+    toggle-confirmation:
+      enable: false
+      time-to-confirm: 15
+    deny-cmd-in-forceworlds: true
+    force-recall-worlds: []
+    force-enabled-worlds: []
+    force-disabled-worlds: []
+  pvp:
+    enabled-on-join: true
+    enable: true
+  display-cooldown-in-actionbar: true
+  newbie-protection:
+    enable: false
+    duration: 24
+    disable-all-damage: true
+  gold-apple-cooldown:
+    enable: false
+    duration: 10
+  gold-apple:
+    custom-recipe:
+      enable: true
+    regions-whitelist-mode: false
+    disabled-worlds: []
+    blacklisted-regions: []
+  god-apple-cooldown:
+    enable: false
+    duration: 30
+  god-apple:
+    custom-recipe:
+      enable: true
+    regions-whitelist-mode: false
+    disabled-worlds: []
+    blacklisted-regions: []
+  totem-of-undying:
+    disable:
+      general_disabled: false
+      only_in_combat: false
+    cooldown: 120
+    regions-whitelist-mode: false
+    anywhere-in-inventory: false
+    disabled-worlds: []
+    blacklisted-regions: []
+  elytra:
+    general_disabled: false
+    only_in_combat: false
+  disable-drop-handling-permission: false
+  disable-drop-handling: false
+  drop-handling:
+    pickup-restriction:
+      enable: false
+      timelimit: 30
+      mode: KILLER
+    keep-inventory-permission:
+      enable: false
+      only-in-pvp: false
+  pvp-interval:
+    end-all-fights: false
+    enable: false
+    timezone: Europe/Moscow
+    intervals: []
+  bounty:
+    activate: false
+    mark-as-combat: false
+    glow-on-bounty: false
+    tablist-prefix:
+      enable: false
+      prefix: '&4&lBOUNTY'
+    stop-countdown-disabled-worlds: false
+    ignore-player-checks: true
+    disable-command: false
+    allow-stacking: false
+    inventory-list: false
+    compass:
+      enable: false
+      cooldown: 5
+    expire-by-initiator:
+      enable: false
+      fee: false
+      fee-percentage: 20
+      fee-amount: 1000.0
+    tax: 19
+    max-time: 30
+    tax-account: none
+    cmd-alias: bounty
+    min-amount: 100.0
+    max-amount: 100000.0
+    disabled-worlds: []
+  disable-item-interact:
+    only-during-combat: true
+    material-list: []
+  disable-sleeping-during-combat: false
+  disable-armor-change:
+    enable: false
+  disable-bowboost: false
+  potion-stack:
+    enable: false
+    max-stack-size: 16
+  potion-instant-apply:
+    enable: false
+    remove-empty-bootles: false
+  remove-potion-of-invisibility: false
+  apples:
+    instant-eat: false
+  repairing:
+    disable-mending-in-combat: false
+  old-armor-strength:
+    damage-reduction-per-point: 0.04
+Point-Ranking-System:
+  enable-diplaynames: true
+  enable: false
+  pull-limit: 15
+  update-ranking-interval: 60
+  points-death: -10
+  points-kill: 10
+  points-combat-log: -50
+  sort-after: KILLS
+  only-count-pvp-deaths: false
+  auto-save-stats: false
+  disabled-worlds: []
+  start-points: 0
+General:
+  data-group: default
+  check_for_new_updates: true
+  prefix: '&c&lDC &r&8> &r&7'
+  void-tp-to-nearest-spawnpoint: false
+  use_metrics: true
+  fill_recap_inv: true
+  disabled_worlds: []
+  loading-stats-message: false
+  command-alias: []
+  hex-color-support: false
+  use-custom-placeholder-values: false
+  check_for_new_language_changes: true
+Healthbar:
+  mode: NONE
+  enable: false
+  bossbar:
+    keep-time: 20
+    color: PINK
+  icon: '&c❤'
+Support:
+  crackshot:
+    enable: false
+    destroy-non-dropable-weapons: false
+    check-for-non-dropable-weapons: false
+    weapon-file-name: defaultWeapons
+  savagefactions:
+    enable: false
+  placeholderapi:
+    enable: false
+  holographicdisplays:
+    enable: false
+  libsdisguises:
+    undisguise_on_combat: false
+    enable: false
+  vanishnopacket:
+    deny_vanish: false
+    unvanish_on_combat: false
+    enable: false
+  worldguard:
+    combat_throw_out_of_region: false
+    enable: false
+    whitlisted_regions: []
+    allow-pvp-in-pvp-deny-regions-if-tagged: false
+    corpses-only-in-allowed-regions: false
+    allowed-regions-blacklist-mode: false
+    border:
+      byte: 0
+      mode: PHYSICAL
+      material: GLASS
+    play-region-border-effect: false
+    invisible-border-knockback: 1.5
+  vault:
+    sellhead:
+      redeemed-rempve-from-inv: false
+      enable: false
+      money-loss-percentage: 0
+    use-money-from-victim: false
+    remove-money-per-death-percentage: 0
+    remove-money-per-combatlog-percentage: 0
+    min-money-limit: 0.0
+    add-money-per-kill: 0.0
+    remove-money-per-death: 0.0
+    remove-money-lost-head: 0.0
+    remove-money-per-combatlog: 0.0
+    sellhead-cmd-alias: sellhead
+  lands:
+    kill-abuse-for-all-members: false
+    no-pvp-between-members: false
+    no-tag-between-members: true
+    region-borders:
+      enable: false
+      byte: 0
+      mode: PHYSICAL
+      material: GLASS
+    worldguard-pvpzones: []
+  ultimateclaims:
+    no-tag-between-members: false
+    no-pvp-between-members: false
+    region-borders:
+      enable: false
+      byte: 0
+      mode: PHYSICAL
+      material: GLASS
+  towny:
+    region-borders:
+      enable: true
+      byte: 0
+      mode: PHYSICAL
+      material: GLASS
+    tag-in-wilderness: true
+    disable-war-building: false
+  essentials:
+    deny-combat-with-god: false
+    disable-god-on-combat: false
+    deny-combat-on-afk: false
+  cmi:
+    deny-combat-with-god: false
+    deny-combat-on-afk: false
+    check-for-keep-inv: false
+    keep-inventory-permission: cmi.keepinventory
+  factions:
+    delay-hooking: 3
+  disabled-hooks: []
+  advanced-enchantments:
+    keep-on-death-enchantments: []
+  elite-enchantments:
+    keep-on-death-enchantments: []
+  protocollib:
+    disable-sounds:
+      enable: false
+      list: []
+  nbt-api:
+    stattrack:
+      actionbar-hover: false
+      count-on-owner-change: false
+      enable: false
+      purchase-cost: 1000.0
+      material-whitelist: []
+  preciousstones:
+    prevent-door-bug: false
+  gsit:
+    prevent-sit-lay-in-combat: false
+  z-shops:
+    register-economy: false
+  shopguiplus:
+    register-economy: false
+  delayed-hooking: 4
+  shop-plugins:
+    economy-name: DELUXECOMBAT_POINTS
+  mcmmo:
+    disabled-skills-in-combat: []
+spawnpoints: []
+Old_PvP:
+  no-sweep-attacks: false
+  old-cooldown:
+    only-during-combat: false
+    enable: false
+    old-attack-speed: 24
+    new-attack-speed: 4
+    disabled-worlds: []
+  old-armor-durability:
+    enable: false
+    durability-reduction: 1
+  old-armor-strength:
+    enable: false
+  old-burn-delay:
+    enable: false
+    only-in-fight: false
+    burn-ticks: 1200
+  old-axe-damage:
+    enable: false
+    netherite-axe-dividor: 1.25
+  old-snowball-egg-enderpearl-knockback: false
+  disable-shield: false
+  disable-offhand: false
+  rod_knockback:
+    disable-player-pull: false
+    enable: false
+    damage: 0.01
+  disabled-worlds: []
+apple-effects:
+  gold-apple: []
+  god-apple: []
+sellheads: []
+kill-abuses: []

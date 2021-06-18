@@ -1,0 +1,27 @@
+claim:
+  vertexpand: false
+  blocklimits:
+    enabled: false
+    limits: {}
+regionprotect:
+  flow:
+    lava: false
+    water: false
+    other: false
+  fire:
+    spread:
+      toregion: false
+      inregion: false
+    burn: false
+  explosion:
+    block: false
+    entity: false
+autoflags:
+  enabled: false
+  flags: {}
+restrictcommands:
+  enabled: false
+  commands: []
+extendedwewand: false
+misc:
+  pvpmode: default

@@ -1,0 +1,491 @@
+descriptions:
+  accept: Accepter une invitation de guilde
+  admin-addplayer: Commande admin pour ajouter un joueur dans une guilde
+  admin-bank-balance: Commande administrateur pour voir le solde de la banque d'une
+    guilde
+  admin-bank-deposit: Commande administrateur pour mettre de l'argent dans la banque
+    d'une guilde
+  admin-bank-withdraw: Commande administrateur pour retirer de l'argent à la banque
+    d'une guilde
+  admin-claim: Commande administrateur pour réclamer le territoire d'une guilde
+  admin-delhome: Commande administrateur pour supprimer le foyer d'une guilde
+  admin-home: Commande administrateur pour se téléporter au foyer d'une guilde
+  admin-motd: Commande administrateur pour afficher le MOTD d'une guilde
+  admin-motd-set: Commande administrateur pour définir le MOTD d'une guilde
+  admin-motd-remove: Commande administrateur pour supprimer le MOTD d'une guilde
+  admin-prefix: Commande administrateur pour changer le préfixe d'une guilde
+  admin-rename: Commande administrateur pour renommer une guilde
+  admin-remove: Commande administrateur pour supprimer une guilde du serveur
+  admin-removeplayer: Commande administrateur pour supprimer un joueur de la guilde
+  admin-score-resetall: Commande administrateur pour réinitialiser les résultats de
+    toutes des guildes
+  admin-score-setloses: Commande administrateur pour définir les défaites d'une guilde
+  admin-score-setwins: Commande administrateur pour définir les victoires d'une guilde
+  admin-sethome: Commande administrateur pour définir le foyer d'une guilde
+  admin-status: Commande administrateur pour changer le statut d'une guilde
+  admin-spy: Commande administrateur pour activer l'espionnage du chat de guilde
+  admin-transfer: Commande administrateur pour transférer une guilde d'une personne
+    à une autre
+  admin-unclaim: Commande administrateur pour annuler la réclamation de la propriété
+    d'une guilde
+  admin-upgrade: Commande administrateur pour augmenter le rang d'une guilde
+  admin-vault: Commande administrateur pour voir le coffre fort d'une guilde
+  ally-accept: Accepter une proposition d'alliance d'une autre guilde
+  ally-add: Ajouter une guilde en alliée
+  ally-decline: Refuser une invitation d'alliance d'une autre guilde
+  ally-list: Lister des alliés de votre guilde
+  ally-remove: Supprimer une alliance avec une guilde
+  arena-challenger: Définir l'emplacement du challenger pour une arène
+  arena-create: Créer une nouvelle arène de guerre
+  arena-defender: Définir l'emplacement du défenseur pour une arène
+  arena-delete: Supprimer une arène de guerre
+  arena-list: Lister toutes les arènes créées
+  arena-tp: Se téléporter à un emplacement d'une arène
+  bank-balance: Afficher le montant en banque de votre guilde
+  bank-deposit: Déposer de l'argent sur le compte de votre guilde
+  bank-withdraw: Prendre de l'argent dans la banque de guilde
+  buff: Ouvrir le menu des buffs de guilde
+  cancel: Annuler une action
+  chat: Afficher le chat de guilde
+  check: Voir les invitations en attente
+  claim: Claim une zone pour votre guilde
+  code-create: Créer un code d’invitation pour votre guilde
+  code-delete: Supprimer un code d'invitation de la guilde
+  code-info: Obtenir l'information à propos d'un code d'invitation
+  code-list: Lister tous les codes d'invitation actuels dans votre guilde
+  code-redeem: Valider un code d'invitation pour rejoindre une guilde
+  confirm: Confirmer une action
+  console-backup: Sauvegarder les données du plugin
+  console-migrate: Émigrez les données d'une base de données à l'autre
+  console-unclaim-all: Commande administrateur pour réclamer tous les territoires
+    de guilde sur le serveur
+  console-update-languages: Commande de console pour mettre à jour les fichiers de
+    langue
+  create: Créer une guilde
+  decline: Refuser une invitation de guilde
+  delete: Supprimer votre guilde
+  delhome: Supprime votre home de guilde
+  demote: Rétrograde un membre de votre guilde
+  give: Donne un ticket d'upgrade
+  help: Affiche le menu d'aide
+  home: Téléporte au home de guilde
+  info: Ouvre le GUI d'info
+  invite: Invite un joueur dans votre guilde
+  kick: Kick un joueur de la guilde
+  language: Change le langage des messages du plugin pour vous
+  leave: Quitte votre guilde
+  list: Liste des Guildes
+  members: Ouvre l'interface graphique de la liste de membres
+  motd: Voir le message du jour de votre guilde
+  motd-set: Définir le message du jour de votre guilde
+  motd-remove: Supprimer le message du jour de votre guilde
+  prefix: Change le prefix de votre guilde
+  promote: Promouvoir un membre de votre guilde
+  reload: Recharge les configurations du plugin
+  rename: Change le nom de votre guilde
+  request: Demande pour rejoindre une guilde
+  sethome: Défini le home de guilde
+  status: Changer le statut de votre guilde
+  transfer: Changer le chef de guilde
+  unclaim: Enlever le claim de guilde
+  upgrade: Améliorer votre tier de Guilde!
+  vault: Ouvre le coffre fort de guilde
+  version: Informations à propos du plugin
+  war-accept: Accepte une déclaration de guerre
+  war-challenge: Déclarer la guerre à une autre guilde
+  war-deny: Refuser une déclaration de guerre
+  war-join: Rejoindre une guerre en attente
+create:
+  guild-name-taken: '&cCe nom est déjà pris !'
+  warning: '&cLa création de guilde coûte {amount}. Ecrivez /guilds confirm pour créer
+    votre guilde, écrivez /guilds cancel pour annuler.'
+  successful: '&aLa Guilde ''{guild}&r&a'' a été créée avec succès !'
+  cancelled: '&cCréation de guilde annulée !'
+  requirements: '&Votre nom de guilde ne correspond pas aux critères ! Vous devez
+    utiliser seulement des caractères alphanumérique et d''un maximum de 64 lettres'
+  name-too-long: '&cVous n''avez spécifié aucun prefix et le nom entré ne pouvais
+    pas être utilisé comme prefix. Essayez d''entrer un nom plus court ou entrez un
+    prefix.'
+  prefix-too-long: '&cLe préfixe de guilde fourni ne correspond pas aux exigences
+    ! Peu-être vous avez utilisé trop de caractères ?'
+chat:
+  disabled: Chat de guilde désactivé
+  enabled: Chat de guilde activé
+request:
+  success: '&aVous avez demandé une invitation à la guilde {guild}'
+  incoming-request: '&a{player} demande à rejoindre la guilde. Envoyez lui une invitation
+    en faisant /guild invite {player}!'
+  cooldown: Vous ne pouvez envoyez de nouvelles requêtes avant {time} secondes.
+error:
+  already-in-guild: '&Vous êtes déjà dans une guilde !'
+  no-guild: '&cVous n''êtes pas dans une guilde !'
+  role-no-permission: '&cVous devez disposer d''un grade plus élevé pour faire ça
+    !'
+  tier-no-permission: '&cVous devez disposer d''un rang de guilde plus élevé pour
+    faire ça !'
+  guild-no-exist: '&cCette guilde n''existe pas ! (Si vous obtenez ceci en essayant
+    de rejoindre une guilde qui a un nom de couleur personnalisée, vous pouvez essayer
+    de faire /guild join <nom de celui qui vous a invité> pour rejoindre aussi!)'
+  player-not-found: '&cLe joueur ''{player}&r&c'' n''est pas en ligne !'
+  player-not-in-guild: '&c{player} n''est pas dans votre guilde !'
+  not-officer: '&cCe joueur doit être officier dans votre guilde !'
+  blacklist: '&cUn mot ou plus de votre nom de guilde ou préfix est dans la blacklist
+    !'
+  not-enough-money: '&cDésolé, vous n''avez pas assez d''argent pour faire ça !'
+  economy-required: '&cUn plugin d''économie est requis pour que cela fonctionne.
+    Contactez un administrateur.'
+  buff-cooldown: '&cDésolé, votre guilde a récemment acheté un buff. Vous pouvez réessayer
+    dans {amount} secondes.  '
+  buff-no-permission: '&cVous n''avez pas les droits requis pour acheter ce renforcement!'
+  no-pending-invites: '&cDésolé, vous n''avez aucune invitation de guilde en attente
+    en ce moment!'
+  migrating: '&cDésolé, cette action ne peut pas être terminée. Les données sont en
+    cours de migration ! Réessayez dans quelques minutes.'
+  console-command: '&cDésolé, cette commande ne peut être utilisée que depuis la console.'
+  transfer-same-person: '&cDésolé, vous ne pouvez pas transférer une guilde à la même
+    personne qui est déjà le chef de cette guilde !'
+  player-no-exist: '&cDésolé, il ne semble pas que ce joueur ait déjà été sur le serveur
+    !'
+bank:
+  balance: '&aVotre guilde possède : {amount}.'
+  deposit-success: '&a{player} vient de déposer {amount} dans la banque de Guilde.
+    Votre nouveau total est de {total}.'
+  withdrawal-success: '&a{player} vient de rétirer {amount} de la banque de Guilde.
+    Votre nouveau total est de {total}.'
+  not-enough-bank: '&cIl n''y a pas assez d''argent en banque pour faire cela'
+  over-max: '&cDésolé, vous ne pouvez pas déposer autant, ou vous dépasserez la limite
+    maximum de votre banque !'
+admin:
+  delete-warning: '&cVous êtes sur le point de supprimer la guilde {guild}. Ecrivez
+    /guilds confirm pour supprimer cette guilde, ecrivez /guilds cancel pour annuler.'
+  delete-success: '&aVous avez supprimé avec succès la guilde {guild}.'
+  guild-vault-sign: Coffre fort de guilde créé !
+  player-added: '&aVous avez été ajouté à {guild} par un Admin!'
+  admin-player-added: '&aVous avez ajouté {player} à la guilde {guild}!'
+  admin-guild-add: '&a{player} a été ajouté à votre guilde par un administrateur !'
+  player-removed: '&cVous avez été retiré de {guild} par un Admin !'
+  admin-player-removed: '&aVous avez retiré {player} de la guilde {guild}!'
+  admin-guild-remove: '&a{player} a été retiré de votre guilde par un administrateur
+    !'
+  admin-upgrade: '&aVous avez amélioré le tier de la guilde {guild}''!'
+  admin-guild-upgrade: '&aVotre tier de guilde a été mis à niveau par un administrateur.
+    !'
+  spy-on: '&aEspionnage de chat de guilde activé !'
+  spy-off: '&cEspionnage de chat de guilde  désactivé !'
+  motd: 'Le MOTD de &a{guild} est : {motd}'
+  motd-success: '&aVous avez bien changé le message du jour de la guilde {guild} en
+    {motd}.'
+  motd-remove: '&aVous avez bien supprimé le message du jour de la guilde {guild}.'
+  bank-balance: '&aLa guilde {guild} a un solde bancaire de {balance}.'
+  bank-deposit: '&aVous venez d''introduire {amount} dans la banque de {guild}. Leur
+    nouveau solde est de {total}.'
+  bank-withdraw: '&aVous venez d'' prendre {amount} depuis la banque de {guild}. Leur
+    nouveau solde est de {total}.'
+  score-resetall: '&aVous avez réinitialisé les victoires et défaites de toutes les
+    guildes sur le serveur.'
+  score-setloses: '&aVous avez défini correctement le nombre de défaites à {amount}
+    pour la guilde {guild}.'
+  score-setwins: '&aVous avez défini correctement le nombre de victoires à {amount}
+    pour la guilde {guild}.'
+  sethome: '&a Vous venez de définir le nouveau foyer de la guilde {guild}.'
+  home: '&a Vous venez de téléporter le foyer de {guild}.'
+  delhome: '&a Vous venez d''effacer le foyer de la guilde {guild}.'
+boot:
+  player-kicked: '&cLe joueur ''{player}'' a été exclu de la guilde par {kicker}!'
+  successful: '&aLe joueur {player} a bien été expulsé de la guilde !'
+  kicked: '&cVous avez été expulsé de votre guilde par {kicker}!'
+decline:
+  success: '&aInvitation à une guilde refusée !'
+demote:
+  cant-demote: '&cCe joueur ne peut pas être rétrogradé !'
+  demote-successful: '&aVous avez rétrogradé avec succès {player} de {old} à {new}'
+  you-were-demoted: '&cVous avez été rétrogradé de {old} à {new}'
+promote:
+  cant-promote: '&cCe joueur ne peut pas être promu !'
+  promote-successful: '&aVous avez promu avec succès {player} de {old} à {new}'
+  you-were-promoted: '&aVous avez été promu de {old} à {new}'
+delete:
+  successful: '&aSuppression de la guilde ''{guild}&r&a'' réussie !'
+  cancelled: '&cSuppression de la guilde annulée !'
+  warning: '&cEcrivez /guilds confirm pour supprimer votre guilde, ecrivez /guilds
+    cancel pour annuler.'
+  notify-allies: '&c{guild} n''est plus votre alliée car elle a été dissoute.'
+leave:
+  cancelled: '&cQuitter la guilde annulée !'
+  successful: '&aVous avez quitté votre guilde avec succès !'
+  player-left: '&cLe joueur ''{player}'' quitte la guilde !'
+  guildmaster-left: '&cLe chef de guilde, ''{player}'' a quitté la guilde. la guilde
+    {guild} est dissoute.'
+  warning: '&cEcrivez /guilds confirm pour quitter votre guilde, ecrivez /guilds cancel
+    pour annuler.'
+  warning-guildmaster: '&cVous êtes le maître de cette guilde, quitter la guilde signifiera
+    que celle-ci sera supprimée. Ecrivez /guilds confirm pour quitter et supprimer
+    votre guilde, ecrivez /guilds cancel pour annuler.'
+transfer:
+  newmaster: '&aVous êtes le nouveau maître de guilde de {guild} !'
+  success: '&aLa guilde a été transférée !'
+invite:
+  already-invited: L'utilisateur est déjà invité dans votre guilde
+  message: '&a{player} vous a invité à rejoindre sa guilde, ''{guild}'' écrivez /guild
+    join {guild} pour la rejoindre !'
+  successful: '&aVous avez invité avec succès {player} à votre guilde !'
+  already-in-guild: '&c{player} est déjà dans une autre guilde !'
+upgrade:
+  tier-max: '&cVous ne pouvez pas améliorer la guilde une fois de plus ! Vous êtes
+    au maximum !'
+  money-warning: '&cVous allez dépenser {amount} pour mettre à jour votre guilde.
+    (Ecrivez /guilds confirm pour continuer)'
+  cancel: '&cAmélioration annulé !'
+  success: '&aVous avez mis à jour votre guilde avec succès !'
+  not-enough-money: '&cDésolé ! Vous n''avez pas assez d''argent pour améliorer votre
+    guilde ! Vous avez besoin de {needed} de plus !'
+  not-enough-members: '&cDésolé! Vous avez besoin d''au moins {amount} membres pour
+    augmenter votre tier de Guilde !'
+prefix:
+  successful: '&aLe préfix de guilde a bien été changé to {prefix}!'
+  disabled: '&cLes préfixes sont désactivés.'
+status:
+  successful: '&aStatut de guilde défini sur {status}!'
+rename:
+  successful: '&aLe nom de la guilde a été changé en {name}!'
+home:
+  no-home-set: '&cAucun home défini ! Utilisez &a/guild sethome &cpour définir un
+    home !'
+  teleported: '&aVous avez été téléporté au home de votre guilde !'
+  cooldown: '&cTu dois attendre au moins {amount} secondes avant de recommencer'
+  warmup: '&aVous serez téléporté dans {amount} secondes. Ne bouge pas !'
+  cancelled: '&cTu as bougé ! La téléportation annulée!'
+sethome:
+  successful: '&aHome de guilde défini !'
+  deleted: '&aVous avez supprimé votre home de guilde!'
+  cooldown: '&cVous devez attendre au moins {amount} secondes avant de recommencer'
+reload:
+  reloaded: '&aFichiers de config rechargés avec succès !'
+cancel:
+  error: '&cAucune action à annuler !'
+  success: '&aAction annulée !'
+confirm:
+  error: '&cAucune action à confirmer !'
+  success: '&aAction confirmée !'
+ally:
+  none: '&cVous n''avez pas d''allié !'
+  list: 'Votre guilde a les alliés suivants: {ally-list}'
+  current-declined: '&a{guild} : La demande d''alliance a été refusée !'
+  target-declined: '&cVotre demande d''alliance avec {guild} a été refusée !'
+  current-accepted: '&aVous avez accepté une demande d''alliance de {guild}'
+  target-accepted: '&aVotre demande d''alliance {guild} a été acceptée !'
+  invite-sent: '&aVous avez envoyé avec succès une invitation d''alliance à {guild}!'
+  incoming-invite: '&aVous avez une nouvelle demande d''alliance de {guild}!'
+  current-remove: '&aVous avez enlevé {guild} de votre liste d''allié !'
+  target-remove: '&c{guild} vous a retiré de sa liste d''alliés !'
+  already-ally: '&cCette guilde est déjà votre alliée !'
+  same-guild: '&cVous ne pouvez pas envoyer une invitation d''alliance à vous même
+    ! '
+  not-allied: '&cVous ne pouvez pas supprimer cette guilde, elle n''est pas votre
+    alliée !'
+  already-requested: '&cVous avez déjà une demande d''allié en attente auprès de cette
+    guilde !'
+  max-allies: '&cVous ne pouvez pas envoyer ou accepter des demandes d''allié car
+    vous avez déjà le nombre maximum d''alliés autorisés pour votre niveau !'
+accept:
+  not-invited: '&cCette guilde est privée / vous n''avez pas reçu d''invitation de
+    la guilde.'
+  guild-full: '&cCette guilde est pleine'
+  player-joined: Le joueur &a{player} a rejoint votre guilde !
+  successful: '&aVous avez rejoint la guilde ''{guild}&r&a'' avec succès'
+  cooldown: '&cVous devez attendre {amount} secondes avant de pouvoir rejoindre une
+    guilde.'
+claim:
+  already-exists: '&cVous avez déjà une zone claim. Veuillez supprimer votre zone
+    claim précédente pour en créer une nouvelle.'
+  overlap: '&cVotre demande n''a pas pu être créée car une autre zone claim est à
+    proximité'
+  success: '&aNouvelle zone claim ! Ça va de {loc1}  {loc2}!'
+  hook-disabled: '&cVeuillez activer le claim de zone dans la configuration pour utiliser
+    cette fonctionnalité'
+  sign-not-enabled: '&cCette fonctionnalité n''est pas activée. Pour l''utiliser,
+    vous devez l''activer via la configuration.'
+  sign-no-permission: '&cVous n''avez pas la permission de créer le panneau de protection
+    !'
+  sign-invalid-format: '&cFormat de panneau de protection invalide ! Veuillez essayer
+    à nouveau !'
+  sign-invalid-region: '&cRégion Worldguard invalide !'
+  sign-placed: '&aVous avez créé avec succès un panneau de protection pour la région
+    {region} au prix de {price}.'
+  sign-not-enough: '&cVous n''avez pas assez d''argent dans votre banque de guilde
+    pour acheter ce territoire de guilde.'
+  sign-forced: '&cVous ne pouvez réclamer un terrain que via les panneaux de revendication
+    ! Demandez de l''aide à un membre du personnel sur votre serveur !'
+  sign-buy-success: '&aHourra ! Vous venez d''acheter ce territoire!'
+unclaim:
+  success: '&aVous avez réussi à supprimer votre demande de guilde !'
+  not-found: '&cVous ne pouvez pas claim des terres que vous n''avez pas !'
+  all-warning: '&bImportant! &cVous êtes sur le point d''effacer TOUTES les données
+    de territoire. Êtes-vous sûr de vouloir continuer ? Tapez /guilds confirm pour
+    continuer ou /guilds cancel pour annuler !'
+  all-cancelled: '&aVous venez d''annuler la suppression de toutes les données de
+    territoire sur le serveur.'
+  all-success: '&aVous venez de supprimer toutes le territoires de guilde sur le serveur!'
+pending:
+  invites: '&aVous avez {number} invitation(s) de guilde en attente: &e{guilds}&r&a
+    . Ecrivez /guild accept <name> ou /guild decline <name> pour accepter ou refuser
+    une invitation!'
+codes:
+  created: '&aVous avez créé un nouveau code d''invitation: &6{code} &aavec &6{amount}
+    &autilisations !'
+  empty: '&cOh non ! Je n''ai pas de codes, essaie d''en faire un premièrement !'
+  list-header: '&aVoici les codes d''activation actifs pour votre guilde :'
+  list-item: '&aID: &6{code} &f| &aUtilisations Restantes: &6{amount} &f| &aCréateur:
+    &6{creator}'
+  deleted: '&aCe code d''invitation a été retiré de votre guilde !'
+  invalid-code: '&cCe code d''invitation semble ne pas exister. S''il vous plaît essayez
+    encore !'
+  joined: '&aVous avez bien rejoint &6{guild} &aen utilisant un code d''invitation!'
+  guild-message: '&6{player}&a a rejoint la guilde en utilisant le code d''invitation
+    de &6{creator}&a!'
+  out: '&cCe code d''invitation n''a plus d''utilisations restantes ! Veuillez en
+    essayer un autre !'
+  info: |-
+    &aInformation du code d'invitation:
+    &aID: &6{code}
+    &aUtilisations: &6{amount}
+    &aCréateur: &6{creator}
+    &aUtilisateur: &6{redeemers}
+  max: '&cVous avez déjà trop de codes d''utilisation actifs dans votre guilde !'
+vaults:
+  maxed: '&cVous ne pouvez pas ouvrir ce coffre car vous avez déjà le nombre maximum
+    de coffre pour le rang de votre Guilde !'
+  blacklisted: '&cVous ne pouvez mettre cet item dans votre coffre fort de guilde.'
+languages:
+  set: '&aVous avez défini avec succès votre langage en {language}'
+  warning: '&cVous allez mettre à jour les fichiers de langue. Cela supprimera les
+    anciens fichiers de langue. Tapez /guilds confirm pour confirmer, /guilds cancel
+    pour annuler.'
+  updated: '&aLes fichiers de langue ont été recréés et rechargés!'
+backup:
+  started: '&aEn train de sauvegarder toutes les données des guildes!'
+  finished: '&aToutes les données des guildes ont été sauvegardées et placées dans
+    le dossier de vos plugins.'
+  warning: '&cVous êtes sur le point de faire une sauvegarde de toutes les données
+    pour le plugin. Veuillez vous assurer de ne rien faire d''exigeant pendant la
+    sauvegarde. Tapez /guilds confirm pour continuer, tapez /guilds cancel pour annuler.'
+  cancelled: '&aVous avez annulé la sauvegarde avec succès.'
+help:
+  header: <c3>=== </c3><c1>Aide pour </c1><c2>{commandprefix}{command}</c2><c3> ===</c3>
+  detailed-header: <c3>=== </c3><c1>Aide détaillée pour </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  command-format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  parameter-format: '<c2>{syntaxorname}</c2>: <c3>{description}</c3>'
+  page-info: Page <c2>{page}</c2> of <c2>{totalpages}</c2> (<c3>{results}</c3> résultats).
+  search-header: <c3>=== </c3><c1>Résultats pour </c1><c2>{commandprefix}{command}
+    {search}</c2><c3> ===</c3>
+motd:
+  success: '&aVous avez bien définit le message du jour de votre guilde en {motd}.'
+  remove: '&aVous avez bien supprimé le message du jour de la guilde.'
+  motd: '&7[&aMessage du jour de Guilde&7] {motd}'
+  not-set: '&cVotre guilde n''a aucun message du jour définit.'
+arena:
+  created: '&aVous venez de créer une arène appelée &c{arena}&a! N''oubliez pas de
+    définir les points d''apparition ! Apprenez-en plus en tapant /guild arena'
+  deleted: '&aVous venez de supprimer l''arène appelée &c{arena}&a'
+  no-exist: Un programme portant ce nom n'existe pas.
+  challenger-set: '&aVous avez défini avec succès l''emplacement du Challenger pour
+    &c{arena}&a à votre emplacement actuel!'
+  defender-set: '&aVous avez défini avec succès l''emplacement du défenseur pour &c{arena}&a
+    à votre emplacement actuel!'
+  list: '&aLes arènes suivantes sur le serveur sont : &c{arenas}&a.'
+  list-empty: '&cIl n''y a actuellement aucune arène créée sur le serveur.'
+  position-not-set: '&cL''emplacement de cette équipe n''a pas encore été défini.
+    Essayez de le définir avant de le téléporter!'
+  teleported-to-selection: '&aWooosh! Vous avez téléporté au &c{team}&a point d''apparition
+    pour &c{arena}&a.'
+  all-full: '&cToutes les arènes du serveur sont actuellement en cours d''utilisation
+    ! Réessayez plus tard !'
+  location-issue-challenger: '&c Il semble y avoir un problème avec le lieu de l''arène
+    &a{arena} &cdu &achallenger&c. Veuillez informer l''administrateur du serveur.'
+  location-issue-defender: '&c Il semble y avoir un problème avec le lieu de l''arène
+    &a{arena} &cdu &adéfenseur&c. Veuillez informer l''administrateur du serveur.'
+war:
+  no-defenders: '&cLa faible guilde que vous avez défié n''a personne d''assez brave
+    pour accepter le défi.'
+  challenge-sent: '&aUne déclaration de guerre a été envoyé à &b{guild}&a! Ils auront
+    &b{amount} &asecondes pour l''accepter !'
+  incoming-challenge: '&aAttention ! La guilde &b{guild} &avous a envoyé une déclaration
+    de guerre ! Montrez-leur que vous êtes le meilleur dans tous les pays en faisant
+    /guild war accept ou soyez un petit chat effrayant et fuyez en faisant /guild
+    war deny! Vous avez &b{amount} &a secondes pour vous décider!'
+  no-pending-challenge: '&cDésolé ! Vous n''avez pas de déclaration de guerre en attente
+    à accepter.'
+  already-challenging: '&cDésolé, vous avez déjà une déclaration en attente. Veuillez
+    l''annuler ou attendre qu''elle expire.'
+  no-self-challenge: '&cPersonne stupide, vous ne pouvez pas vous déclarer une guerre
+    à vous-même !'
+  guild-expired-challenge: '&cVotre défi contre &b{guild} &aà expiré car il n''a pas
+    réussi à l''accepter à temps.'
+  target-expired-challenge: '&cIl semblerait que vous, faibles, ayez eu trop peur
+    de prendre une décision à temps. Le défi a été annulé.'
+  challenge-denied-defender: '&aNous comprenons, la guerre n''est pas pour tout le
+    monde. Vous avez refusé le défi de &b{guild}&a.'
+  challenge-denied-challenger: '&aVous devez être trop imposant pour &b{guild}&a,
+    ils ont choisi de ne pas vous combattre ce beau jour.'
+  not-enough-on: '&cSoit votre guilde ou celle que vous défiez n''a pas le nombre
+    minimum de joueurs en ligne requis pour une guerre.'
+  challenger-war-accepted: '&aPréparez-vous, &b{guild} &aa accepté votre déclaration
+    de guilde ! Équipez-vous et soyez prêts ! Vous avez &b{amount} &asecondes pour
+    rejoindre la guerre en faisant &b/guild war join'
+  defender-war-accepted: '&aPréparez-vous, &b{guild} &aa accepté votre déclaration
+    de guilde ! Équipez-vous et soyez prêts ! Vous avez &b{amount} &asecondes pour
+    rejoindre la guerre en faisant &b/guild war join'
+  action-bar-join: '&b{amount} &asecondes restantes pour rejoindre la guerre. /guild
+    war join!'
+  not-joinable: '&cDésolé, vous ne pouvez pas rejoindre la guerre en ce moment'
+  not-enough-joined: '&cSoit votre guilde ou celle de l''autre guilde ne comptait
+    pas assez de personnes dans ses rangs. Annulation de la guerre.'
+  already-at-max: '&cDésolé, votre guilde a déjà le nombre maximum de joueurs dans
+    votre équipe pour la guerre !'
+  war-joined: Le joueur &a{player} vient de rejoindre votre guilde !
+  action-bar-ready: '&b{amount} &asecondes restantes pour que la guerre commence!
+    Préparez-vous !'
+  winner: '&aLa bataille fût rude... du sang fût versé... les larmes étaient présentes...
+    mais à la fin, les puissants guerriers de &b{guild} &aont gagné la bataille !'
+  already-accepted: '&cVous ne pouvez pas accepter un défi déjà accepté ! Soyez patient
+    !'
+  already-joined: '&cVous avez déjà rejoint cette guerre ! Attendez qu''elle commence
+    !'
+  removed-for-size: '&aLe(s) joueur(s) suivant(s) a/ont été retiré(s) de la guerre
+    afin de garder chaque camp pair: {players}'
+  defend-cooldown: '&b{guild} &chse sont déjà défendus dans l''arène récemment. Laissez-les
+    retrouver leur force et défiez-les une autre fois!'
+  commands-blocked: '&cDésolé ! Vous ne pouvez pas exécuter de commandes pendant une
+    guerre !'
+  player-killed-player: '&b{player} &aa été tué par &b{killer}&a!'
+  player-killed-other: '&b{player} &aa été tué pour des raisons inconnues.'
+  player-killed-quit: '&b{player} &aa été tué car il est sorti du serveur.'
+  teleported-back: '&aVous avez combattu durement ! Hélas, tout le monde ne peut pas
+    être le meilleur. Vous avez été téléporté à votre position d''origine !'
+acf-core:
+  help_header: <c3>=== </c3><c1>Aide pour </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  invalid_syntax: 'Utilisation : <c2>{command}</c2> <c3>{syntax}</c3>'
+  permission_denied: Désolé, mais vous n'avez pas la permission d'exécuter cette commande.
+  unknown_command: Commande inconnue, tapez <c2>/help</c2>
+  error_performing_command: Désolé, mais il y a eu une erreur lors de l'exécution
+    de cette commande.
+  help_format: <c1>/{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+migrate:
+  invalid-backend: '&cLe backend vers lequel vous avez tenté de migrer est invalide.'
+  connection-failed: '&cLa connexion au nouveau backend a échoué ! Assurez-vous que
+    votre authentification est correctement configurée !'
+  same-backend: '&cVous ne pouvez pas migrer vers le backend que vous êtes déjà en
+    train d''utiliser!'
+  complete: '&aLa migration des données ({amount} guilds) est terminée et continuera
+    à utiliser ce nouveau backend jusqu''au redémarrage. Assurez-vous de changer votre
+    backend dans la configuration par ce vers quoi vous avez migré avant de redémarrer
+    !'
+  warning: '&bImportant! &cVous êtes sur le point de migrer TOUTES les données de
+    votre plugin. Il est VIVEMENT conseillé de faire une sauvegarde de TOUTES les
+    données avant de le faire. Si vous perdez vos données, elles NE peuvent PAS être
+    récupérées. Êtes-vous sûr de vouloir continuer ? Tapez /guilds confirm pour continuer
+    ou /guilds cancel pour annuler !'
+  cancelled: '&aVous avez annulé la migration des données avec succès !'

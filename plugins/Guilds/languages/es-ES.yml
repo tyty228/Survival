@@ -1,0 +1,472 @@
+descriptions:
+  accept: Aceptar una invitación de gremio
+  admin-addplayer: Comando administrativo para agregar un jugador a un equipo
+  admin-bank-balance: Comando administrativo para ver el saldo bancario de un equipo
+  admin-bank-deposit: Comando administrativo para colocar dinero en el banco del equipo
+  admin-bank-withdraw: Comando administrativo para retirar dinero del banco del equipo
+  admin-claim: Comando administrativo para reclamar un terreno para el equipo
+  admin-delhome: Comando administrativor para eliminar la casa de un equipo
+  admin-home: Comando administrativo para teletransportarse a la casa de un equipo
+  admin-motd: Comando administrativo para ver el MOTD de un equipo
+  admin-motd-set: Comando administrativo para establecer el motd de un equipo
+  admin-motd-remove: Comando administrativo para eliminar el motd de un gremio
+  admin-prefix: Comando de administrador para cambiar el prefijo del equipo
+  admin-rename: Comando de administrador para cambiar el nombre del equipo
+  admin-remove: Comando de administrador para remover un equipo del servidor
+  admin-removeplayer: Comando de administrador para remover a un jugador de un equipo
+  admin-score-resetall: Comando de admin para reiniciar el puntaje de gremio de todos
+    los gremios
+  admin-score-setloses: Comando de admin para poner las derrotas de un gremio
+  admin-score-setwins: Comando de admin para poner las victorias de un gremio
+  admin-sethome: Comando de administrador para establecer la casa de un equipo
+  admin-status: Coomando de administrador para cambiar el estado de un equipo
+  admin-spy: Comando de administrador para activar el chat privado de un equipo
+  admin-transfer: Comando de administrador para transferir el equipo de una persona
+    a otra
+  admin-unclaim: Comando administrativo para reclamar un terreno del equipo
+  admin-upgrade: Comando de administrador para mejorar el nivel de un equipo
+  admin-vault: Comando de administrador para ver la bóveda del equipo
+  ally-accept: Aceptar una invitación de alianza de otra equipo
+  ally-add: Agregar un equipo como aliado
+  ally-decline: Rechazar una invitación de alianza de otro equipo
+  ally-list: Lista de todas las alianzas de tu equipo
+  ally-remove: Remover un equipo como aliado
+  arena-challenger: Establecer la ubicación del retador para una arena
+  arena-create: Crea una nueva arena de guerra
+  arena-defender: Establecer la ubicación del defensor para una arena
+  arena-delete: Elimina una arena de guerra
+  arena-list: Lista todas las arenas creadas
+  arena-tp: Teletransportarse a una ubicación de una arena
+  bank-balance: Mostrar el saldo bancario de tu guild
+  bank-deposit: Poner dinero en el banco de tu guild
+  bank-withdraw: Tomar dinero del banco de tu guild
+  buff: Abrir el Guild Buff GUI
+  cancel: Cancelar una acción
+  chat: Activar o desactivar el chat de la guild
+  check: Revisar invitaciones de guild pendientes
+  claim: Reclamar tierra para tu guild
+  code-create: Crea un código de invitación para tu gremio
+  code-delete: Eliminar un código de invitación del gremio
+  code-info: Obtenga la información sobre un código de invitación
+  code-list: Lista todos los códigos de invitación actuales en tu gremio
+  code-redeem: Canjea un código de invitación para unirte a un gremio
+  confirm: Confirmar una acción
+  console-backup: Copia de seguridad de los datos del complemento
+  console-migrate: Migrar tus datos de una fuente a otra
+  console-unclaim-all: Comando de administrador para reclamar todos los reclamos del
+    gremio en el servidor
+  console-update-languages: Comando de consola para actualizar los archivos de idioma
+  create: Crear una guild
+  decline: Rechazar una invitación de una guild
+  delete: Eliminar tu guild
+  delhome: Remover el hogar de tu guild
+  demote: Degrada a un usuario en tu Gremio
+  give: Da un ticket de mejora a un usuario
+  help: Muestra este menú de ayuda
+  home: Ir al hogar de tu guild
+  info: Abrir la GUI de información de la guild
+  invite: Invitar a otro jugador a tu guild
+  kick: Kickear a alguien de tu guild
+  language: Cambia el idioma de los mensajes del plugin por ti
+  leave: Dejar tu guild
+  list: Listar todas las guilds
+  members: Abre la Lista de Miembros GUI
+  motd: Ver el MOTD de tu Gremio
+  motd-set: Configura la MOTD de tu gremio
+  motd-remove: Configura la MOTD de tu gremio
+  prefix: Cambiar el prefijo de tu guild
+  promote: Asciende a un usuario en tu Gremio
+  reload: Recarga el archivo de configuración de plugin
+  rename: Cambia el nombre de tu guild
+  request: Solicita unirte a una guild
+  sethome: Coloca el hogar de tu guild
+  status: Cambia el estado de tu guild
+  transfer: Transfiere tu guild a otro usuario
+  unclaim: Abandona la tierra de tu gremio
+  upgrade: ¡Mejora el nivel de tu guild!
+  vault: Abre la bóveda de tu guild
+  version: Información acerca del plugin
+  war-accept: Aceptar un desafío de guerra
+  war-challenge: Desafía a otro gremio a una guerra
+  war-deny: Negar un desafío de guerra
+  war-join: Únete a una guerra pendiente
+create:
+  guild-name-taken: '&c¡Este nombre ya está tomado!'
+  warning: '&cLa creación de una guild cuesta {amount}. Escribe /guilds confirm para
+    crear tu guild, escribe /guilds cancel para cancelar.'
+  successful: '&a¡Guild ''{guild}&r&a'' creada exitosamente!'
+  cancelled: ¡&cCreación de guild cancelada!
+  requirements: '&c¡El nombre de tu guild no tiene los requerimientos necesarios!
+    Solo puedes usar caracteres alfanuméricos y la longitud del nombre no puede exceder
+    64 caracteres'
+  name-too-long: '&cNo proporcionó un prefijo, por lo que el nombre que ingresó se
+    probó con los requisitos del prefijo y eso falló. Por favor intente con un nombre
+    más corto o ingrese un prefijo en la creación.'
+  prefix-too-long: '&c¡El prefijo del gremio proporcionado no cumplía con los requisitos!
+    ¿Quizás tenías demasiados personajes?'
+chat:
+  disabled: Chat de la guild desactivado
+  enabled: Chat de la guild activado
+request:
+  success: '&aHas solicitado una invitación de la guild {guild} exitosamente'
+  incoming-request: '&a{player} está pidiendo entrar a la guild. ¡Envíale una invitación
+    usando /guild invite {player}!'
+  cooldown: No puedes enviar otra solicitud durante {time} segundos.
+error:
+  already-in-guild: '&c¡Ya estás en una guild!'
+  no-guild: '&c¡No estás en una guild!'
+  role-no-permission: '&c¡Tu rol no es suficientemente alto para hacer eso!'
+  tier-no-permission: '&cTu nivel de hermandad no es lo suficientemente alto para
+    hacer eso!'
+  guild-no-exist: '&c¡Este equipo no existe! (¡Si estás obteniendo esto al intentar
+    entrar a un equipo que tiene un nombre con colores, puedes intentar hacer /join
+    guild <player who invited you> para entrar al equipo!)!'
+  player-not-found: '&c¡El jugador ''{player}&r&c'' no está conectado!'
+  player-not-in-guild: '&c¡{player} no está en tu guild!'
+  not-officer: '&c¡El usuario debe ser un Oficial en tu guild!'
+  blacklist: '&c¡Una o más palabras en el nombre o prefijo de tu guild está en la
+    lista negra!'
+  not-enough-money: '&cPerdón, no tienes suficiente dinero para hacer eso'
+  economy-required: '&cSe requiere un complemento económico para que esto funcione.
+    Por favor póngase en contacto con el administrador de su servidor'
+  buff-cooldown: '&cLo sentimos, tu gremio ha comprado recientemente un beneficio.
+    Puedes volver a intentarlo en {amount} segundos.'
+  buff-no-permission: '&cLo sentimos, ¡no tienes permiso para comprar este beneficio!'
+  no-pending-invites: '&cLo sentimos, actualmente no tienes ninguna invitación de
+    gremio pendiente!'
+  migrating: '&cLo sentimos, esta acción no se puede hacer. ¡Los datos se están migrando
+    actualmente! Inténtalo de nuevo en unos minutos.'
+  console-command: '&cLo sentimos, este comando solo puede ser ejecutado por la consola.'
+  transfer-same-person: '&cLo sentimos, no puedes transferir una hermandad a la misma
+    persona que ya es el líder de ese gremio!'
+  player-no-exist: '&cLo sentimos, no parece que el jugador haya estado en el servidor
+    antes!'
+bank:
+  balance: '&cEl banco de tu guild tiene la cantidad de {amount}.'
+  deposit-success: '&a{player} ha depositado {amount} en el Banco del Gremio. El nuevo
+    total es {total}.'
+  withdrawal-success: '&a{player} ha retirado {amount} del Banco del Gremio. El nuevo
+    total es {total}.'
+  not-enough-bank: '&cNo hay suficiente dinero en el banco de tu guild para hacer
+    eso'
+  over-max: '&cLo sentimos, no puede depositar tanto como lo haría sobre su saldo
+    bancario máximo!'
+admin:
+  delete-warning: '&cEstás a punto de eliminar la guild {guild}. Escribe /guilds confirm
+    para remover esta guild, escribe /guilds cancel para cancelar.'
+  delete-success: '&aHas eliminado la guild {guild} exitosamente.'
+  guild-vault-sign: ¡Cofre global de gremio creado!
+  player-added: ¡&aHas sido añadido a {guild} por un Administrador!
+  admin-player-added: ¡&aHas añadido a {player} al gremio {guild}!
+  admin-guild-add: ¡&a{player} ha sido añadido a tu gremio por un administrador!
+  player-removed: ¡&cHas sido eliminado de {guild} por un administrador!
+  admin-player-removed: ¡&aHas eliminado a {player} de {guild}!
+  admin-guild-remove: ¡&a{player} ha sido eliminado de tu gremio por un administrador!
+  admin-upgrade: ¡&aUsted ha actualizado el nivel a {guild}!
+  admin-guild-upgrade: ¡&aTu nivel de gremio ha sido actualizado por un administrador!
+  spy-on: ¡&aEl chat espia de gremios ha sido habilitado!
+  spy-off: ¡&aEl chat espia de gremios ha sido deshabilitado!
+  motd: '&aEl MOTD del gremio {guild} es: {motd}'
+  motd-success: '&aHas establecido el MOTD del gremio {guild} a {motd}.'
+  motd-remove: '&aHas eliminado correctamente el MOTD del gremio {guild}.'
+  bank-balance: '&aEl gremio {guild} tiene un balance bancario de {balance}.'
+  bank-deposit: '&aHas puesto con éxito {amount} en el banco de {guild}. Su nuevo
+    saldo es {total}.'
+  bank-withdraw: '&aTu haz tomado satisfactoriamente {amount} del banco de {guild}.
+    Su nuevo saldo es {total}.'
+  score-resetall: '&aHas reiniciado con éxito las victorias y derrotas para todos
+    los gremios del servidor.'
+  score-setloses: '&aHas establecido con éxito la cantidad de pérdidas en {amount}
+    para el gremio {guild}.'
+  score-setwins: '&aHas establecido con éxito la cantidad de victorias en {amount}
+    para el gremio {guild}.'
+  sethome: '&aHas establecido con éxito una nueva casa de gremio para {guild}.'
+  home: '&aTe has teletransportado exitosamente a la casa de {guild}'
+  delhome: '&a Has eliminado con éxito la casa del gremio para{guild}'
+boot:
+  player-kicked: ¡&cEl Jugador '{player}' ha sido expulsado del Gremio por {kicker}!
+  successful: ¡&aExpulsaste a {player} del gremio!
+  kicked: ¡&cHas sido expulsado de tu gremio por {kicker}!
+decline:
+  success: ¡&aRechazaste la invitacion al Gremio!
+demote:
+  cant-demote: ¡&cEse jugador no puede ser degradado!
+  demote-successful: '&aHas degradado a {player} de {old} a {new}'
+  you-were-demoted: '&aHas sido degradado de {old} a {new}'
+promote:
+  cant-promote: '&cEse jugador no puede ser ascendido!'
+  promote-successful: '&aHas ascendido al jugador {player} de {old} a {new}'
+  you-were-promoted: '&aTe han ascendido de {old} a {new}'
+delete:
+  successful: '&aEliminaste el gremio ''{guild}&r&a'' correctamente!'
+  cancelled: '&cEliminacion del gremio cancelada!'
+  warning: '&cEscribe /guilds confirm para eliminar tu gremio, escribe /guilds cancel
+    para cancelarlo.'
+  notify-allies: '&c{guild} ya no es tu aliado porque ha sido eliminado.'
+leave:
+  cancelled: '&cLa deserción del gremio ha sido cancelada!'
+  successful: '&aHas dejado el gremio!'
+  player-left: '&cEl Jugador ''{player}'' se fue de tu gremio!'
+  guildmaster-left: '&cEl maestro del gremio, ''{player}'' ha dejado el gremio. El
+    gremio va a ser disuelto.'
+  warning: '&cEscribe /guilds confirm para dejar el gremio, escribe /guilds cancel
+    para cancelarlo.'
+  warning-guildmaster: '&cTú eres el dueño de este gremio, dejar el gremio significa
+    que el gremio sera eliminado. Escribe /guilds confirm para irte y eliminar el
+    Gremio, escribe /guilds cancel para cancelarlo.'
+transfer:
+  newmaster: '&aAhora eres el Dueño del Gremio!'
+  success: '&aGremio Transferido!'
+invite:
+  already-invited: El jugador ya fue invitado a tu Gremio
+  message: '&a{player} te ha invitado a su gremio, ''{guild}'' escribe /guild join
+    {guild} para unirte!'
+  successful: '&aHas invitado al jugador {player} a tu Gremio!'
+  already-in-guild: '&c{player} ya está en otro gremio!'
+upgrade:
+  tier-max: '&cNo puedes subir mas, ya ostentas el nivel maximo!'
+  money-warning: '&cEstas a punto de gastar {amount} para actualizar tu gremio. (Escribe
+    /guilds confirm para continuar)'
+  cancel: '&cOperacion Cancelada!'
+  success: '&aActualizacion completa!'
+  not-enough-money: '&cNo tienes suficiente dinero para eso, necesitas: {needed}!'
+  not-enough-members: '&cNecesitas al menos {amount} miembros para aumentar tu nivel
+    de gremio!'
+prefix:
+  successful: '&aPrefijo del Gremio cambiado a {prefix}!'
+  disabled: '&cLa capacidad de usar prefijos está actualmente deshabilitada.'
+status:
+  successful: '&aEstado del Gremio cambiado a {status}!'
+rename:
+  successful: '&aNombre del Gremio cambiado a {name}!'
+home:
+  no-home-set: '&cNo tienes casa! Usar: &a/guild sethome &cpara establecer una!'
+  teleported: '&aHas sido teletransportado a tu Gremio!'
+  cooldown: '&cDebes esperar {amount} segundos para hacerlo de nuevo'
+  warmup: '&aSeras teletransportado en {amount} segundos. No te muevas!'
+  cancelled: '&cTe moviste! Teletransportacion cancelada!'
+sethome:
+  successful: '&aEstableciste la casa del Gremio!'
+  deleted: '&a¡Has eliminado con éxito la casa de tu gremio!'
+  cooldown: '&cDebes esperar {amount} segundos para hacerlo de nuevo'
+reload:
+  reloaded: '&aConfiguracion recargada!'
+cancel:
+  error: '&cNo tienes acciones para cancelar!'
+  success: '&aAccion Cancelada!'
+confirm:
+  error: '&cNo tienes acciones para confirmar!'
+  success: '&aAccion Confirmada!'
+ally:
+  none: '&cNo tienes Aliados!'
+  list: 'Tu gremio tiene los siguientes aliados: {ally-list}'
+  current-declined: '&aLa solicitud de alianza con {guild} ha sido denegada!'
+  target-declined: '&cTu solicitud de alianza con {guild} ha sido denegada!'
+  current-accepted: '&aLa solicitud de alianza con {guild} ha sido aceptada'
+  target-accepted: '&aLa solicitud de alianza con {guild} ha sido aceptada!'
+  invite-sent: '&aLa solicitud de alianza con {guild} ha sido enviada!'
+  incoming-invite: '&aSe ha recibido una solicitud de alianza de {guild}!'
+  current-remove: '&aHas eliminado a {guild} de tu lista de aliados!'
+  target-remove: '&c{guild} te ha eliminado de su lista de aliados!'
+  already-ally: '&cEse Gremio ya es tu aliado!'
+  same-guild: '&cNo puedes enviarte una invitacion aliada a ti mismo!'
+  not-allied: '&cNo puedes eliminar un gremio que no esté en tu lista de aliados!'
+  already-requested: '&cActualmente ya tienes una solicitud de aliado pendiente para
+    este gremio!'
+  max-allies: '&cNo puedes enviar o aceptar solicitudes de aliado porque ya tienes
+    los aliados máximos permitidos para tu nivel!'
+accept:
+  not-invited: '&cEste Gremio es privado / no has recibido una invitacion de este
+    Gremio.'
+  guild-full: '&cEse Gremio esta lleno!'
+  player-joined: '&a{player} se ha unido a tu Gremio!'
+  successful: '&aHas entrado a ''{guild}&r&a'''
+  cooldown: '&cActualmente estás enfriando para unirte a un gremio. Inténtalo de nuevo
+    en {amount} segundos.'
+claim:
+  already-exists: '&cYa tienes tierra. Por favor, elimine su anterior tierra para
+    crear una nueva'
+  overlap: '&cNo puedes reclamar tierras porque hay tierras de otro gremio cerca'
+  success: '&aHas reclamado nuevas tierras! Van desde {loc1} a {loc2}!'
+  hook-disabled: '&cPor favor habilite los reclamos de tierras en la configuracion
+    para utilizar esta caracteristica'
+  sign-not-enabled: '&cEsta característica no está activada. Para usarla, debes activarla
+    a través de la configuración.'
+  sign-no-permission: '&c¡No tiene permiso para crear una Señal de reclamo!'
+  sign-invalid-format: '&cFormato de Señal de Reclamo no válido! Por favor inténtalo
+    de nuevo!'
+  sign-invalid-region: '&c¡Región inválida de la Guardia Mundial!'
+  sign-placed: '&aHas creado correctamente un signo de reclamo para la región{region}
+    con el precio {price}'
+  sign-not-enough: '&cNo tienes suficiente dinero en tu banco de gremios para comprar
+    este reclamo de gremio.'
+  sign-forced: '&c¡Solo puede reclamar tierras a través de Signos de reclamo! ¡Pídale
+    ayuda a un miembro del personal de su servidor!'
+  sign-buy-success: '&a¡Hurra! ¡Has comprado este reclamo!'
+unclaim:
+  success: '&aHas eliminado exitosamente tu reclamo de gremio!'
+  not-found: '&cNo puedes abandonar la tierra que no tienes!'
+  all-warning: |2-
+
+    &b ¡Importante! &c Está a punto de eliminar TODOS los datos de reclamos. ¿Estás seguro de que te gustaría continuar? ¡Escriba / guilds confirme para continuar o / guilds cancel para cancelar!
+  all-cancelled: '&aHas cancelado con éxito la eliminación de todos los datos de reclamos
+    en el servidor.'
+  all-success: '&a¡Has eliminado todas las zonas reclamadas del servidor con éxito!'
+pending:
+  invites: '&aTienes {number} invitaciones pendientes de: &e{guilds}&r&a . Usa /guild
+    accept <name> o /guild deny <name> para aceptar o rechazar una invitacion!'
+codes:
+  created: '&aHas creado un nuevo código de invitación: &6{code} &acon &6{amount}
+    &ausos!'
+  empty: '&c¡Oh no! No tengo códigos, intenta hacer uno primero!'
+  list-header: '&aAquí están los siguientes códigos de invitación activos para tu
+    gremio:'
+  list-item: '&aID: &6{code} &f| &aUsos restantes: &6{amount} &f| &aCreador: &6{creator}'
+  deleted: '&a¡Ese código de invitación ha sido eliminado de tu gremio!'
+  invalid-code: '&cEse código de invitación no parece existir. ¡Inténtalo de nuevo!'
+  joined: '&a Te has unido exitosamente &6{guild} &a¡Canta un código de invitación!'
+  guild-message: '&6{player}&a se ha unido al gremio usando un código de invitación
+    de a6{creator}&a!'
+  out: '&c Ese código de invitación está fuera de uso! Por favor, intente otro!'
+  info: |-
+    &aInformación del código de invitación:
+    &aID: &6{code}
+    &aUsos: &6{amount}
+    &aCreador: a6{creator}
+    &aRedentores: &6{redeemers}
+  max: '&c¡Ya tienes demasiados códigos de invitación activos en tu gremio!'
+vaults:
+  maxed: '&c¡No puedes abrir esta bóveda porque ya tienes la cantidad máxima de bóvedas
+    para tu nivel de gremio!'
+  blacklisted: '&cNo puedes poner ese objeto en tu bóveda del gremio porque está en
+    la lista negra!'
+languages:
+  set: Has configurado correctamente tu idioma para {language}
+  warning: '&cEstás a punto de actualizar todos los archivos de idioma. Esto borrará
+    todos los archivos de idioma actuales y los volverá a crear. Escribe /guilds confirm
+    para continuar, escribe /guilds cancel para cancelar.'
+  updated: '&aLos archivos de idioma han sido recreados y recargados!'
+backup:
+  started: '&aRestaurando los datos de todos los Gremios!'
+  finished: '&aTodos los datos de los Gremios han sido respaldados y colocados en
+    la carpeta de plugins.'
+  warning: '&cEstás a punto de hacer una copia de seguridad de todos los datos del
+    plugin. Por favor, asegúrate de no hacer nada intensivo durante esto. Escribe
+    ''/guilds confirm'' para continuar, escribe ''/guilds cancel'' para cancelar.'
+  cancelled: '&aHas cancelado la copia de seguridad con éxito.'
+help:
+  header: <c3>=== </c3><c1>Mostrando ayuda detallada para </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  detailed-header: <c3>=== </c3><c1>Mostrando ayuda detallada para </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  command-format: <c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+  parameter-format: '<c2>{syntaxorname}</c2>: <c3>{description}</c3>'
+  page-info: '- Página <c2>{page}</c2> de <c2>{totalpages}</c2> (<c3>{results}</c3>
+    resultados).'
+  search-header: <c3>=== </c3><c1>Mostrando ayuda detallada para </c1><c2>{commandprefix}{command}
+    {search}</c2><c3> ===</c3>
+motd:
+  success: '&aHas establecido con éxito el MOTD de tu gremio a {motd}.'
+  remove: '&aHas eliminado con éxito el MOTD de tu gremio.'
+  motd: '&7[&aMOTD Gremio&7] {motd}'
+  not-set: '&cTu gremio no tiene un MOTD establecido.'
+arena:
+  created: '&aHas creado con éxito una arena llamada &c{arena}&a! ¡No olvides establecer
+    los puntos de aparición! Aprende más haciendo /guild arena'
+  deleted: '&aHas eliminado con éxito la arena llamada &c{arena}&a'
+  no-exist: '&cNo existe ninguna arena con ese nombre.'
+  challenger-set: '&aHas establecido con éxito la ubicación del Desafío para &c{arena}&a
+    a tu ubicación actual!'
+  defender-set: '&aHas establecido correctamente la ubicación del Defensor para &c{arena}&a
+    a tu ubicación actual!'
+  list: '&aLas siguientes arena(s) en el servidor son: &c{arenas}&a.'
+  list-empty: '&cActualmente no hay arenas creadas en el servidor.'
+  position-not-set: '&cLa ubicación de ese equipo todavía no ha sido establecida.
+    ¡Intenta configurarla antes de teletransportarte a ella!'
+  teleported-to-selection: '&aWooosh! Has sido teletransportado al punto de aparición
+    de &c{team}&a para &c{arena}&a.'
+  all-full: '&cLo sentimos, todas las arenas del servidor están ocupadas! Inténtalo
+    de nuevo más tarde!'
+  location-issue-challenger: '&cThere seems to be a problem with the &achallenger
+    &clocation for arena &a{arena}&c. Please inform your server administrator.'
+  location-issue-defender: '&cThere seems to be a problem with the &adefender &clocation
+    for arena &a{arena}&c. Please inform your server administrator.'
+war:
+  no-defenders: '&cEl equipo que has desafiado no tiene suficientes jugadores para
+    aceptarla.'
+  challenge-sent: '&aUn reto de guerra ha sido enviada a &b{guild}&a! Tendrán &b{amount}
+    &asegundos para aceptarla!'
+  incoming-challenge: '&a¡Cuidado! ¡El gremio &b{guild} &aacaba de enviarte un desafío
+    de guerra! Muéstrales que eres el mejor en todas las tierras haciendo /guild war
+    accept o sé un pequeño gato asustado huyendo haciendo /guild war deny! ¡Tú tienes
+    &b{amount} &ade tiempo a decidir!'
+  no-pending-challenge: '&c¡Lo sentimos! No tienes un reto de guerra pendiente para
+    aceptar.'
+  already-challenging: '&cLo siento, tú ya tienes un duelo pendiente. Por favor cancelalo
+    o espera a que expire.'
+  no-self-challenge: '&cTonta persona, ¡tú no puedes desafiarte a ti mismo a una guerra!'
+  guild-expired-challenge: '&cTú desafío contra &b{guild} &aha expirado porque no
+    lo aceptaron a tiempo.'
+  target-expired-challenge: '&cParece que fueron muy cobardes para tomar una decisión
+    a tiempo. El reto ha sido cancelado.'
+  challenge-denied-defender: '&aLo entendemos, la guerra no es para todos. Has rechazado
+    el reto de &b{guild}&a.'
+  challenge-denied-challenger: '&aDeben ser muy poderosos para &b{guild}&a, han elegido
+    no luchar contra ti en este buen día.'
+  not-enough-on: '&cTu equipo o el equipo desafiado no tienen suficientes jugadores
+    en línea para una guerra.'
+  challenger-war-accepted: '&aPreparence, &b{guild} &aha aceptado tu reto de guerra!
+    Selecciona tu mejores armas para el combate! Tienes &b{amount} &aseconds para
+    unirte a la guerra haciendo &b/guild war join'
+  defender-war-accepted: '&aPrepárence, acabas de aceptar el reto contra &b{guild}&a!
+    ¡Selecciona tu mejores armas para el combate! Tienes &b{amount} &aseconds para
+    unirte a la guerra haciendo &b/guild war join'
+  action-bar-join: Tienes &b{amount} &asegundos restantes para unirte a la guerra!
+    /guild war join
+  not-joinable: '&cLo sentimos, no te puedes unir a la guerra en este momento'
+  not-enough-joined: '&cTu equipo o el otro no tienen suficiente jugadores. La guerra
+    ha sido cancelada.'
+  already-at-max: '&cLo sentimos, tu equipo ya tiene la cantidad máxima de jugadores
+    para la guerra!'
+  war-joined: '&a{player} se ha unido a tu Gremio!'
+  action-bar-ready: '&b{amount} &asegundos para que el inicio de la guerra! Prepárate
+    tú mismo!'
+  winner: '&aLa batalla fue difícil... sangre fue derramada... las lágrimas estaban
+    presentes... pero al final, los poderosos guerreros de &b{guild} &aganaron la
+    batalla!'
+  already-accepted: '&cNo puedes aceptar un desafío que ya has aceptado! Ten paciencia!'
+  already-joined: '&c¡Ya te has unido a esta guerra! Espera a que comience!'
+  removed-for-size: '&aLos siguientes jugadores han sido eliminados de la guerra para
+    mantener los equipos equilibrados: {players}'
+  defend-cooldown: '&b{guild} &cya lucharon recientemente en la arena. ¡Dejenlos recuperar
+    sus fuerza para que los desafíen otra vez!'
+  commands-blocked: ¡&cLo sentimos! ¡No puedes ejecutar comandos mientras estés en
+    una guerra!
+  player-killed-player: '&b{player} &aha sido asesinado por &b{killer}&a!'
+  player-killed-other: '&b{player} &aha sido asesinado por razones desconocidas.'
+  player-killed-quit: '&b{player} &aha sido asesinado por abandonar el servidor.'
+  teleported-back: '&a¡Has luchado duro! Desafortunadamente, no todo el mundo puede
+    ser el mejor. ¡Has sido teletransportado a tu ubicación original!'
+acf-core:
+  help_header: <c3>=== </c3><c1>Showing help for </c1><c2>{commandprefix}{command}</c2><c3>
+    ===</c3>
+  invalid_syntax: 'Uso: <c2>{command}</c2> <c3>{syntax}</c3>'
+  permission_denied: Lo siento, pero no tienes permiso para ejecutar este comando.
+  unknown_command: Comando desconocido, por favor escribe <c2>/help</c2>
+  error_performing_command: Lo siento, pero hubo un error al ejecutar este comando.
+  help_format: <c1>/{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>
+migrate:
+  invalid-backend: '&cEl backend al que ha intentado migrar no es válido.'
+  connection-failed: '&c¡La conexión al nuevo backend falló! ¡Asegúrese de que su
+    autenticación esté configurada correctamente!'
+  same-backend: '&cNo puedes migrar al mismo backend que ya estás usando!'
+  complete: '&aMigración de datos ({amount} guilds) ha sido completada y continuará
+    utilizando este nuevo backend hasta que sea reiniciado. ¡Asegúrate de cambiar
+    tu backend en la configuración a lo que migraste antes de reiniciar!'
+  warning: '&b¡Importante! &cEstá a punto de migrar TODOS los datos de su complemento.
+    Se recomienda ALTAMENTE que haga una copia de seguridad de TODOS los datos antes
+    de hacer esto. Si pierde sus datos, NO se pueden recuperar. ¿Estás seguro de que
+    te gustaría continuar? ¡Escriba / guilds confirme para continuar o / guilds cancel
+    para cancelar!'
+  cancelled: '&a¡Has cancelado con éxito la migración de datos!'

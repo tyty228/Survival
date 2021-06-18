@@ -1,0 +1,68 @@
+messages:
+  # Неудаляемые строки.
+  # При удалении строки будет применена её стандартная английская локализация.
+  only-for-players: '&7(&c&l!&7) &fКоманда доступна только для игроков.'
+  chat-not-found: '&7(&c&l!&7) &fДоступный чат &cне найден&f. Возможно, у вас отсутствуют права.'
+  reload: '&7(&a&l✓&7) &fКонфигурация перезагружена. &8(&7Перевод от DraimGooSe#8815&8)'
+  no-permission: '&7(&c&l!&7) &fУ вас &cнедостаточно &fправ.'
+  spy-on: '&7(&a&l✓&7) &fВы &aактивировали &fрежим слежки.'
+  spy-off: '&7(&a&l✓&7) &fВы &cотключили &fрежим слежки.'
+  cooldown: '&7(&c&l!&7) &fПодождите &6{cooldown} &fсекунд, прежде чем отправлять сообщение в этот чат снова.'
+  not-enough-money: '&7(&c&l!&7) &fВам необходимо &2{money} &fмонет для отправки сообщения в этот чат.'
+
+  clearchat-command:
+    usage: '&fИспользование: /{label} [all]'
+    clear-chat-for-all: '&7(&c&l!&7) &9{player} &fочистил чат.'
+    clear-chat-for-yourself: '&7(&a&l✓&7) &fЧат очищен.'
+
+  msg-command:
+    usage: '&fИспользование: /{label} <игрок> <сообщение>'
+    player-not-found: '&7(&c&l!&7) &fИгрок &cне найден&f.'
+    cannot-message-yourself: '&7(&c&l!&7) &fВы &cне можете &fнаписать самому себе.'
+
+  reply-command:
+    usage: '&fИспользование: /{label} <сообщение>'
+    target-not-found: '&7(&c&l!&7) &fИгрок, которому можно отправить сообщение, &cне найден&f.'
+
+  ignore-command:
+    usage: '&fИспользование: /{label} <игрок>'
+    player-not-found: '&7(&c&l!&7) &fИгрок &cне найден&f.'
+    ignore-list: '&fСейчас вы игнорируете: &6{players}&f.'
+    ignore-list-delimiter: '&8, &6'
+    add-ignore: '&7(&a&l✓&7) &fТеперь вы игнорируете игрока &6{player}&f.'
+    remove-ignore: '&7(&a&l✓&7) &fВы больше не игнорируете игрока &6{player}&f.'
+    cannot-ignore-yourself: '&7(&c&l!&7) &fВы &cне можете &fигнорировать самого себя.'
+
+  swears-command:
+    usage: '&fИспользование: /{label} add <слово>'
+    add-word: '&7(&a&l✓&7) &fВы &aдобавили &fслово &6{word}&f в белый список.'
+
+  chat-command:
+    usage: '&fИспользование: /{label} <чат>'
+    chat-not-found: '&7(&c&l!&7) &fЧат с таким именем &cне найден&f.'
+    chat-switched: '&7(&a&l✓&7) &fВы перешли в чат &7"&6{chat}&7"&f.'
+    no-chat-permission: '&7(&c&l!&7) &fУ вас &cнедостаточно прав &fдля этого чата.'
+
+  prefix-command:
+    usage: '&fИспользование: /{label} <игрок> <<префикс>|clear>'
+    no-permissions-others: '&7(&c&l!&7) &fУ вас &cнедостаточно прав &fдля смены префикса другим игрокам.'
+    player-not-found: '&7(&c&l!&7) &fИгрок &cне найден&f.'
+    length-limit-min: '&7(&c&l!&7) &fПрефикс &cне может &fбыть короче &e{limit} &fсимволов.'
+    length-limit-max: '&7(&c&l!&7) &fПрефикс &cне может &fбыть длиннее &e{limit} &fсимволов.'
+    prefix-clear: '&7(&a&l✓&7) &fВы &cудалили &fпрефикс игроку &6{player}&f.'
+    prefix-set: '&7(&a&l✓&7) &fВы &aустановили &fпрефикс &r{prefix} &fигроку &6{player}&f.'
+
+  suffix-command:
+    usage: '&fИспользование: /{label} <игрок> <<суффикс>|clear>'
+    no-permissions-others: '&7(&c&l!&7) &fУ вас &cнедостаточно прав &fдля смены суффикса другим игрокам.'
+    player-not-found: '&7(&c&l!&7) &fИгрок &cне найден&f.'
+    length-limit-min: '&7(&c&l!&7) &fСуффикс &cне может &fбыть короче &e{limit} &fсимволов.'
+    length-limit-max: '&7(&c&l!&7) &fСуффикс &cне может &fбыть длиннее &e{limit} &fсимволов.'
+    suffix-clear: '&7(&a&l✓&7) &fВы &cудалили &fсуффикс игроку &6{player}&f.'
+    suffix-set: '&7(&a&l✓&7) &fВы &aустановили &fсуффикс &r{suffix} &fигроку &6{player}&f.'
+
+  # Удаляемые строки.
+  # Удалите строку, чтобы убрать сообщение.
+  advertisement-found: '&7(&c&l!&7) &fВ вашем сообщении &cобнаружена &fреклама.'
+  caps-found: '&7(&c&l!&7) &fВ вашем сообщении обнаружено &cзлоупотребление &fкапсом.'
+  swear-found: '&7(&c&l!&7) &fВ вашем сообщении &cобнаружен &fмат.'
