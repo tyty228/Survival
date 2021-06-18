@@ -32,7 +32,6 @@ world
 world_nether
 plugins\AureliumSkills\regiondata\
 plugins/Multiverse-Inventories/players/5354bc22-fb01-43d1-8ec2-678ab9799c92.json
-server.properties
 plugins/Multiverse-Core/worlds.yml
 plugins/PlayerWarps/data/database.db
 plugins/PlayerParticles/playerparticles.db
