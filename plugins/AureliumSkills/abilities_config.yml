@@ -8,14 +8,14 @@ abilities:
     bountiful_harvest:
       enabled: true
       base: 10.0
-      per_level: 5.0
+      per_level: 3.0
       unlock: 2
       level_up: 5
       max_level: 0
     farmer:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -44,14 +44,14 @@ abilities:
     lumberjack:
       enabled: true
       base: 10.0
-      per_level: 5.0
+      per_level: 2.0
       unlock: 2
       level_up: 5
       max_level: 0
     forager:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -78,16 +78,16 @@ abilities:
       max_level: 0
   mining:
     lucky_miner:
-      enabled: true
-      base: 3.0
-      per_level: 3.0
+      enabled: false
+      base: 2.0
+      per_level: 2.0
       unlock: 2
       level_up: 5
       max_level: 0
     miner:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -114,16 +114,16 @@ abilities:
       max_level: 0
   fishing:
     lucky_catch:
-      enabled: true
-      base: 10.0
-      per_level: 5.0
+      enabled: false
+      base: 5.0
+      per_level: 3.0
       unlock: 2
       level_up: 5
       max_level: 0
     fisher:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -135,7 +135,7 @@ abilities:
       level_up: 5
       max_level: 0
     grappler:
-      enabled: true
+      enabled: false
       base: 50.0
       per_level: 100.0
       unlock: 5
@@ -158,8 +158,8 @@ abilities:
       max_level: 0
     excavator:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -178,7 +178,7 @@ abilities:
       level_up: 5
       max_level: 0
     lucky_spades:
-      enabled: true
+      enabled: false
       base: 0.1
       per_level: 0.05
       unlock: 6
@@ -187,15 +187,15 @@ abilities:
   archery:
     crit_chance:
       enabled: true
-      base: 5.0
-      per_level: 5.0
+      base: 3.0
+      per_level: 3.0
       unlock: 2
       level_up: 5
       max_level: 0
     archer:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -230,8 +230,8 @@ abilities:
       max_level: 0
     defender:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -266,8 +266,8 @@ abilities:
       max_level: 0
     fighter:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 5.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -308,8 +308,8 @@ abilities:
       max_level: 0
     runner:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -344,8 +344,8 @@ abilities:
       max_level: 0
     jumper:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -384,8 +384,8 @@ abilities:
       add_item_lore: true
     brewer:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -422,8 +422,8 @@ abilities:
       max_level: 0
     enchanter:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -442,7 +442,7 @@ abilities:
       level_up: 5
       max_level: 0
     lucky_table:
-      enabled: true
+      enabled: false
       base: 5.0
       per_level: 1.0
       unlock: 6
@@ -458,8 +458,8 @@ abilities:
       max_level: 0
     healer:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -497,8 +497,8 @@ abilities:
       max_level: 0
     forger:
       enabled: true
-      base: 10.0
-      per_level: 10.0
+      base: 5.0
+      per_level: 3.0
       unlock: 3
       level_up: 5
       max_level: 0
@@ -568,7 +568,7 @@ mana_abilities:
     check_offhand: true
     sneak_offhand_bypass: true
   sharp_hook:
-    enabled: true
+    enabled: false
     base_value: 0.5
     value_per_level: 0.5
     cooldown: 2
@@ -581,7 +581,7 @@ mana_abilities:
     display_damage_with_scaling: true
     enable_sound: true
   terraform:
-    enabled: true
+    enabled: false
     base_value: 5.0
     value_per_level: 4.0
     cooldown: 200
