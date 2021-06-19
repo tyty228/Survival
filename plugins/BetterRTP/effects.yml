@@ -6,28 +6,28 @@ Sounds:
 Titles:
   Enabled: true
   NoDelay:
-    Title: '&6Teleporting...'
-    Subtitle: '&8please wait'
+    Title: '&6Телепортация...'
+    Subtitle: '&8пожалуйста, подождите'
     SendMessage: true
   Teleport:
-    Title: '&6Teleported!'
-    Subtitle: '&fx=%x% y=%y% z=%z% in %attempts% attempts'
+    Title: '&6Вы телепортированы!'
+    Subtitle: '&7На коордианты: &f%x% %y% %z%'
     SendMessage: true
   Delay:
     Title: ''
-    Subtitle: '&fTeleporting in %time% seconds...'
+    Subtitle: '&fТелепортация через %time% секунд'
     SendMessage: true
   Cancelled:
-    Title: '&eYou moved...'
-    Subtitle: '&cRtp was cancelled!'
+    Title: '&eВы двигаетесь...'
+    Subtitle: '&cТелепортация отменена!'
     SendMessage: true
   Loading:
     Title: ''
-    Subtitle: '&7loading chunks... please wait'
+    Subtitle: '&7Загрузка местоности..'
     SendMessage: true
   Failed:
     Title: ''
-    Subtitle: '&cFailed! No safe spots located'
+    Subtitle: '&cОшибка! &fНе найдена територия!'
     SendMessage: true
 Particles:
   Enabled: true
@@ -37,9 +37,9 @@ Particles:
   Shape: EXPLODE
 Invincible:
   Enabled: true
-  Seconds: 5
+  Seconds: 2
 Potions:
-  Enabled: true
+  Enabled: false
   Types:
   - Blindness:60:1
   - Invisibility:60:1

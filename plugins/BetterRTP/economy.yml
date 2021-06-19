@@ -5,7 +5,7 @@ Hunger:
   Enabled: false
   Honches: 4
 CustomWorlds:
-  Enabled: true
+  Enabled: false
   Prices:
-  - world: 50
+  - world: 0
   - world_end: 0
