@@ -8,20 +8,10 @@
 # Plugin made by Archy
 # 
 # MySql Options
-default-language: en
+default-language: ru
 try-detect-client-language: true
 languages:
-- en
-- es
-- id
-- fr
-- zh-TW
-- tr
-- pl
-- pt-BR
-- zh-CN
-- de
-- lt
+- ru
 base-mana: 20
 enable-roman-numerals: true
 damage-holograms: true
@@ -55,7 +45,7 @@ action-bar:
   enabled: true
   idle: false
   ability: true
-  xp: false
+  xp: true
   maxed: false
   update-period: 5
   round-xp: false
