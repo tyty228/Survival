@@ -3,7 +3,7 @@
 # Those are automatically imported from your bukkit.yml.
 # Set them there if you didn't already.
 whitelist:
-- 127.0.0.1
+- 152.228.176.33
 playerKickMessage: '&cYou have to join through the proxy.'
 debug: false
 setup: false
