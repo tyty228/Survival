@@ -8,7 +8,7 @@ Titles:
   NoDelay:
     Title: '&6Телепортация...'
     Subtitle: '&8пожалуйста, подождите'
-    SendMessage: true
+    SendMessage: false
   Teleport:
     Title: '&6Вы телепортированы!'
     Subtitle: '&7На коордианты: &f%x% %y% %z%'
@@ -16,7 +16,7 @@ Titles:
   Delay:
     Title: ''
     Subtitle: '&fТелепортация через %time% секунд'
-    SendMessage: true
+    SendMessage: false
   Cancelled:
     Title: '&eВы двигаетесь...'
     Subtitle: '&cТелепортация отменена!'
