@@ -4,11 +4,11 @@ Sounds:
   Delay: entity_tnt_primed
   Success: entity_generic_explode
 Titles:
-  Enabled: true
+  Enabled: false
   NoDelay:
     Title: '&6Телепортация...'
     Subtitle: '&8пожалуйста, подождите'
-    SendMessage: false
+    SendMessage: true
   Teleport:
     Title: '&6Вы телепортированы!'
     Subtitle: '&7На коордианты: &f%x% %y% %z%'
@@ -16,7 +16,7 @@ Titles:
   Delay:
     Title: ''
     Subtitle: '&fТелепортация через %time% секунд'
-    SendMessage: false
+    SendMessage: true
   Cancelled:
     Title: '&eВы двигаетесь...'
     Subtitle: '&cТелепортация отменена!'
