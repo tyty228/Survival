@@ -3,12 +3,12 @@ skills_menu:
   rows: 5
   fill:
     enabled: true
-    material: BLACK_STAINED_GLASS_PANE
+    material: GREEN_STAINED_GLASS_PANE
   items:
     your_skills:
       row: 0
-      column: 0
-      material: DIAMOND_AXE
+      column: 4
+      material: DIAMOND
       display_name: '{your_skills}'
       lore:
         - '{desc}'
@@ -17,7 +17,7 @@ skills_menu:
         - '{click}'
     close:
       row: 4
-      column: 8
+      column: 4
       material: BARRIER
       display_name: '{close}'
   templates:
@@ -51,21 +51,21 @@ skills_menu:
         - ' '
         - '{skill_click}'
       pos:
-        - FARMING 1 2
-        - FORAGING 1 3
+        - FARMING 1 1
+        - FORAGING 1 2
         - MINING 1 4
-        - FISHING 1 5
-        - EXCAVATION 1 6
+        - FISHING 1 6
+        - EXCAVATION 1 7
         - ARCHERY 2 2
         - DEFENSE 2 3
         - FIGHTING 2 4
         - ENDURANCE 2 5
         - AGILITY 2 6
-        - ALCHEMY 3 2
-        - ENCHANTING 3 3
+        - ALCHEMY 3 1
+        - ENCHANTING 3 2
         - SORCERY 3 4
-        - HEALING 3 5
-        - FORGING 3 6
+        - HEALING 3 6
+        - FORGING 3 7
 stats_menu:
   title: '{stats_menu_title}'
   rows: 3
