@@ -1,5 +1,5 @@
 # Language file you want to use
-Language: EN
+Language: RU
 Economy:
   # Enable or disable CMI economy in general
   # In case CMIInjector is present, then this will be set to true automatically.
