@@ -747,12 +747,12 @@ Chat:
   # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
   # Or direct download https://www.zrips.net/cmi/
   # Do you want to enable private messaging over bungeecord
-  BungeeMessages: true
+  BungeeMessages: false
   # Do you want to enable public messaging over bungeecord
   # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
-  BungeePublicMessages: true
+  BungeePublicMessages: false
   # Do you want to enable staff messaging over bungeecord
-  BungeeStaffMessages: true
+  BungeeStaffMessages: false
   # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
   GeneralFormat: '{prefix}&f{displayName}&7: &r{message}'
   # Will define message format itself, this allows to have gradients in messages
