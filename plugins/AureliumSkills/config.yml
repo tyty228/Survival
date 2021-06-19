@@ -42,7 +42,7 @@ mysql:
   always-load-on-join: false
   ssl: false
 action-bar:
-  enabled: true
+  enabled: false
   idle: true
   ability: true
   xp: true
