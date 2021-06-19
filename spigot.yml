@@ -16,7 +16,7 @@ settings:
   save-user-cache-on-stop-only: true
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
-  bungeecord: false
+  bungeecord: true
   player-shuffle: 0
   sample-count: 12
   user-cache-size: 1000
