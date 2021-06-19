@@ -20,7 +20,7 @@ skill-level-requirements-multiplier: 100
 enable-skill-commands: true
 check-block-replace: true
 blocked-check-block-replace-worlds:
-- Example
+- duels
 blocked-check-block-replace-regions:
 - Example
 blocked-worlds:
@@ -28,8 +28,8 @@ blocked-worlds:
 blocked-regions:
 - spawn
 disabled-worlds:
-- Example
-disable-in-creative-mode: false
+- duels
+disable-in-creative-mode: true
 check-for-updates: true
 mysql:
   enabled: false
@@ -43,10 +43,10 @@ mysql:
   ssl: false
 action-bar:
   enabled: true
-  idle: false
+  idle: true
   ability: true
   xp: true
-  maxed: false
+  maxed: true
   update-period: 5
   round-xp: false
   placeholder-api: true
@@ -204,7 +204,7 @@ forging:
   max-level: 97
   check-cancelled: true
 health:
-  modifier: 0.5
+  modifier: 1.0
   health-scaling: true
   hp-indicator-scaling: 5
   update-delay: 0
@@ -222,7 +222,7 @@ health:
     '19': 393
     '20': 626
 strength:
-  modifier: 0.63
+  modifier: 0.05
   hand-damage: true
   bow-damage: true
   display-damage-with-health-scaling: true
@@ -242,11 +242,11 @@ regeneration:
     hunger-delay: 60
 luck:
   modifier: 0.1
-  double-drop-enabled: true
+  double-drop-enabled: false
   double-drop-modifier: 0.005
   double-drop-percent-max: 100
 wisdom:
   anvil-cost-modifier: 0.25
   experience-modifier: 0.01
-  allow-over-max-mana: true
+  allow-over-max-mana: false
   max-mana-per-wisdom: 2.0
