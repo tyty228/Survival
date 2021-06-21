@@ -90,7 +90,7 @@ chats:
   global:
     enable: true
     display-name: 'Глобальный'
-    format: '&8(&✉&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
+    format: '&8(&6✉&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
     range: -2
     symbol: '!'
     cooldown: 3
