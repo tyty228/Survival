@@ -83,14 +83,14 @@ chats:
   local:
     enable: true
     display-name: 'Локальный'
-    format: '&8(&3L&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
+    format: '&8(&3✉&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
     range: 100
     cooldown: -1
 
   global:
     enable: true
     display-name: 'Глобальный'
-    format: '&8(&6G&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
+    format: '&8(&6✉&8) &r%guilds_formatted%&r%cmi_user_prefix%%cmi_user_display_name%&8: &f{message}'
     range: -2
     symbol: '!'
     cooldown: 3
