@@ -12,8 +12,8 @@ commands:
 anvil:
   rework-cost: false # Use vanilla rework penalty
   allow-unsafe-levels: false # Allow unsafe enchantments like Sharpness 6 by combining 2 Sharp 5.
-  allow-combining-unsafe: true # Allow further combining unsafe levels, eg Sharp 6 + Sharp 6 = Sharp 7.
-  allow-existing-unsafe-levels: true # Allow combining existing unsafe enchantments like Sharpness 6
+  allow-combining-unsafe: false # Allow further combining unsafe levels, eg Sharp 6 + Sharp 6 = Sharp 7.
+  allow-existing-unsafe-levels: false # Allow combining existing unsafe enchantments like Sharpness 6
 
   cost-exponent: # Increase value of each extra level by the exponent^levels
     enabled: true # Use exponent
@@ -78,7 +78,7 @@ enchanting-table:
     factor: 2.2 # Factor to reduce probability by. Done as compound, so second pass is (factor) times less likely than first, third less likely than second, etc
 
 villager:
-  enabled: true #Enable EcoEnchants through villagers
+  enabled: false #Enable EcoEnchants through villagers
   book-times-less-likely: 7 # Times less likely to get an enchantment from a book with a villager. Recommended to be higher as books can only have one enchantment on them.
 
   reduce-probability: # Reduce probability of adding new enchantment by factor after each enchantment added. Does not apply to books as they only ever contain one enchantment.
@@ -86,7 +86,7 @@ villager:
     factor: 5 # Factor to reduce probability by. Done as compound, so second pass is (factor) times less likely than first, third less likely than second, etc
 
 loot:
-  enabled: true #Enable EcoEnchants through loot chests
+  enabled: false #Enable EcoEnchants through loot chests
   book-times-less-likely: 2
 
   reduce-probability: # Reduce probability of adding new enchantment by factor after each enchantment added. Does not apply to books as they only ever contain one enchantment.
