@@ -16,3 +16,7 @@
 # In this case if player performs /ca wrongsub or /ca anotherwrong
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
+CustomAlias:
+  s:
+    Cmds:
+    - tphere
