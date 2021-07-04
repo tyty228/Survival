@@ -10,64 +10,173 @@ change-tablist-prefix-suffix: true
 enable-header-footer: true
 
 header:
-  - "&3&lServer name"
-  - "&7&l>> %animation:Welcome%&3 &l%player%&7&l! &7&l<<"
-  - "&7Online players: &f%online%"
-  - "&6Online staff: &e%staffonline%"
-  - "%animation:ping-tps%"
-  - ""
-  - "&7&l Used memory: %memory-used% MB / %memory-max% MB"
-  - "%animation:MyAnimation1%"
+- ''
+- '{#ff6666>}DRAIMCIDO{#ffd966<}'
+- '{#40bf40>}Survival{#9fdf9f<}'
+- ''
 footer:
-  - "%animation:MyAnimation1%"
-  - "%animation:time%"
-  - ""
-  - "&7Visit our webpage %animation:web%"
+- ''
+- '{#6666ff>}Игроков на режиме:{#4dffff<} &f%online%'
+- '{#6666ff>}Всего на проекте{#4dffff<} &f%bungee_total% {#66d9ff>}игроков{#66ffff<}'
+- ''
+- '{#ff6666>}VK{#ffb366<} {#006600}➥ {#6666ff>}vk.com/draimcido{#4dffff<}'
+- '{#ff6666>}Discord{#ffd966<} {#006600}➥ {#6666ff>}discord.gg/TBeK3nE{#4dffff<}'
 
 #supports any numeric placeholder, set to "" to disable the feature
-yellow-number-in-tablist: "%ping%"
+yellow-number-in-tablist: ""
 
 group-sorting-priority-list:
-  - owner
-  - admin
-  - mod
-  - helper
-  - builder
-  - premium
-  - player
-  - default
+- dev
+- dev-revol
+- texadm
+- ga_admin
+- zga_adm
+- st_adm_surv
+- st_adm_sky
+- admin
+- st_moder
+- moder
+- builder
+- redaktor
+- stazer
+- youtube
+- support
+- omega
+- sigma
+- blaze
+- yota
+- delta
+- epsilon
+- alpha
+- default
 
 Groups:
-  Owner:
-    tabprefix: "&0&l[&a&lOwner&0&l] &a"
-    tagprefix: "&2&lOwner &a"
-  Admin:
-    tabprefix: "&0&l[&4&lAdmin&0&l] &1"
-    tagprefix: "%animation:admin_prefix%"
-  Player:
-    tabprefix: "&0&l[&7&lPlayer&0&l] &3"
-    tagprefix: "&2&lPlayer &3"
-  example_group:
-    header:
-      - "This is an example of per-group header/footer"
-    footer:
-      - "applied to a group"
-      
-  #default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
-  _OTHER_:
-    tabprefix: "%vault-prefix%"
-    tagprefix: "%vault-prefix%"
-    tabsuffix: "%afk%"
-    tagsuffix: "%afk%"
-    customtabname: "%essentialsnick%"
-    customtagname: "%essentialsnick%"
+  dev:
+    tabprefix: '%cmi_user_afk_symbol% {#696969}({#4dffff>}Основатель{#ff1a8c<}{#696969})'
+    customtabname: ' {#ff1a8c>}%nick%{#4dffff<} %guilds_formatted%'
+    tagprefix: '{#696969}({#4dffff>}Основатель{#ff1a8c<}{#696969})'
+    customtagname: ' {#ff1a8c>}%nick%{#4dffff<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  dev-revol:
+    customtabname: '%cmi_user_afk_symbol% {#696969}({#7204e2>}Со-Основатель{#4dffff<}{#696969})
+      {#4dffff>}%nick%{#7204e2<} %guilds_formatted%'
+    customtagname: '{#696969}({#7204e2>}Со-Основатель{#4dffff<}{#696969}) {#4dffff>}%nick%{#7204e2<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  texadm:
+    customtabname: '%cmi_user_afk_symbol% {#696969}({#e60000>}Тех.Админ{#e6cf00<}{#696969})
+      {#e6cf00>}%nick%{#e6cf00<} %guilds_formatted%'
+    customtagname: '{#696969}({#e60000>}Тех.Админ{#e6cf00<}{#696969}) {#e6cf00>}%nick%{#e6cf00<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  ga_admin:
+    customtagname: '{#4d4d33}({#e6000e>}Гл.Админ{#e6cf00<}{#4d4d33}) {#e6cf00>}%nick%{#e6000e<}'
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#e6000e>}Гл.Админ{#e6cf00<}{#4d4d33})
+      {#e6cf00>}%nick%{#e6000e<} %guilds_formatted%'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  zga_adm:
+    customtagname: '{#4d4d33}({#CC00FF>}Гл.Админ{#FF0066<}{#4d4d33}) {#FF0066>}%nick%{#CC00FF<}'
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#CC00FF>}Гл.Админ{#FF0066<}{#4d4d33})
+      {#FF0066>}%nick%{#CC00FF<} %guilds_formatted%'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  st_adm_surv:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#ff66ff>}Ст.Админ{#800080<}{#4d4d33})
+      {#800080>}%nick%{#ff66ff<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#ff66ff>}Ст.Админ{#800080<}{#4d4d33}) {#800080>}%nick%{#ff66ff<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  st_adm_sky:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#66c2ff>}Ст.Админ{#b3e0ff<}{#4d4d33})
+      {#b3e0ff>}%nick%{#66c2ff<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#66c2ff>}Ст.Админ{#b3e0ff<}{#4d4d33}) {#b3e0ff>}%nick%{#66c2ff<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  admin:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#6666ff>}Администратор{#9999ff<}{#4d4d33})
+      {#9999ff>}%nick%{#6666ff<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#6666ff>}Администратор{#9999ff<}{#4d4d33}) {#9999ff>}%nick%{#6666ff<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  st_moder:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#ff5555>}Ст.Модератор{#ffaa00<}{#4d4d33})
+      {#ffb31a>}%nick%{#ffc44d<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#ff5555>}Ст.Модератор{#ffaa00<}{#4d4d33}) {#ffb31a>}%nick%{#ffc44d<}'
+  builder:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#39e600>}Строитель{#79ff4d<}{#4d4d33})
+      {#79ff4d>}%nick%{#39e600<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#39e600>}Строитель{#79ff4d<}{#4d4d33}) {#79ff4d>}%nick%{#39e600<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  redaktor:
+    customtabname: '%cmi_user_afk_symbol% {#696969}({#017987>}Редактор{#005CE6<}{#696969})
+      {#005CE6>}%nick%{#991199<} %guilds_formatted%'
+    customtagname: '{#696969}({#017987>}Редактор{#005CE6<}{#696969}) {#005CE6>}%nick%{#991199<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  moder:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#6666ff>}Модератор{#9999ff<}{#4d4d33})
+      {#6666ff>}%nick%{#9999ff<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#6666ff>}Модератор{#9999ff<}{#4d4d33}) {#6666ff>}%nick%{#9999ff<}'
+  stazer:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#99cc00>}Стажер{#d2ff4d<}{#4d4d33})
+      {#d2ff4d>}%nick%{#99cc00<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#99cc00>}Стажер{#d2ff4d<}{#4d4d33}) {#d2ff4d>}%nick%{#99cc00<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  youtube:
+    customtabname: '%cmi_user_afk_symbol% {#696969}({#ff0000>}YouTube{#ffb3b3<}{#696969})
+      {#ffb3b3>}%nick%{#ff0000<} %guilds_formatted%'
+    customtagname: '{#696969}({#ff0000>}YouTube{#ffb3b3<}{#696969}) {#ffb3b3>}%nick%{#ff0000<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  support:
+    customtabname: '%cmi_user_afk_symbol% %animation:support% %guilds_formatted%'
+    customtagname: '%animation:support%'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  omega:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#ff4d4d>}Omega{#ff9999<}{#4d4d33})
+      {#ff9999>}%nick%{#ff4d4d<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#ff4d4d>}Omega{#ff9999<}{#4d4d33}) {#ff9999>}%nick%{#ff4d4d<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  sigma:
+    customtabname: '%cmi_user_afk_symbol% %animation:sigma% %guilds_formatted%'
+    customtagname: '%animation:sigma%'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  blaze:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#ff4d94>}Blaze{#e6005c<}{#4d4d33})
+      {#e6005c>}%nick%{#ff4d94<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#ff4d94>}Blaze{#e6005c<}{#4d4d33}) {#e6005c>}%nick%{#ff4d94<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  yota:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#29a3a3>}Yota{#99e6e6<}{#4d4d33})
+      {#99e6e6>}%nick%{#29a3a3<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#29a3a3>}Yota{#99e6e6<}{#4d4d33}) {#99e6e6>}%nick%{#29a3a3<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  delta:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#cc00cc>}Delta{#ff66ff<}{#4d4d33})
+      {#ff66ff>}%nick%{#cc00cc<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#cc00cc>}Delta{#ff66ff<}{#4d4d33}) {#ff66ff>}%nick%{#cc00cc<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  epsilon:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#006666>}Epsilon{#00e6e6<}{#4d4d33})
+      {#00e6e6>}%nick%{#006666<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#006666>}Epsilon{#00e6e6<}{#4d4d33}) {#00e6e6>}%nick%{#006666<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  alpha:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#e6e600>}Alpha{#ffff99<}{#4d4d33})
+      {#ffff99>}%nick%{#e6e600<} %guilds_formatted%'
+    customtagname: '{#4d4d33}({#e6e600>}Alpha{#ffff99<}{#4d4d33}) {#ffff99>}%nick%{#e6e600<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
+  default:
+    tabprefix: '%cmi_user_afk_symbol% {#696969}({#cc7a00>}Игрок{#ffc266<}{#696969}) '
+    customtabname: '{#ffc266>}%nick%{#cc7a00<} %guilds_formatted%'
+    tagprefix: '{#696969}({#cc7a00>}Игрок{#ffc266<}{#696969}) '
+    customtagname: '{#ffc266>}%nick%{#cc7a00<}'
+    belowname: '%health% &c❤ &7| {#66a3ff}Пинг: {#f2c40d}%player_colored_ping%'
 
 Users:
-  _NEZNAMY_:
-    tabprefix: "&6&lTAB Author &a"
-    tagprefix: "&6&lTAB &r&a"
-    abovename: "&bOh look, 3 lines of text !"
-    belowname: "&eThere's only one plugin out there supporting it"
+  TyTy_1337:
+    customtabname: '%cmi_user_afk_symbol% %animation:tyty_prefix%%guilds_formatted%'
+    customtagname: '%animation:tyty_prefix%%guilds_formatted%'
+    tabsuffix: '%animation:animsuf6%'
+  Wider443:
+    customtabname: '%cmi_user_afk_symbol% {#4d4d33}({#39e600>}Гл. Строитель{#79ff4d<}{#4d4d33})
+      {#79ff4d>}%nick%{#39e600<}'
+    customtagname: '{#4d4d33}({#39e600>}Гл. Строитель{#79ff4d<}{#4d4d33}) {#79ff4d>}%nick%{#39e600<}'
+  Revolution792:
+    customtabname: '%cmi_user_afk_symbol% %animation:revolution%%animation:revolution2%
+      %guilds_formatted%'
 
 #additional very limited line of text below nametag
 #don't forget this enables on all player entities, which includes NPCs
@@ -75,13 +184,13 @@ Users:
 classic-vanilla-belowname:
 
   #enabling the feature
-  enabled: true
+  enabled: false
   
   #number or numeric placeholder, supports per-player placeholders
   number: "%health%"
   
   #text after number, must be same on all players
-  text: "Health"
+  text: '&c❤'
 
 #controlling the collision rule
 enable-collision: true
@@ -100,7 +209,7 @@ allow-spectator-bypass-permission: false
 unlimited-nametag-prefix-suffix-mode:
 
   #enabling the feature
-  enabled: false
+  enabled: true
   
   #using a feature introduced in 1.8.1 to make hitbox zero so you can't cry it affects pvp despite hit redirection
   #1.8.0 clients will see wild things
@@ -113,27 +222,12 @@ unlimited-nametag-prefix-suffix-mode:
   #in blocks
   space-between-lines: 0.22
 
-per-world-settings:
-  world1:
-    header:
-      - "an example of world with custom"
-    footer:
-      - "header/footer and prefix/suffix"
-    Groups:
-      Owner:
-        tabprefix: "&0&l[&a&lOwner&0&l] &a"
-        tagprefix: "&2&lOwner &a"
-        
-  #separating multiple worlds with "-"
-  world2-world3:
-    header:
-      - "This is a shared header for"
-      - "world2 and world3"
+per-world-settings: {}
 
 placeholders:
   #output of %afk%
-  afk-yes: " &4*&4&lAFK&4*&r"
-  afk-no: ""
+  afk-yes: '&8(&4●&8)'
+  afk-no: '&8(&2●&8)'
   
   #%date%
   date-format: "dd.MM.yyyy"
@@ -150,15 +244,7 @@ placeholders:
     - "< >"
     
 #aliases for %rank%, this is not the place where group prefix is defined!
-rank-aliases:
-  Admin: "&4&lADMIN"
-  Mod: "&b&lMOD"
-  Premium: "&6&lPREMIUM"
-  Ultra: "&b&lULTRA"
-  Legend: "&a&lLEGEND"
-  Titan: "&c&lTITAN"
-  Youtuber: "&c&lYOUTUBE"
-  _OTHER_: "&7No Rank"
+rank-aliases: {}
   
 disable-features-in-worlds:
   header-footer:
@@ -177,7 +263,7 @@ disable-features-in-worlds:
     - disabledworld
 
 placeholderapi-refresh-intervals:
-  default-refresh-interval: 100
+  default-refresh-interval: 50
   server:
     "%server_uptime%": 1000
     "%server_tps_1_colored%": 1000
