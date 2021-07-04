@@ -2,28 +2,28 @@
 TabList:
   # Defines if we want to run tablist updater in async mode
   # While enabled it can increase overall performance but some plugins can have same issues handling async placeholder requests
-  Async: true
-  UpdateTabListNames: true
+  Async: false
+  UpdateTabListNames: false
   # Enable or disable grouped format tablist's
   # You can save some resources by disabling this if you are not interested in grouped format tablist feature
   # If disabled then this will use only default format and will skip checking for custom one to save some resources if needed
-  GroupedEnabled: true
+  GroupedEnabled: false
   Updates:
     # automatically updates tab list every x seconds for ALL online players
     # If you are using static Footer and Header you can disable this by setting to -1
     # Consider setting this to -1 if its completely enough to update on player events
-    AutoInterval: 60
-    OnJoin: true
-    OnLeave: true
-    afkStateChange: true
-    OnWorldChange: true
+    AutoInterval: 99999
+    OnJoin: false
+    OnLeave: false
+    afkStateChange: false
+    OnWorldChange: false
     OnDeath: false
     OnTeleport: false
-    OnNickChange: true
+    OnNickChange: false
   # When set to false we will not add header text to tablist
-  addTabListHeader: true
+  addTabListHeader: false
   # When set to false we will not add footer text to tablist
-  addTabListFooter: true
+  addTabListFooter: false
   # PlaceholderAPI supported for any custom variable you want to insert into this
   # In addition CMI will handle some placeholders without PlaceHolderAPI
   # Full list can be checked ingame with /cmi placeholders
