@@ -67,7 +67,7 @@ interactiveCommands: true
 #  
 # Handling of attached commands
 # Applies for servers from 1.7.x and up
-attachedCommands: true
+attachedCommands: false
 #  
 # Handling of player tagging in chat and tabcomplete with @
 # Applies for servers from 1.7.x and up
@@ -75,7 +75,7 @@ playerChatTag: true
 #  
 # Handling of tablist
 # Applies for servers from 1.7.x and up
-tablist: true
+tablist: false
 #  
 # Handling of painting editing with shift+right click
 # Applies for servers from 1.7.x and up
@@ -191,7 +191,7 @@ disabledEnchants: true
 #  
 # Handling of siting on blocks
 # Applies for servers from 1.8.x and up
-sitAnimation: true
+sitAnimation: false
 #  
 # Handling of ride suffocation detection
 # Applies for servers from 1.7.x and up
