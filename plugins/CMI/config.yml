@@ -1,5 +1,5 @@
 # Language file you want to use
-Language: EN
+Language: RU
 Economy:
   # Enable or disable CMI economy in general
   # In case CMIInjector is present, then this will be set to true automatically.
@@ -37,7 +37,7 @@ Economy:
   BalTop:
     # List of players to exclude from baltop list
     Exclude:
-    - Notch
+    - DanichMan
     # When enabled baltop list will show short money values, like 12.5M instead of 12501234
     DisplayWithShorts: false
     # List of names to exclude from baltop
@@ -61,16 +61,16 @@ Economy:
     MaximumAmount: 1.0E8
     # Defines amount until player can send to another player
     # This can prevent annoying spam some players would want to create by sending tiny amounts of money
-    MinimalPay: 0.5
+    MinimalPay: 0.1
     # Defines if you want to allow payments with fractions
     # if this is disabled then payments will be limited to whole numbers and in case player provides number with fraction we will round number down
     Fractions: true
     # Currency symbol to be used when showing balance or similar
-    CurrencySymbol: €
+    CurrencySymbol: $
     # Format used for displaying money
     MoneyFormat: '###,##0.00'
     # Converts long numbers to short ones, like 12305122 to 12.3m
-    UseShortNumbers: false
+    UseShortNumbers: true
     # Suffixes for short numbers
     ShortNumbersSuffixes:
     - ''
@@ -123,7 +123,7 @@ Optimizations:
   # When enabled you will see beeHive information in action bar when right clicking it
   ShowBeeHiveInformation: true
   # Sets indicator when creating elevator signs. Its case insensitive
-  ElevatorIndicator: '[CMIElevator]'
+  ElevatorIndicator: '(Лифт)'
   # Defines elevator type. If this is used on second line of sing, then player will be teleported directly in front of it instead of keeping original players x and z coordinates
   ElevatorStaticIndicator: '[*]'
   # Used to show date in places like mail, checkban, infopage and similar locations
@@ -243,7 +243,7 @@ Optimizations:
   # Do you want to use CMI playtime tracking
   # While this is enabled, player play time will be record for each hour he playied in server
   # This doesnt have effect on rankup or /playtime commands, it will only show more specific playtime by hours when using /cplaytime command
-  CMIPlayTimeTracking: false
+  CMIPlayTimeTracking: true
   # Player names to be excluded from playtimetop list
   PlaytimeTopExclude:
   - Some
@@ -435,9 +435,15 @@ Homes:
   # To have unlimited homes use cmi.command.sethome.unlimited permission
   # In addition to this you can use simple numeric permission node cmi.command.sethome.[number] which will define max number of homes player can have
   Groups:
-    Newbie: 2
-    Advanced: 3
-    Vip: 5
+    default: 2
+    alpha: 3
+    epsilon: 4
+    delta: 5
+    yota: 6
+    blaze: 7
+    sigma: 8
+    omega: 10
+    support: 15
   # Requires cmi.bedhome permission node
   # When set to true by interacting with bed, regular home location will be created
   # When set to false vanilla bed home location will be set
@@ -454,7 +460,7 @@ Homes:
   DefaultName: Home
   # Name for bed location. By default its "Home"
   # Different name can be used to identify home location set by interacting with a bed from home location created with command
-  DefaultBedName: Home
+  DefaultBedName: Кровать
   # Defines what characters you can use in your home names
   ValidNameRegex: '[^a-zA-Z0-9\-\_]'
 ReSpawn:
@@ -502,35 +508,32 @@ ReSpawn:
     - worldSpawn
 Afk:
   # Enable or disable auto afk system entirely
-  Enabled: false
+  Enabled: true
   # When enabled shows title message informing that player is in afk mode
   TitleMessage: true
   # When enabled shows random subtitle message
   SubTitleMessage: true
   # Prevents jumping in one place to avoid afk status
-  PreventJumping: true
+  PreventJumping: false
   # Prevents damage while afk
-  PreventDamage: true
+  PreventDamage: false
   # Defines how often in seconds plugin will check for afk players state
   CheckInterval: 10
   # When set to true, players playtime counter stops
   # As of nature how this system works you can see +-1second jumping up and down while checking players playtime
-  StopPlayTime: false
+  StopPlayTime: true
   # Defines how long to wait after player stops moving to set him as afk
   # Player needs to have cmi.command.afk.auto permission node
   # Set to 0 if you want to disable it
   AutoAfkIn: 300
   # Defines commands to be performed when player enters afk mode automatically while addling
   # Supports specialized commands
-  AutoAfkCmds:
-  - cmi broadcast !&6[playerDisplayName] &eis now AFK
+  AutoAfkCmds: []
   # Defines commands to be performed when player enters /cmi afk
   # Supports specialized commands
-  ManualAfkCmds:
-  - cmi broadcast !&6[playerDisplayName] &eis now AFK
+  ManualAfkCmds: []
   # Defines commands to be performed when player leaves afk mode
-  AfkLeaveCmds:
-  - cmi broadcast !&6[playerDisplayName] &eis no longer AFK
+  AfkLeaveCmds: []
   # Defines how long to wait after player stops moving to kick player
   # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
   # This can be used not only to kick but to perform repeating action every x seconds if needed
@@ -545,7 +548,7 @@ Afk:
   # Defines commands to be performed when player can be kicked
   # If player is not kicked then commands will be repeated every RepeatingAutoKickInterval seconds
   AutoKickCmds:
-  - cmi kick [playerName] &eYou have been kicked for idling more than [time]
+  - cmi kick [playerName] &eВас выгнали за бездействие более чем [time]
   # Defines worlds where players will not be placed into afk mode after they idled for defined time
   DisabledWorlds:
   - oneTestWorld
@@ -624,8 +627,8 @@ Votifier:
   # Supports specialized commands and placeholders
   # [serviceName] variable can be used to insert address
   CommandsOnVote:
-  - cmi broadcast !&6[playerDisplayName] &evoted!
-  - cmi give [playerName] diamond
+  - cmi broadcast !&6[playerDisplayName] &eпроголосовал!
+  - cmi money give [playerName] 50
   # Keep it at false if you dont want to give out extra rewards
   ExtraRewardsEnabled: false
   # Commands will be performed when player collect determined amount of votes
@@ -716,8 +719,8 @@ Chat:
     # Defines name of global chat channel in discordsrv
     GlobalChannel: global
     # Indicator which can be used as {discord} in chat format to indicate that message came from discord and not ingame
-    Label: '&2[&7D&2]'
-    UnlinkedLabel: '&4[&cD&4]'
+    Label: '&8(&aДС&8)'
+    UnlinkedLabel: '&8(&cДС&8)'
   # Enables support for DynMap web chat
   DynMapChat: true
   # When set to false, each time you will use /r you will reply to person you previously sent message directly or to person who sent you message if there is none you have conversion before
@@ -905,16 +908,26 @@ NickName:
   - server
   - staff
   - staf
+  - moder
+  - модератор
+  - danichman
+  - данич
+  - draimgoose
+  - админ
+  - администратор
+  - основатель
+  - стажёр
+  - строитель
   # Min length of nick name, can be bypassed with cmi.command.nick.bypass.length
-  MinLength: 4
+  MinLength: 2
   # Max length of nick name, can be bypassed with cmi.command.nick.bypass.length
-  MaxLength: 16
+  MaxLength: 20
   # Adds prefix for players nickname to indicate that its not real name. This can be added to display name with {nicknameprefix}
-  Prefix: '~'
+  Prefix: ''
   # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without addign prefix
   PrefixWhenDifferent: false
   # When true, online players nick name will be included into tabcomplete
-  IncludeInTabComplete: true
+  IncludeInTabComplete: false
 Dye:
   # When set to true colored lether armor will be bound to the player who receives that coloration and will not work on others if he would give it to them
   # Only applies for dynamic armor colors like biome, health and so on
@@ -929,7 +942,7 @@ Spawners:
     # Enable or disable spawner handler for spawner break
     # If enabled player will get spawner if using silktouch pickaxe and have cmi.dropspawner permission node
     # If player has cmi.dropspawner.nosilk permission node, player is not required to use silk touch pickaxe to get droped spawner
-    Enabled: false
+    Enabled: true
     # If set to true, player will need to have particular permission node to break and get particular spawner.
     # In example: player should have cmi.dropspawner.pig to break pig spawner and get it dropped, or cmi.dropspawner.zombie to get zombie spawner
     RequiresExactPermission: false
@@ -1005,6 +1018,7 @@ ItemRenaming:
   # List of materials followed with optional regex code which can prevent specific naming, like renaming mob spawners into another type while still allowing renaming spawner into anything else
   List:
   - mobspawner:([A-z]+ (?i)\w*spawner)
+  - GOLD_NUGGET
 SpawnMob:
   # Defines how many passengers entities can be spawned at once
   MaxQuantity: 10
@@ -1041,9 +1055,9 @@ Portals:
 Animations:
   # Enable siting on stair block by clicking on them with empty hand or by looking and using command
   # Requires cmi.command.sit.stairs
-  SitOnStairs: true
-  StairsAsChairs: true
-  SlabsAsChairs: true
+  SitOnStairs: false
+  StairsAsChairs: false
+  SlabsAsChairs: false
   CarpetsAsChairs: false
   RemoveFromChairOnDamage: true
   # Player will sit on chair only after rapid double click
@@ -1062,11 +1076,11 @@ DamageControl:
 - lowermagmacubedamage:hot_floor:0.5
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
-  RemoveFromInventory: false
+  RemoveFromInventory: true
   Cooldown:
     # When this set to true player can use totem only every X second's
-    Use: false
-    Time: 600
+    Use: true
+    Time: 60
   Warmup:
     # When this set to true player can use totem to have X amount of second's, during which he can die and be resurected
     # Totem will be consumed durring activation and wont be returned even if resurection is not used during warmup time
@@ -1138,10 +1152,10 @@ FlightCharge:
   AutoSwitch: false
   # How much it costs for one recharge point in exp points. Value can be in decimals, like 0.2 but it cant be equal or lower than 0
   # Set to 0 to disable this type of recharge
-  ExpRechargeCost: 1.0
+  ExpRechargeCost: 0
   # How much it costs for one recharge point. Value can be in decimals, like 0.2 but it cant be equal or lower than 0
   # Set to 0 to disable this type of recharge
-  MoneyRechargeCost: 1.0
+  MoneyRechargeCost: 0
   # Defines maximum amount of charge player can have
   # One charge is one traveled block while flying
   # if player doesn't move, then one charge for each second while hovering
@@ -1208,7 +1222,7 @@ Messages:
     AutoHideFrom: -1
 Books:
   # Defines default creator name for books when using getbook command
-  DefaultAuthor: Server
+  DefaultAuthor: Администратор
   # When set to true books write date will be added
   AddDate: false
 # Defines name of customtext on players login to server. To disable just set name to non existing customText
@@ -1237,8 +1251,7 @@ Warnings:
       DefaultReason: '&7Using cheats'
   Perform:
     '3':
-    - cmi mute [playerName] 10m
-    - cmi msg [playerName] !&cMuted for &710 &cminutes for getting &73 &cwarnings!
+    - ban [playerName] 5d
     '5':
     - cmi kick [playerName] &cKicked for getting 5 warnings!
     '10':
@@ -1269,7 +1282,7 @@ Spawn:
     Yaw: 0.0
 Newbie:
   # Kit name to give for new players joining server
-  Kit: Newbie
+  Kit: start
 Kits:
   # When set to true, kit list will be shown in GUI instead of chat list
   GUI: true
@@ -1284,7 +1297,7 @@ Kits:
     Back: Fence
 Warps:
   # When set to true, warps list will be shown in GUI instead of chat list
-  GUI: true
+  GUI: false
   # Automatically opens GUI when created new warp point
   GUIOnCreation: true
   # Minimal length of warp name
@@ -1347,7 +1360,7 @@ CheckForNameChange:
   PerformCommandsOnNewName: false
   # Command list to be performed in case player logs in with new name
   NameChangeCommands:
-  - 'asConsole! cmi broadcast !&2[oldname] logged in with new name: [newname]'
+  - 'asConsole! cmi broadcast !&2[oldname] вошел под новым именем: [newname]'
 inv:
   # Do you want to save the player's inventory on his death
   SaveOnDeath: false
@@ -1459,7 +1472,7 @@ Cooldowns:
   - cmi feed:120
 Combat:
   # Defines combat timer to be used in particular features
-  Timer: 15
+  Timer: 30
   # Prevents damage from players with god mode enabled
   # Can be bypassed with cmi.pvp.godBypass permission node
   noGodDamage: false
@@ -1467,7 +1480,7 @@ Combat:
   noGodDamageInform: false
   # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
   # If set to false then only attacker will be marked for pvp mode
-  IncludeVictim: true
+  IncludeVictim: false
   Player:
     # If set to true, then player who gets placed into combat mode will get its fly mode disabled
     # This will disable players fly mode which will result in player dropping down and will disable option to start flying
@@ -1483,9 +1496,9 @@ Combat:
     # This only applies for pvp type combat
     BlockCommands: false
     AllowedCommands:
-    - msg
-    - r
-    - tell
+    - spawn
+    - home
+    - g home
     # When set to true AllowedCommands become black list which will define which commands player cant use
     MakeBlackList: false
   Mob:
@@ -1683,7 +1696,7 @@ Time:
     SmoothSpeed: 100
     # Worlds effected by autotime adjustment
     Worlds:
-    - ''
+    - events
   # Allows you to change vanilla time speed to your own liking and needs
   TimeSpeed:
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
@@ -1700,15 +1713,15 @@ Time:
 RandomTeleportation:
   # If this set to true we will generate random teleport default settings for all detected worlds
   # Setting to false will not longer generate world setups, but you can add them manually if needed
-  AutoGenerateWorlds: true
+  AutoGenerateWorlds: false
   Worlds:
     # World name to use this feature. Add annother one with appropriate name to enable random teleportation
     world:
-      Enabled: true
+      Enabled: false
       # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 coordinates
       MaxRange: 1000
       # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-      MinRange: 500
+      MinRange: -1500
       CenterX: 0
       CenterZ: 0
       Circle: false
@@ -1717,7 +1730,7 @@ RandomTeleportation:
       minY: 0
       maxY: 256
     world_nether:
-      Enabled: true
+      Enabled: false
       MaxRange: 1000
       MinRange: 500
       CenterX: 0
@@ -1728,7 +1741,7 @@ RandomTeleportation:
       minY: 0
       maxY: 256
     world_the_end:
-      Enabled: true
+      Enabled: false
       MaxRange: 1000
       MinRange: 500
       CenterX: 0
@@ -1739,7 +1752,7 @@ RandomTeleportation:
       minY: 0
       maxY: 256
   # How long force player to wait before using command again.
-  Cooldown: 5
+  Cooldown: 120
   # How many times to try find correct location for teleportation.
   # Keep it at low number, as player always can try again after delay
   MaxTries: 20
