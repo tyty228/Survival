@@ -510,9 +510,9 @@ Afk:
   # Enable or disable auto afk system entirely
   Enabled: true
   # When enabled shows title message informing that player is in afk mode
-  TitleMessage: true
+  TitleMessage: false
   # When enabled shows random subtitle message
-  SubTitleMessage: true
+  SubTitleMessage: false
   # Prevents jumping in one place to avoid afk status
   PreventJumping: false
   # Prevents damage while afk
