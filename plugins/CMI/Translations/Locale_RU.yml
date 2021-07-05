@@ -269,8 +269,8 @@ info:
   sec: '&f[secs] &7сек. '
   vanishSymbolOn: '&8[&7V&8]&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&8(&4●&8)'
-  afkSymbolOff: '&8(&2●&8)'
+  afkSymbolOn: '&8(&4●&8) '
+  afkSymbolOff: '&8(&2●&8) '
   nextPageConsole: '&fFor next page perform &5[command]'
   prevPage: '&7<------- '
   prevPageGui: '&7Назад '
@@ -1320,7 +1320,7 @@ command:
       args: (Ник игрока)
     info:
       # This only determines message in title message and not message shown in chat. For chat message check config.yml file
-      afkTitle: '&eYou are now AFK'
+      afkTitle: '&eВы в АФК-режиме'
       afkSubTitle:
       - '&2Don''t eat to much cookies!'
       - '&2Nice day for fishing'
