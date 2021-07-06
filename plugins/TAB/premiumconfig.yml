@@ -13,44 +13,80 @@ scoreboard:
   toggle-command: /sbr
   permission-required-to-toggle: false
   remember-toggle-choice: false
-  hidden-by-default: false
   use-numbers: false
   static-number: 0
-  delay-on-join-milliseconds: 0
   disable-in-worlds:
   - disabledworld
-  default-scoreboard: admin
+  default-scoreboard: guildsboard
   per-world:
-    testworld: twscoreboard
+    duels: duelsboard
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
 scoreboards:
-  admin:
-    display-condition: permission:tab.scoreboard.admin
-    if-condition-not-met: scoreboard1
-    title: Admin scoreboard
+  guildsboard:
+    # display-condition: '%guilds_code_amount%=0'
+    # if-condition-not-met: scoreboard
+    title: '{#ff6666>}DAILYFIRE{#ffd966<}'
     lines:
-    - Scoreboard for people with permission
-    - tab.scoreboard.admin
-  scoreboard1:
-    title: Default
+    - '             {#40bf40>}SkyBlock{#9fdf9f<}'
+    - '&8| &7    %server_time_d MMM y H:m:s%'
+    - '&8| &7'
+    - '&8|  &7Ник: {#7204e2>}%player_name%{#4dffff<}'
+    - '&8|  &7Привилегия: {#f2c40d}%luckperms_suffix%'
+    - '&8|  &7Золото: &6Ⓖ %vault_eco_balance%'
+    - '&8|  &7Коинов: {#f2c40d}%tm_tokens_formatted%&e₴'
+    - '&7'
+    - '&8|  &7У/C: &e%statistic_player_kills% &8/ &e%statistic_deaths%'
+    - '&8|  &7Посет./Участн.: &e%fabledskyblock_island_visitors%/%fabledskyblock_island_members% чел.'
+    - '&8|  &7Размер: &e%fabledskyblock_island_size%'
+    - '&8|  &7Черепа: &e☠ %tokenenchant_token%'
+    - '&8|  &7Уровень: &e%fabledskyblock_island_level%'
+    - '&8|'
+    - '&8|        {#7204e2>}mc.dailyfire.ru{#4dffff<}'
+  scoreboard:
+    title: '{#ff6666>}DAILYFIRE{#ffd966<}'
     lines:
-    - Scoreboard for players
-  twscoreboard:
-    title: TestWorld
+    - '&7'
+    - '{#7204e2>}&l%player_name%{#4dffff<}'
+    - '{#7204e2}│ {#7204e2>}Ранг:{#4dffff<} {#f2c40d}%luckperms_suffix%'
+    - '{#7204e2}│ {#7204e2>}Энергии:{#4dffff<} {#f2c40d}%aureliumskills_mana%'
+    - '{#7204e2}│ {#7204e2>}У/С:{#4dffff<} {#f2c40d}%deluxecombat_ranking_kd%'
+    - '{#7204e2}│ {#7204e2>}Баланс:{#4dffff<} {#2eb82e}%cmi_user_balance_formated%'
+    - '{#7204e2}└{#7204e2>}Коинов:{#4dffff<} {#f2c40d}%tm_tokens_formatted%&e₴'
+    - '&7'
+    - '{#7204e2>}Сервер:{#4dffff<}'
+    - '{#7204e2}│ {#7204e2>}Пинг:{#4dffff<} {#f2c40d}%player_colored_ping% мс'
+    - '{#7204e2}│ {#7204e2>}Время:{#4dffff<}: &f%server_time_HH:mm:ss%'
+    - '{#7204e2}└{#7204e2>}Онлайн:{#4dffff<} {#f2c40d}%bungee_total%'
+    - '&7'
+    - '    {#7204e2>}mc.dailyfire.ru{#4dffff<}'
+  duelsboard:
+    title: '{#ff6666>}&lDAILYFIRE{#ffd966<}'
     lines:
-    - This is scoreboard for everyone in testworld world
-scoreboard-on: '&2Scoreboard enabled'
-scoreboard-off: '&7Scoreboard disabled'
+    - '&7'
+    - '{#ff5c33}Бой'
+    - '{#b32400}│ {#4d94ff}Набор: {#ff704d}%duels_match_kit%'
+    - '{#b32400}│ {#4d94ff}Ставка: {#ff704d}%duels_match_bet%'
+    - '{#b32400}│ {#4d94ff}Противник: {#ff704d}%duels_match_opponent%'
+    - '{#b32400}└{#4d94ff}Здоровье противника: {#ff704d}%duels_match_opponent_health%'
+    - '&7'
+    - '{#ff5c33}Рейтинг'
+    - '{#b32400}│ {#4d94ff}Ваш: {#ff704d}%duels_match_rating%'
+    - '{#b32400}└{#4d94ff}Противника: {#ff704d}%duels_match_opponent_rating%'
+    - '&7'
+    - '{#ff5c33}Инфорамция'
+    - '{#b32400}│ {#66a3ff}Время боя: {#ff704d}%duels_match_duration%'
+    - '{#b32400}└{#66a3ff}Арена: {#ff704d}%duels_match_arena%'
+    - '{#998066}          mc.dailyfire.ru'
+scoreboard-on: '&8({#4dffff}!&8) {#40bf40>}Меню информации включено{#9fdf9f<}'
+scoreboard-off: '&8({#4dffff}!&8) {#7204e2>}Меню информации выключено{#4dffff<}'
 placeholder-output-replacements:
   '%essentials_vanished%':
-    'yes': '&7| Vanished'
-    'no': ''
+    'Yes': '&7| Vanished'
+    'No': ''
   '%tps%':
-    '20': '&aPerfect'
-  '%cmi_user_afk_symbol%':
-    'yes': ''
-    'no': ''
-align-tabsuffix-on-the-right: false
-character-width-overrides: {}
+    '20': '80'
+extra-character-widths: {}
 conditions:
   health:
     conditions:
@@ -59,6 +95,7 @@ conditions:
     type: AND
     true: Healthy!
     false: Damaged!
+align-tabsuffix-on-the-right: true
 placeholder-order:
 - value1
 - value2
