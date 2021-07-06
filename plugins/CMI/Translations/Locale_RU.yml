@@ -51,7 +51,7 @@ info:
       DontMove: '&4Не двигайся &7[autoTimeLeft] &4сек.!'
       WaitFor: '&4Подожди &7[autoTimeLeft] &4сек.!'
   Spawner: '&r&7Спавнер &f[type]'
- FailedSpawnerMine: '!actionbar!&cНе удалось добыть спавнер. &7[percent]% &cшанс
+  FailedSpawnerMine: '!actionbar!&cНе удалось добыть спавнер. &7[percent]% &cшанс
     выпадения'
   ClickSpawner: '!actionbar!&7[percent]% &eШанс выпадения'
   Elevator:
