@@ -66,7 +66,7 @@ Economy:
     # if this is disabled then payments will be limited to whole numbers and in case player provides number with fraction we will round number down
     Fractions: true
     # Currency symbol to be used when showing balance or similar
-    CurrencySymbol: $
+    CurrencySymbol: '&6 Ⓖ' 
     # Format used for displaying money
     MoneyFormat: '###,##0.00'
     # Converts long numbers to short ones, like 12305122 to 12.3m
