@@ -26,10 +26,9 @@ scoreboards:
   guildsboard:
     # display-condition: '%guilds_code_amount%=0'
     # if-condition-not-met: scoreboard
-    title: '{#ff6666>}DAILYFIRE{#ffd966<}'
+    title: '{#ff6666>}DRAIMCIDO{#ffd966<}'
     lines:
-    - '             {#40bf40>}SkyBlock{#9fdf9f<}'
-    - '&8| &7    %server_time_d MMM y H:m:s%'
+    - '             {#40bf40>}Survival{#9fdf9f<} &7| &f%server_time_d MMM y H:m:s%'
     - '&8| &7'
     - '&8|  &7Ник: {#7204e2>}%player_name%{#4dffff<}'
     - '&8|  &7Привилегия: {#f2c40d}%luckperms_suffix%'
