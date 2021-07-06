@@ -1206,9 +1206,9 @@ teleportation:
 afk:
   'on': '&7AFK'
   'off': '&7Играет'
-  left: '&f[playerDisplayName] &7не в AFK'
-  MayNotRespond: '&7Игрок в AFK и не может отвечать'
-  MayNotRespondStaff: '&7Админ АФК и может не отвечать.'
+  left: '&c&lAFK &8| &7Игрок &c[playerDisplayName] &7больше не AFK'
+  MayNotRespondStaff: '&7Сотрудник сервера AFK и может не отвечать. Попробуйте связаться
+    с нами в группе VK или Discord'
 BossBar:
   hpBar: '&f[victim] &f[max]&7/&f[current] &7(&f-[damage]&7)'
 Potion:
@@ -1316,25 +1316,22 @@ command:
       message: '&f[messsage]'
   afk:
     help:
-      info: '&7Переключить режим AFK'
-      args: (Ник игрока)
+      info: '&fПереключение режима AFK. Причина может быть указана'
+      args: (Ник игрока) (причина)
     info:
       # This only determines message in title message and not message shown in chat. For chat message check config.yml file
       afkTitle: '&eВы в АФК-режиме'
       afkSubTitle:
-      - '&2Don''t eat to much cookies!'
-      - '&2Nice day for fishing'
-      - '&2Afk, again?'
-      - '&2Where are you?'
+      - '&2Приходи скорей!'
   afkcheck:
     help:
-      info: '&7Проверьте статус AFK игрока'
+      info: '&fПроверка статуса игрока'
       args: '[Ник игрока]'
     info:
-      feedback: '&f[playerDisplayName]&7: &f[status]'
-      feedbackInactive: '&7(&c&l!&7) Неактивен в прошлом &f[time]'
+      feedback: '&c[playerDisplayName]&7: &c[status]'
+      feedbackInactive: '&7Неактивен уже &c[time]'
       feedbackAll: '&e[place]. &e[playerDisplayName]&e: &6[status]'
-      feedbackReason: '&f[reason]'
+      feedbackReason: '&c[reason]'
   air:
     help:
       info: '&7Установить кислород игроку'
@@ -2725,7 +2722,7 @@ command:
       newExp: '&7Exp: &6[totalexp]&7exp -> &6[currentexp]&e/&6[needexp] &e(&6[level]&7lvl&e)'
       newPos: '&fPos '
       newPosHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
-      newAfk: 'AFK '
+      newAfk: 'АФК'
       newAfkHover: '&6Afk for last: [time]'
       newBed: '&fBed '
       newBedHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
