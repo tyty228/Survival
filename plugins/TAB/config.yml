@@ -52,8 +52,7 @@ group-sorting-priority-list:
 
 Groups:
   _OTHER_:
-    abovename: '%cmi_user_afk_symbol%'
-    tabprefix: '%cmi_user_vanished_symbol% %cmi_user_prefix%'
+    tabprefix: '%cmi_user_prefix%'
     tagprefix: '%cmi_user_prefix%'
     tabsuffix: '%guilds_formatted%'
     tagsuffix: '%guilds_formatted%'
