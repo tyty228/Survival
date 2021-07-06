@@ -9,8 +9,8 @@ unlimited-nametag-mode-dynamic-lines:
 unlimited-nametag-mode-static-lines:
   myCustomLine: 0.66
 scoreboard:
-  enabled: false
-  toggle-command: /sb
+  enabled: true
+  toggle-command: /sbr
   permission-required-to-toggle: false
   remember-toggle-choice: false
   hidden-by-default: false
@@ -46,6 +46,9 @@ placeholder-output-replacements:
     'no': ''
   '%tps%':
     '20': '&aPerfect'
+  '%cmi_user_afk_symbol%':
+    'yes': ''
+    'no': ''
 align-tabsuffix-on-the-right: false
 character-width-overrides: {}
 conditions:
