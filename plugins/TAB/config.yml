@@ -62,16 +62,8 @@ Groups:
 
 Users:
   TyTy_1337:
-    customtabname: '%cmi_user_afk_symbol%%animation:tyty_prefix%%guilds_formatted%'
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%%animation:tyty_prefix%%guilds_formatted%'
     customtagname: '%animation:tyty_prefix%%guilds_formatted%'
-    tabsuffix: '%animation:animsuf6%'
-  Wider443:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#39e600>}Гл. Строитель{#79ff4d<}{#4d4d33})
-      {#79ff4d>}%nick%{#39e600<}'
-    customtagname: '{#4d4d33}({#39e600>}Гл. Строитель{#79ff4d<}{#4d4d33}) {#79ff4d>}%nick%{#39e600<}'
-  Revolution792:
-    customtabname: '%cmi_user_afk_symbol%%animation:revolution%%animation:revolution2%
-      %guilds_formatted%'
 
 #additional very limited line of text below nametag
 #don't forget this enables on all player entities, which includes NPCs
