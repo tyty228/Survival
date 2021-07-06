@@ -3,7 +3,7 @@
 # Language Settings
 Language:
   # Defines the used language and the corresponding file used. The corresponding language file will be placed next to the config.yml named: <Language>.yml
-  Language: en
+  Language: ru
   # Options:
   #     Overwrite (deletes all changes from the file and extracts a new language file)
   #     Upgrade (extracts a new language file and copy's all settings from the old language file)
