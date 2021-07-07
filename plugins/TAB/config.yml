@@ -52,114 +52,114 @@ group-sorting-priority-list:
 
 Groups:
   dev:
-    tabprefix: '%cmi_user_afk_symbol%{#696969}({#4dffff>}Основатель{#ff1a8c<}{#696969})'
+    tabprefix: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#4dffff>}Основатель{#ff1a8c<}{#696969})'
     customtabname: ' {#ff1a8c>}%nick%{#4dffff<}'
     tagprefix: '{#696969}({#4dffff>}Основатель{#ff1a8c<}{#696969})'
     customtagname: ' {#ff1a8c>}%nick%{#4dffff<}'
     belowname: '&7Здоровье: %health%'
   dev-revol:
-    customtabname: '%cmi_user_afk_symbol%{#696969}({#7204e2>}Со-Основатель{#4dffff<}{#696969})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#7204e2>}Со-Основатель{#4dffff<}{#696969})
       {#4dffff>}%nick%{#7204e2<}'
     customtagname: '{#696969}({#7204e2>}Со-Основатель{#4dffff<}{#696969}) {#4dffff>}%nick%{#7204e2<}'
     belowname: '&7Здоровье: %health%'
   texadm:
-    customtabname: '%cmi_user_afk_symbol%{#696969}({#e60000>}Тех.Админ{#e6cf00<}{#696969})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#e60000>}Тех.Админ{#e6cf00<}{#696969})
       {#e6cf00>}%nick%{#e6cf00<}'
     customtagname: '{#696969}({#e60000>}Тех.Админ{#e6cf00<}{#696969}) {#e6cf00>}%nick%{#e6cf00<}'
     belowname: '&7Здоровье: %health%'
   ga_admin:
     customtagname: '{#4d4d33}({#e6000e>}Гл.Админ{#e6cf00<}{#4d4d33}) {#e6cf00>}%nick%{#e6000e<}'
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#e6000e>}Гл.Админ{#e6cf00<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#e6000e>}Гл.Админ{#e6cf00<}{#4d4d33})
       {#e6cf00>}%nick%{#e6000e<}'
     belowname: '&7Здоровье: %health%'
   zga_adm:
     customtagname: '{#4d4d33}({#CC00FF>}Гл.Админ{#FF0066<}{#4d4d33}) {#FF0066>}%nick%{#CC00FF<}'
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#CC00FF>}Гл.Админ{#FF0066<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#CC00FF>}Гл.Админ{#FF0066<}{#4d4d33})
       {#FF0066>}%nick%{#CC00FF<}'
     belowname: '&7Здоровье: %health%'
   st_adm_surv:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#ff66ff>}Ст.Админ{#800080<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#ff66ff>}Ст.Админ{#800080<}{#4d4d33})
       {#800080>}%nick%{#ff66ff<}'
     customtagname: '{#4d4d33}({#ff66ff>}Ст.Админ{#800080<}{#4d4d33}) {#800080>}%nick%{#ff66ff<}'
     belowname: '&7Здоровье: %health%'
   st_adm_sky:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#66c2ff>}Ст.Админ{#b3e0ff<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#66c2ff>}Ст.Админ{#b3e0ff<}{#4d4d33})
       {#b3e0ff>}%nick%{#66c2ff<}'
     customtagname: '{#4d4d33}({#66c2ff>}Ст.Админ{#b3e0ff<}{#4d4d33}) {#b3e0ff>}%nick%{#66c2ff<}'
     belowname: '&7Здоровье: %health%'
   admin:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#6666ff>}Администратор{#9999ff<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#6666ff>}Администратор{#9999ff<}{#4d4d33})
       {#9999ff>}%nick%{#6666ff<}'
     customtagname: '{#4d4d33}({#6666ff>}Администратор{#9999ff<}{#4d4d33}) {#9999ff>}%nick%{#6666ff<}'
     belowname: '&7Здоровье: %health%'
   st_moder:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#ff5555>}Ст.Модератор{#ffaa00<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#ff5555>}Ст.Модератор{#ffaa00<}{#4d4d33})
       {#ffb31a>}%nick%{#ffc44d<}'
     customtagname: '{#4d4d33}({#ff5555>}Ст.Модератор{#ffaa00<}{#4d4d33}) {#ffb31a>}%nick%{#ffc44d<}'
   builder:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#39e600>}Строитель{#79ff4d<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#39e600>}Строитель{#79ff4d<}{#4d4d33})
       {#79ff4d>}%nick%{#39e600<}'
     customtagname: '{#4d4d33}({#39e600>}Строитель{#79ff4d<}{#4d4d33}) {#79ff4d>}%nick%{#39e600<}'
     belowname: '&7Здоровье: %health%'
   redaktor:
-    customtabname: '%cmi_user_afk_symbol%{#696969}({#017987>}Редактор{#005CE6<}{#696969})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#017987>}Редактор{#005CE6<}{#696969})
       {#005CE6>}%nick%{#991199<}'
     customtagname: '{#696969}({#017987>}Редактор{#005CE6<}{#696969}) {#005CE6>}%nick%{#991199<}'
     belowname: '&7Здоровье: %health%'
   moder:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#6666ff>}Модератор{#9999ff<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#6666ff>}Модератор{#9999ff<}{#4d4d33})
       {#6666ff>}%nick%{#9999ff<}'
     customtagname: '{#4d4d33}({#6666ff>}Модератор{#9999ff<}{#4d4d33}) {#6666ff>}%nick%{#9999ff<}'
   stazer:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#99cc00>}Стажер{#d2ff4d<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#99cc00>}Стажер{#d2ff4d<}{#4d4d33})
       {#d2ff4d>}%nick%{#99cc00<}'
     customtagname: '{#4d4d33}({#99cc00>}Стажер{#d2ff4d<}{#4d4d33}) {#d2ff4d>}%nick%{#99cc00<}'
     belowname: '&7Здоровье: %health%'
   youtube:
-    customtabname: '%cmi_user_afk_symbol%{#696969}({#ff0000>}YouTube{#ffb3b3<}{#696969})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#ff0000>}YouTube{#ffb3b3<}{#696969})
       {#ffb3b3>}%nick%{#ff0000<}'
     customtagname: '{#696969}({#ff0000>}YouTube{#ffb3b3<}{#696969}) {#ffb3b3>}%nick%{#ff0000<}'
     belowname: '&7Здоровье: %health%'
   support:
-    customtabname: '%cmi_user_afk_symbol%%animation:support%'
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%%animation:support%'
     customtagname: '%animation:support%'
     belowname: '&7Здоровье: %health%'
   omega:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#ff4d4d>}Omega{#ff9999<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#ff4d4d>}Omega{#ff9999<}{#4d4d33})
       {#ff9999>}%nick%{#ff4d4d<}'
     customtagname: '{#4d4d33}({#ff4d4d>}Omega{#ff9999<}{#4d4d33}) {#ff9999>}%nick%{#ff4d4d<}'
     belowname: '&7Здоровье: %health%'
   sigma:
-    customtabname: '%cmi_user_afk_symbol%%animation:sigma%'
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%%animation:sigma%'
     customtagname: '%animation:sigma%'
     belowname: '&7Здоровье: %health%'
   blaze:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#ff4d94>}Blaze{#e6005c<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#ff4d94>}Blaze{#e6005c<}{#4d4d33})
       {#e6005c>}%nick%{#ff4d94<}'
     customtagname: '{#4d4d33}({#ff4d94>}Blaze{#e6005c<}{#4d4d33}) {#e6005c>}%nick%{#ff4d94<}'
     belowname: '&7Здоровье: %health%'
   yota:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#29a3a3>}Yota{#99e6e6<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#29a3a3>}Yota{#99e6e6<}{#4d4d33})
       {#99e6e6>}%nick%{#29a3a3<}'
     customtagname: '{#4d4d33}({#29a3a3>}Yota{#99e6e6<}{#4d4d33}) {#99e6e6>}%nick%{#29a3a3<}'
     belowname: '&7Здоровье: %health%'
   delta:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#cc00cc>}Delta{#ff66ff<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#cc00cc>}Delta{#ff66ff<}{#4d4d33})
       {#ff66ff>}%nick%{#cc00cc<}'
     customtagname: '{#4d4d33}({#cc00cc>}Delta{#ff66ff<}{#4d4d33}) {#ff66ff>}%nick%{#cc00cc<}'
     belowname: '&7Здоровье: %health%'
   epsilon:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#006666>}Epsilon{#00e6e6<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#006666>}Epsilon{#00e6e6<}{#4d4d33})
       {#00e6e6>}%nick%{#006666<}'
     customtagname: '{#4d4d33}({#006666>}Epsilon{#00e6e6<}{#4d4d33}) {#00e6e6>}%nick%{#006666<}'
     belowname: '&7Здоровье: %health%'
   alpha:
-    customtabname: '%cmi_user_afk_symbol%{#4d4d33}({#e6e600>}Alpha{#ffff99<}{#4d4d33})
+    customtabname: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#4d4d33}({#e6e600>}Alpha{#ffff99<}{#4d4d33})
       {#ffff99>}%nick%{#e6e600<}'
     customtagname: '{#4d4d33}({#e6e600>}Alpha{#ffff99<}{#4d4d33}) {#ffff99>}%nick%{#e6e600<}'
     belowname: '&7Здоровье: %health%'
   default:
-    tabprefix: '%cmi_user_afk_symbol%{#696969}({#cc7a00>}Игрок{#ffc266<}{#696969}) '
+    tabprefix: '%cmi_user_vanished_symbol%%cmi_user_afk_symbol%{#696969}({#cc7a00>}Игрок{#ffc266<}{#696969}) '
     customtabname: '{#ffc266>}%nick%{#cc7a00<}'
     tagprefix: '{#696969}({#cc7a00>}Игрок{#ffc266<}{#696969}) '
     customtagname: '{#ffc266>}%nick%{#cc7a00<}'
