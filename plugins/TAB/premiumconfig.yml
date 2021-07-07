@@ -28,13 +28,13 @@ scoreboards:
     # if-condition-not-met: scoreboard
     title: '{#ff6666>}DRAIMCIDO{#ffd966<}'
     lines:
-    - '   {#40bf40>}Survival{#9fdf9f<} &7| &f%server_time_HH:mm%'
+    - '{#40bf40>}&lSurvival{#9fdf9f<} &7| &f%server_time_HH:mm:ss%'
     - '&8| &7'
     - '&8|  &7Ник: {#7204e2>}%player_name%{#4dffff<}'
     - '&8|  &7Привилегия: {#f2c40d}%luckperms_suffix%'
     - '&8|  &7Золото: &6Ⓖ %vault_eco_balance%'
     - '&8|  &7Коинов: {#f2c40d}%tm_tokens_formatted%&e₴'
-    - '&8| {#40bf40>}Гильдия{#9fdf9f<}'
+    - '{#40bf40>}&lГильдия{#9fdf9f<}'
     - '&8|  &7Ранг: &f%guilds_role%'
     - '&8|  &7Участники онлайн: &f%guilds_members_online%/%guilds_max_members%'
     - '&8|  &7Статус: &f%guilds_tier_name%'
