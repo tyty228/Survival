@@ -70,7 +70,7 @@ Combat:
   disabled-worlds: []
 Death:
   corpses:
-    enable: false
+    enable: true
     remove_after: 30
     despawn-in-lava: false
     despawn-empty-inventory: false
@@ -82,7 +82,8 @@ Death:
     force-load-chunk: false
     drop-items-after-removal: false
     inventory-name: '&4#%player%'
-  custom_death_messages: false
+    disabled-worlds: []
+  custom_death_messages: true
   instant_respawn: false
   respawn_at_nearest_spawnpoint: false
   drop_head:
@@ -115,11 +116,11 @@ Death:
   kill-recaps:
     broadcast-only-to-victim: false
     fill_recap_inv: true
-    broadcast: false
+    broadcast: true
     enable: true
     remove-back-item: false
     broadcast-only-to-victim-assists: false
-  custom_death_messages_prefix: false
+  custom_death_messages_prefix: true
   lightning-on-kill:
     enable: false
   respawn_at_random_spawnpoint: false
@@ -127,7 +128,7 @@ Death:
   void-tp-to-nearest-spawnpoint: false
   commands-when-no-bed-placed: []
 PvP_Settings:
-  disable_fly: true
+  disable_fly: false
   modified_knockback:
     enable: false
     ground:
@@ -176,7 +177,7 @@ PvP_Settings:
   pvptogglecommand:
     cooldown-on-kill: false
     save-on-quit: true
-    enable: false
+    enable: true
     show-in-scoreboard: false
     use-scoreboard-groups: false
     cooldown: 1800
@@ -196,7 +197,7 @@ PvP_Settings:
   display-cooldown-in-actionbar: true
   newbie-protection:
     enable: false
-    duration: 1
+    duration: 24
     disable-all-damage: true
   gold-apple-cooldown:
     enable: false
@@ -290,6 +291,7 @@ PvP_Settings:
     disable-mending-in-combat: false
   old-armor-strength:
     damage-reduction-per-point: 0.04
+  disable-riptide: false
 Point-Ranking-System:
   enable-diplaynames: true
   enable: false
@@ -313,7 +315,7 @@ General:
   disabled_worlds: []
   loading-stats-message: false
   command-alias: []
-  hex-color-support: false
+  hex-color-support: true
   use-custom-placeholder-values: false
   check_for_new_language_changes: true
 Healthbar:
@@ -469,3 +471,4 @@ apple-effects:
   god-apple: []
 sellheads: []
 kill-abuses: []
+saved_experience: []
