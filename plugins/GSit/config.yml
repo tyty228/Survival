@@ -1,14 +1,14 @@
 Lang:
   
   # Defines the Plugin-Language
-  lang: en_en
+  lang: ru_ru
   
   
   
 Options:
   
   # Checks if a new Update was released
-  check-for-update: true
+  check-for-update: false
   
   Sit:
     
@@ -116,13 +116,14 @@ Options:
   MaterialWhiteList: []
   
   # Defines the List of Materials that a Player cannot sit nor lay on
-  MaterialBlackList: []
+  MaterialBlackList:
+  - "BEDROCK"
   
   # Defines the List of Commands that cannot be executed while sitting or lying down (Commands must be lowercase!)
   BlockedCommandList: []
   
   # Defines whether the Player gets up when they take Damage
-  get-up-on-damage: false
+  get-up-on-damage: true
   
   # Defines whether a Player can only sit or lay in their own Plots
   sit-lay-only-in-own-plot: false
