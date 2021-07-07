@@ -44,7 +44,7 @@ scoreboards:
   scoreboard:
     title: '{#ff6666>}DRAIMCIDO{#ffd966<}'
     lines:
-    - '   {#40bf40>}Survival{#9fdf9f<} &7| &f%server_time_HH:mm:ss%'
+    - '&f%server_time_HH:mm:ss% &7| {#40bf40>}&lSurvival{#9fdf9f<} &7| &f%player_colored_ping% мс'
     - '&8| &7'
     - '&8|  &7Ник: {#7204e2>}%player_name%{#4dffff<}'
     - '&8|  &7Привилегия: {#f2c40d}%luckperms_suffix%'
@@ -54,7 +54,7 @@ scoreboards:
     - '&8|  &7Онлайн: {#f2c40d}%bungee_total%'
     - '&8|  &7Пинг: {#f2c40d}%player_colored_ping% мс'
     - '&8|'
-    - '&8|     {#ff6666>}mc.draimcido.ru{#ffd966<}'
+    - '     {#ff6666>}mc.draimcido.ru{#ffd966<}'
   duelsboard:
     title: '{#ff6666>}DRAIMCIDO{#ffd966<}'
     lines:
