@@ -1,0 +1,435 @@
+# 
+#                                                                                                            #
+# ______     _                _____                 _           _                                            #
+# |  _  \   | |              /  __ \               | |         | |                                           #
+# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
+# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
+# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
+# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
+combat-logger:
+  potion-disabled-during-combat: '&b&lℹ&7 &7Это зелье отключено во время боя!'
+  damage-to-enemy: '&b&lℹ&7 &7Вы сейчас в &cбое &7с &f%victim%&7, не выходите с игры!'
+  damage-from-enemy: '&b&lℹ&7 &f%damager% &7сейчас в &cбое &7с тобой, не выходите
+    с игры!'
+  disabled-command: '&b&lℹ&7 &7Вы не можете использовать команду &2%command% &7пока
+    вы в бою.'
+  leave-broadcast: '&b&lℹ&7 &e%player% &7вышел, пока сражался с &f%damager%'
+  items-broadcast: '&b&lℹ&7 &f%player%''s &7предметы находятся по координатам: &f%world%&7,
+    &f%x%&7,&f %y%&7,&f %z%'
+  combat-expired-player: '&b&lℹ&7 &7Вы больше не боретесь c &f%victim%&7.'
+  combat-expired: '&b&lℹ&7 &7Вы &aне &7в бою больше, теперь вы можете спокойно выйти
+    с игры.'
+  enderpearl-disabled-during-combat: '&8(&c&l✘&8)&7 Жемчуг Эндера нельзя использовать
+    во время боя!'
+  chorusfruit-disabled-during-combat: '&8(&c&l✘&8)&7 Во время боя нельзя использовать
+    хорус!'
+  totem-disabled-during-combat: '&8(&c&l✘&8)&7 В бою нельзя использовать тотемы бессмертия!'
+  elytra-disabled-during-combat: '&8(&c&l✘&8)&7 Нельзя использовать элитры во время
+    боя!'
+  building-disabled-during-combat: '&8(&c&l✘&8)&7 Вы не можете строить во время боя!'
+  deny-pvp-deny-enter: '&8(&c&l✘&8)&7 Вы не можете войти в этот регион во время боя!'
+  display-time-bossbar: '&e&o%time%s &cИдёт Бой &r&e&o%time%s'
+  display-time-actionbar: '%progressbar% &r&e- &c%time%s'
+  player-is-already-fighting: '&b&lℹ&7 &f%victim% &7уже воюет с другим игроком! Ты
+    не можешь его сейчас ударить.'
+  combat-enter-title: none
+  combat-enter-subtitle: none
+  combat-leave-title: none
+  combat-leave-subtitle: none
+  you-cant-do-that-during-combat: '&eYou cannot do that during combat.'
+  damage-to-from-entity: '&eYou are now in &ccombat &ewith &c%entity% &eso do not
+    quit!'
+  leave-broadcast-entity: '&c%player% &eleft while he was in combat with &c%entity_name%
+    &e(&c%entity%&e)!'
+  tagged-list-no-players-tagged: ' &fNo players are tagged at the moment.'
+  tagged-list:
+  - ' '
+  - ' &6&lTagged players'
+  - ' '
+  - ' %tagged_players%'
+  - ' '
+death-sign:
+  line1: Р.И.П.
+  line2: '%player%'
+  line3: Умер за
+  line4: выход
+death-causes:
+  void: '&8(&c&l☠&8) &f%player% &7упал в мировую дыру и умер'
+  void_player: '&8(&c&l☠&8) &7Игрок &f%killer% &7избавился от трупа &f%player%&7,
+    выкинув его в пустоту'
+  shoot: '&8(&c&l☠&8) &f%killer% &7случайно пробил &f%player% &7фотоаппарат стрелой'
+  drown: '&8(&c&l☠&8) &f%player% &7пытался найти кольцо в воде и задохнулся'
+  lava: '&8(&c&l☠&8) &f%player% &7споткнулся и упал в лаву'
+  fall: '&8(&c&l☠&8) &f%player% &7не рассчитал высоту и упал с горы'
+  magic: '&8(&c&l☠&8) &f%player% &7выпил &nне то &r&7зелье'
+  magic_player: '&8(&c&l☠&8) &f%killer%&7 отравил зельем &f%player%'
+  fire: '&8(&c&l☠&8) &c%player% &eиграл с огнём и сгорел'
+  none: '&8(&c&l☠&8) &c%player% &eпросто умер'
+  sword_kill: '&8(&c&l☠&8) &f%killer% &7убил &f%player% &7и нанёс пару ножевых ранений
+    используя предмет: &e%item_name%'
+  explosion_player: '&c%player% &egot blown up by &c%killer%&e!'
+corpses-messages:
+- '&7Тут был &f%player%'
+- '&7Похоже это труп &f%player%'
+- '&f%player%&7 сказал: &6gg'
+- '&f%player%&7 здесь похоронен!'
+- '&f%player%&7 не ожидал этого!'
+Points-Ranking-System:
+  unknown-input-stats: '&7Неизвестный ввод: Выберите одну из этих характеристик: KILLS,
+    DEATHS, POINTS, COMBATLOGS'
+  not-loaded-atm: '&cЭта статистика на данный момент не загружена! Попробуйте позже!'
+  disabled: '&cСистема рейтинга отключена!'
+  reset: '&cВаша статистика очищена!'
+  reset-other: '&cСтатистика игрока &4%player% &cбыла очищена!'
+  add-kill: '&a+1 &r&7Убийство'
+  add-death: '&c+1 &r&7Смерть'
+  add-points: '&a+%points% &r&7очков'
+  remove-points: '&c%points% &r&7очков'
+  your-rank: '&7Ваш ранг: &a#%rank%&r&7. Рассчитано из %value%'
+  players-rank: '&7Ранг игрока %player%: &e#%rank%&r&7. Рассчитано из %value%'
+  ranking-placeholder-format: '&e%rank%. &b%player% &7- &e%amount%'
+  sign-layout:
+  - '#%rank%'
+  - ' '
+  - '&o%player%'
+  - '%amount% %value%'
+  pvp-stats:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '               &cPvP статистика                '
+  - '                  &e%player%                   '
+  - ' '
+  - '&8- &cУбийств: &e%kills%'
+  - '&8- &cСмертей: &e%deaths%'
+  - '&8- &cУ/С: &e%kd%'
+  - '&8- &cВыходов из игры: &e%combatlogs%'
+  - '&8- &cОчков: &e%points%'
+  - '&8- &cСерия убийств: &e%streak%'
+  - '&8- &cМакс. серия убийств: &e%highest_streak%'
+  - '&8- &cМесто в топе: &e#%rank% &7(%sort%)'
+  - '&4&m#&c&m---------------------------------&4&m#'
+  loading-data: '&7&oЗагрузка данных...'
+  stats-loaded: '&7Ваша статистика загружена.'
+bounty:
+  bounty: Подарок
+  someone: Кто-то
+  created-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &fYou have successfully set a bounty on &e%target%&f.'
+  - ' '
+  - ' &fThe first player that kills this player will get &e%bounty%$&f.'
+  - ' &e%percentage%% &fof the bounty (&e%tax%$&f) were taken as tax.'
+  - ' '
+  bounty-on-you-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &c%initiator% &fhas set a bounty on you!'
+  - ' &fThe first player that kills you gets &e%bounty%$&f!'
+  - ' '
+  bounty-broadcast-message-list:
+  - ' '
+  - ' &6&lBounty Broadcast'
+  - ' &e%initiator% &fhas set a bounty on &c%target%&f!'
+  - ' &fThe first player that kills &c%target% &fgets &e%bounty%$&f!'
+  - ' '
+  bounty-claimed-broadcast: '&e%player% &fhas claimed &e%target%''s &fbounty! (&e$%bounty%&f)'
+  bounty-claimed: '&7У вас claimed &c%target%''s &ebounty! You gained &a$%bounty%&e!'
+  no-bounty-on-target: '&eThere is no bounty on &c%target%&e!'
+  bounty-information-list:
+  - ' '
+  - ' &6&lBounty information'
+  - ' &eBounty on: &f%target%'
+  - ' &eBounty: &f$%bounty%'
+  - ' &eTime left: &f%time%'
+  - ' '
+  bounty-expired-broadcast: '&fThe bounty on &e%target% &fis expired.'
+  bounty-expired-initiator: '&fYour bounty on &e%target% &fis expired. You got &e$%bounty%
+    &fback.'
+  accept-item: '&aAccept'
+  accept-item-lore: '&7Click to create the bounty'
+  cancel-item: '&cCancel'
+  cancel-item-lore: '&7Click to abbord the bounty'
+  anonymous-item-on: '&eAnonymous: &aOn'
+  anonymous-item-on-lore: '&7This bounty will be set anonymous.=&7That means, nobody
+    can see that=&7you are the initiator of it!'
+  anonymous-item-off: '&eAnonymous: &cOff'
+  anonymous-item-off-lore: '&7This bounty wont be set anonymous.=&7That means, everybody
+    can see that=&7you are the initiator of it!'
+  target-item: '&eTarget: &b%target%'
+  target-item-lore: '&7Click to change the target.'
+  bounty-amount-item: '&eBounty: &b$%with_tax%'
+  bounty-amount-item-lore: '=&foriginal Bounty: &c%without_tax%=&f- Tax (&7%tax%&f):
+    %tax_amount%= =&7Click to change bounty.'
+  type-in-targetname: '&ePlease type in the name of the target:'
+  type-in-bounty: '&ePlease type in a bounty value: &f(Min: $%min%, Max: $%max%)'
+  already-bounty-on-target: '&eThere is already an active bounty set on that target!'
+  bounty-stack-added: '&7У вас added &f%value%$ &eto the active bounty of &f%target%&e!
+    &eBounty now: &f%bounty%$'
+  cant-set-bounty-on-yourself: '&eYou cant set a bounty on &cyourself&e!'
+  target-not-able-to-fight: '&c%target% &eis not able to fight at the moment!'
+  setup-cancelled: '&eBounty setup cancelled.'
+  bounty-list-message-list:
+  - ' '
+  - ' &6&lBounties'
+  - ' '
+  - ' &fCurrently active:'
+  bounty-list-message-entry: ' &e%target%&f, Bounty: &f$%bounty%&f, Initiator: &e%initiator%'
+  target-immune-against-bounty: '&c%target% &eis immune against bounties! Bounty setup
+    cancelled.'
+  no-bounties-active: '&cThere are no active bounties at the moment.'
+  bounty-help-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &f/%cmd% create &e- Create a bounty'
+  - ' &f/%cmd% list &e- List all bounties'
+  - ' &f/%cmd% expire (Player) &e- Expire the bounty of a player'
+  - ' &f/%cmd% compass &e- Point your compass to a bounty'
+  - ' '
+  bounty-list-menu-title: Bounty List
+  bounty-entry-item-title: '&6&o%target%'
+  bounty-entry-item-lore: '&fBounty: &e$%bounty%=&fInitiator: &e%initiator%=&fTime
+    left: &e%time%'
+  bounty-compass-linked: '&eYour compass now points to &c%target%&e. Right-Click to
+    update / to see, how far the bounty is away from you.'
+  bounty-no-compass-in-hand: '&eYou have no compass in your hand.'
+  bounty-too-many-compass: '&ePlease only put one compass in your hand.'
+  bounty-compass-cooldown: '&ePlease wait &c%time% &ebefore you update your compass
+    again.'
+  bounty-compass-title: '&6&lBounty Tracker'
+  bounty-compass-lore: '&fTarget: &e%target%==&7&oRight-Click to update'
+  bounty-compass-update: '&eCompass updated. &c%target% &eis &c%blocks% &eblocks away
+    from you!'
+  bounty-successfully-removed: '&eYou successfully have removed the bounty on &a%target%&e!'
+  bounty-is-customized: '&ePlease put an un-customized compass in your hand.'
+  bounty-expired-by-initiator: '&eYou paid &c$%amount% &eto expire your bounty.'
+  no-bounty-on-you: '&cThere is no bounty on you!'
+general:
+  no-permission: '&fДля помощи пропишите - &8/&6help'
+  help-message: '&7Напишите &c/%cmd% help &7для помощи!'
+  number-between: '&eПожалуйста, выберите число между &c%min% &и %max%&e!'
+  not-a-number: '&c%input% &eэто не число!'
+  help-list:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '                  &cDraimPvP                   '
+  - ' '
+  - '&8- &c/%cmd% help &8> &7Показывает это сообщение'
+  - '&8- &c/tag [Player] &8> &7Показывает ваш боевой статус'
+  - '&8- &c/pvpstats [Player] &8> &7Показывает вашу pvp-статистику'
+  - '&8- &c/pvpstats reset &8> &7Сбросить статистику'
+  - '&8- &c/grace &8> &7Показывает ваш льготный статус'
+  - '&8- &c/grace disable &8> &7Отключает вашу милость'
+  - '&8- &c/sellhead&8> &7Продать голову в руке'
+  - '&8- &c/%cmd% lb (Stats) &8> &7Показывает статистику лидеров'
+  - ' '
+  - '&8(): &cНеобходимые&7, []: &cПо желанию'
+  - '&4&m#&c&m---------------------------------&4&m#'
+  placeholder-messages:
+    yes-message: '&aДа'
+    no-message: '&cНет'
+    question-message: ???
+  headshot-actionbar: '&a&oВыстрел в голову для %player%!'
+  killer-drops-unlocked-in: '&eДроп разблокируются: &c%time%s'
+  killer-drops-are-locked-next: '&eВаш дроп защищена ещё &a%time%s&e!'
+  killer-drops-are-unlocked: '&eВаш дроп больше не защищен и теперь может быть подобран
+    всеми!'
+  victim-drops-unlocked-notification: '&eВаш дроп теперь разблокирован. Вы можете
+    забрать его снова на &c%x%&e, &c%y%&e, &c%z%'
+  ghost-killed: '&c%attacker% &eубил призрак &c%victim%&e!'
+  ghost-name: '&6%victim% &e[&cНе в сети&e]'
+  damage-indicator:
+    critical: '&c&lКритический удар! &e&o(- %damage%)'
+    normal-damage: '&c&o- %damage%'
+  spawnpoint-msg: '&eВы были телепортированы в: %spawnpoint%'
+  spawnpoint-title: '%spawnpoint%'
+  spawnpoint-subtitle: '&f&oДобро пожаловать, %player%!'
+  please-wait-gold-apple: '&7Пожалуйста, подождите &4%time% &cпрежде чем вы сможете
+    использовать следующее золотое яблоко'
+  please-wait-god-apple: '&7Пожалуйста, подождите &4%time% &cпрежде чем вы сможете
+    использовать следующее зачарование яблоко'
+  enderpearls-block-invalid: '&cЧтобы предотвратить сбой, нельзя бросать жемчужину
+    края в этот блок: &4%block%'
+  enderpearls-not-enough-space: '&cTМежду двумя блоками, в которые вы хотите телепортироваться,
+    недостаточно места.'
+  enderpearls-disabled: '&cЖемчуги эндера отключены на этом сервере'
+  chorusfruits-disabled: '&cЦветки хоруса отключены на этом сервере'
+  totems-disabled: '&cТотемы бессмертия отключены на этом сервере'
+  elytras-disabled: '&cЭлитры отключены на этом сервере'
+  elytra-has-been-dropped: '&cВаш инвентарь полон. Ваши надкрылья упали.'
+  please-wait-enderpearl: '&7Пожалуйста, подождите &4%time% &cбольше секунд, пока
+    вы снова не сможете использовать эндемерл'
+  please-wait-chorusfruit: '&7Пожалуйста, подождите &4%time% &cбольше секунд, пока
+    вы снова не сможете использовать хорус'
+  please-wait-totem: '&7Пожалуйста, подождите &4%time% &cеще секунд, пока вы не сможете
+    использовать следующий тотем бессмертия'
+  please-wait-actionbar: '&6&l%material% &r&f- (&e%time%s&f)'
+  grace-left: '&a%player% для следующего &2%time% &aзащищен от всех видов повреждений!'
+  no-grace-active: '&cУ вас нет активной защиты.'
+  grace-disabled: '&cВы отключили свою защиту. Вы больше не защищены от всех видов
+    повреждений!'
+  grace-disabled-by-admin: '&c%player% отключил вашу защиту. Вы больше не защищены
+    от всех видов повреждений!'
+  player-has-grace-active: '&cВы не можете сражаться с этим игроком, потому что у
+    него активная защита для новичков!'
+  you-have-grace-active: '&cВы не можете сражаться с этим игроком, потому что у вас
+    есть активная защита для новичков! Подождите &4%time% &cили введите &4/grace disable'
+  anti-kill-abuse: '&cВы убили игрока %victim% %amount% раз! Вы можете убить его снова
+    в &4%time%!'
+  reached-kill-max: '&cВы достигли макс. количества (%amount%) убийств с помощью %victim%!
+    Теперь вы не можете убить его за: &4%time%'
+  flying-not-allowed-during-combat: '&cВо время боя летать нельзя!'
+  potion-disabled: '&cЭто зелье отключено на сервере!'
+  player-not-online: '&cЭтого игрока нет в сети!'
+  player-not-in-combat: '&a%player% &7не в боевом режиме!'
+  player-in-combat: '&c%player% &7находится в боевом режиме!'
+  still-in-combat: '&eТы все еще в &cбою&e! Не выходи с игры!'
+  not-in-combat: '&aВы не в бою! Вы можете покинуть сервер!'
+  deny-gamemode: '&cВы не можете поразить других игроков, пока находитесь в творческом
+    режиме игры!'
+  vault-add-money-kill: '&7Вы получили &a%amount% %currency% &7за убийство &c%victim%'
+  vault-remove-money-death: '&7Вы проиграли &c%amount% %currency% &7из-за смерти'
+  vault-remove-money-lost-head: '&7Вы проиграли &c%amount% %currency% &7потому что
+    ты потерял голову во время драки!'
+  vault-not-enough-money: '&cУ тебя мало денег! (&4%amount%&c)'
+  sellhead-successfully-redeemed: '&eВы успешно выкупили отрубленную голову &6%player%&e.
+    Ты получил &a%amount% %currency%&e.'
+  sellhead-already-redeemed: '&eВы &cуже &eвыкупил эту голову.'
+  sellhead-unknown-head: '&eЭта голова уже выкуплена или недействительна.'
+  sellhead-displayname: '&eРасчлененная голова: &c%victim%'
+  sellhead-lore: '&fСтоимость: &e%amount% %currency%=&f&oМожно продать за /sellhead'
+  healthbar-bossbar-message: '&cЗдоровье %player% &e(&c%health% ❤&e)'
+  cannot-teleport-to-death-location: '&cМесто вашей смерти было удалено или у вас
+    его нет!'
+  teleported-to-death-location: '&aВы были телепортированы в место последней смерти.'
+  pvp-toggle-cmd-has-been-disabled: '&cВы не можете использовать эту команду, потому
+    что она была отключена администратором сервера!'
+  pvp-toggle-enabled: '&7У вас &aвключен &eПвП-режим. Ты можешь сейчас &aбить &eдругих
+    игроков!'
+  pvp-toggle-disabled: '&7У вас &cвыключен &eПвП-режим. Ты больше не можешь &cбить
+    &eдругих игроков!'
+  pvp-still-disabled: '&eВаш пвп &cотключён&e! Включите его снова с помощью &c/togglepvp'
+  player-has-pvp-disabled: '&eВы &cне можете &eбить этого игрока, потому что у него
+    отключен ПвП-режим!'
+  pvp-toggle-cmd-disabled-in-this-world: '&cВы не можете использовать эту команду
+    в этом мире!'
+  lava-fire-not-allowed: '&eВы не можете разместить &c%type% &eрядом с этим игроком,
+    потому что у него отключена защита или пвп.'
+  fire: огонь
+  lava: лава
+  time:
+    hours: часов
+    hour: час
+    minutes: минут
+    minute: минута
+    seconds: секунд
+    second: секунда
+    days: days
+    day: day
+  please-wait-before: '&7Пожалуйста, подождите &4%time% &cпрежде чем вы сможете сделать
+    это снова!'
+  kill-recap:
+    click-to-view-recap: '&7Нажмите, чтобы просмотреть &e&lПОВТОР &r&7этого боя!'
+    inv-name: '&4Повтор убийства'
+    close: '&c&lЗакрыть'
+    close-lore: '&7Нажмите, чтобы закрыть=&7повтор убийства'
+    exit: '&c&lВыйти'
+    exit-lore: '&7Нажмите, чтобы выйти=&7с повторов убийства'
+    back: '&e&lНазад'
+    back-lore: '&7Нажмите, чтобы вернуться'
+    list-recap: '&6%killer% &b&lпротив &r&c%victim%'
+    list-recap-lore: '&7Смотрите информацию об этом бою=&7Дата: %date%'
+    victim: '&cЖертва: &4%victim%'
+    victim-lore: '&7Убит игроком &6%killer%'
+    killer-weapon: '&c&lОружие: &r%item_name%'
+    killer-weapon-lore: '&7Используемое оружие'
+    damage-dealt: '&cНанесенный ущерб'
+    damage-dealt-lore: '&7Урон, нанесенный жертвой=&7во время боя= =&eНанесенный ущерб:
+      &c%damage_dealt%'
+    damage-taken: '&eУрон'
+    damage-taken-lore: '&7Урон, нанесенный жертвой=&7во время боя= =&eУрон: &c%damage_taken%'
+    killer: '&eУбийца: &6%killer%'
+    killer-lore: '&7Этот игрок убит &c%victim%= =&eУрон: &c%damage_taken%=&eОсталось
+      сердец: &d%hearts_left%=&eНанесенный ущерб: &c%damage_dealt%'
+    potioneffects: '&dЗелье эффекты'
+    potioneffects-lore: '&7Жертва была повреждена =&7этими эффектами зелья: %potioneffects%'
+    potioneffect-lore: '&e- &5%potiontype%'
+    assistants: '&bСообщники'
+    assistants-lore: '&7Эти игроки=&7помогали убийце:: %assistants%'
+    assistant-lore: '&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%'
+    fists: кулаки
+  no-item-in-hand: '&eYou have no item in your hand!'
+  stattrak:
+    help-list:
+    - ' '
+    - ' &6&lStatTrak'
+    - ' '
+    - ' &f/stattrak inspect &e- Inspect a StatTrak item'
+    - ' &f/stattrak register &e- Register a StatTrak for %cost%$'
+    - ' &f/stattrak changeOwner (Owner) &e- Change the owner'
+    - ' &f/stattrak reset &e- Reset the StatTrak on your item'
+    - ' '
+    inspect-message-list:
+    - ' '
+    - ' &6&lStatTrak'
+    - ' '
+    - ' &e- Item: &f%item%'
+    - ' &e- Kills: &f%kills%'
+    - ' &e- Owner: &f%owner%'
+    - ' '
+    title: '&6&lStatTrak'
+    subtitle: '&eKills: &f%kills%&e'
+    item-has-no-stattrak: '&eThis item has no StatTrak attached to it!'
+    item-stattrak-registered: '&eYou have successfully purchased a StatTrak for your
+      item (Cost: &f%cost%$&e)!'
+    item-stattrak-already-registered: '&eThis item already has a StatTrak attached
+      to it!'
+    item-not-allowed: '&eYou cannot attach a StatTrak to this item!'
+    change-owner: '&eYou successfully changed the owner to: &f%owner%&e!'
+    you-are-not-the-owner: '&eYou cant do that because you are not the owner of this
+      StatTrak!'
+    reseted: '&eYou have successfully reset the StatTrak!'
+    actionbar-message: '&eStatTrak: &f%kills% Kills&e, Owner: &f%owner%'
+  enabled: '&aenabled'
+  disabled: '&cdisabled'
+  interval-ended-msg: '&eA PvP period has ended. PvP is now %status% &efrom &c%from%
+    &eto &c%to%&e!'
+  interval-started-msg: '&eA PvP period has started! PvP is now %status% &efrom &a%from%
+    &euntil &a%to%&e!'
+  pvp-enabled-title: '&aPvP is now enabled!'
+  pvp-enabled-subtitle: '&7You can now fight others!'
+  pvp-disabled-title: '&cPvP is now disabled!'
+  pvp-disabled-subtitle: '&7You cant fight now!'
+  interval-toggle-not-allowed: '&eYou cant toggle your pvp in this world.'
+  pvp-enabled-wrldgrd-info: '&ePvP is now enabled in this world, but it seems like
+    the region you are currently in is a &cnon-pvp &eregion!'
+  pvp-toggle-no-players-found: '&fNo players have their pvp %filter%&r&f!'
+  pvp-toggle-list:
+  - ' '
+  - ' &6&lPvP Status &r&f(Filter: %filter%&r&f)'
+  - ' '
+  - ' %players_status%'
+  - ' '
+  you-cant-do-that-world: '&eYou cant do that in this world!'
+  you-cant-do-that-region: '&eYou cant do that in this region!'
+  blacklisted-enchantment-title: '&c&l!Warning!'
+  blacklisted-enchantment-subtitle: '&eYour item contains blacklisted enchantments!'
+  blacklisted-enchantment-msg: '&eThe item in your hand has &cblacklisted enchantments
+    &eon it. You cant use it right now!'
+  pvp-toggle-confirmation-needed: '&eUse &c/togglepvp confirm &eto confirm that you
+    want to toggle your pvp. Use &c/togglepvp deny &eto cancel. You have &c%time%
+    &eto decide.'
+  pvp-toggle-confirmation-information:
+  - ' '
+  - ' &6&lPvP Toggle Confirmation'
+  - ' &fYou are about to turn on your PvP!'
+  - ' '
+  - ' &f- Other players can kill you'
+  - ' &f- You can lose all your items'
+  - ' &f- The server does not refund your items'
+  - ' '
+  pvp-toggle-confirmation-title: '&c&lWarning!'
+  pvp-toggle-confirmation-subtitle: '&fPlease confirm that you want to toggle your
+    PvP!'
+  pvp-toggle-confirmation-expired: '&eThe pvp toggle confirmation has expired.'
+  pvp-toggle-confirmation-nothing-to-confirm: '&eYou have nothing to confirm.'
+  pvp-toggle-confirmation-denied: '&eYou have &cdenied &ethe pvp toggle confirmation.
+    Your pvp is still &cdisabled&e.'
