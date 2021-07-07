@@ -1,10 +1,10 @@
-# CoreProtect Config
+# Конфиг CoreProtect:
 
-# CoreProtect is donationware. For more information, visit our project page.
+# CoreProtect принимает Ваши донаты. Для получения дополнительной информации посетите страницу нашего проекта.
 donation-key: 
 
-# MySQL is optional and not required.
-# If you prefer to use MySQL, enable the following and fill out the fields.
+
+# MySQL является необязательным.
 use-mysql: false
 table-prefix: co_
 mysql-host: 127.0.0.1
@@ -13,129 +13,116 @@ mysql-database: database
 mysql-username: root
 mysql-password: 
 
-# If enabled, CoreProtect will check for updates when your server starts up.
-# If an update is available, you'll be notified via your server console.
-check-updates: true
+# Если включено, CoreProtect будет проверять наличие новой версии себя при запуске Вашего сервера.
+check-updates: false
 
-# If enabled, other plugins will be able to utilize the CoreProtect API.
+# Если включено, другие плагины смогут использовать CoreProtect API.
 api-enabled: true
 
-# If enabled, extra data is displayed during rollbacks and restores.
-# Can be manually triggered by adding "#verbose" to your rollback command.
-verbose: true
+# Если включено, при откатах и восстановлении отображаются дополнительные данные.
+verbose: false
 
-# If no radius is specified in a rollback or restore, this value will be
-# used as the radius. Set to "0" to disable automatically adding a radius.
+# Если при откате или восстановлении радиус не указан, это значение будет использоваться по умолчанию.
 default-radius: 10
 
-# The maximum radius that can be used in a command. Set to "0" to disable.
-# To run a rollback or restore without a radius, you can use "r:#global".
+# Максимальный радиус, который можно использовать в команде. Установите «0», чтобы отключить.
 max-radius: 100
 
-# If enabled, items taken from containers (etc) will be included in rollbacks.
+# Если включено, взятые, взятые из сундуков и их подобных, будут включены в откаты.
 rollback-items: true
 
-# If enabled, entities, such as killed animals, will be included in rollbacks.
+# Если включено, объекты, такие как убитые животные, будут включены в откаты.
 rollback-entities: true
 
-# If enabled, generic data, like zombies burning in daylight, won't be logged.
-skip-generic-data: true
+# Если включено, общие данные, такие как сгоревшие зомби на солнце, будут регистрироваться.
+skip-generic-data: false
 
-# Logs blocks placed by players.
+# Регистрирует блоки, поставленные игроками.
 block-place: true
 
-# Logs blocks broken by players.
+# Регистрирует блоки, сломанные игроками.
 block-break: true
 
-# Logs blocks that break off of other blocks; for example, a sign or torch
-# falling off of a dirt block that a player breaks. This is required for
-# beds/doors to properly rollback.
+# Регистрирует блоки, которые ломаются от других блоков. Например: табличка или факел
 natural-break: true
 
-# Properly track block movement, such as sand or gravel falling.
+# Регистрирует движение блоков, например, падение песка или гравия.
 block-movement: true
 
-# Properly track blocks moved by pistons.
+# Регистрирует блоки, перемещаемые поршнями.
 pistons: true
 
-# Logs blocks that burn up in a fire.
+# Регистрирует блоки, сгоревшие в огне.
 block-burn: true
 
-# Logs when a block naturally ignites, such as from fire spreading.
+# Регистрирует естественное возгорание блока.
 block-ignite: true
 
-# Logs explosions, such as TNT and Creepers.
+# Регистрирует взрывы, такие как от TNT и криперов.
 explosions: true
 
-# Track when an entity changes a block, such as an Enderman destroying blocks.
-entity-change: true
+# Регистрирует когда сущность изменяет блок.
+entity-change: false
 
-# Logs killed entities, such as killed cows and enderman.
+# Регистрирует убитых сущностей.
 entity-kills: true
 
-# Logs text on signs. If disabled, signs will be blank when rolled back.
-sign-text: true
+# Регистрирует текст на табличках. Если отключено, при откате знаки будут пустыми.
+sign-text: false
 
-# Logs lava and water sources placed/removed by players who are using buckets.
+# Регистрирует источники лавы и воды, поставленные/сломанные игроками, использующими ведра.
 buckets: true
 
-# Logs natural tree leaf decay.
-leaf-decay: true
+# Регистрирует естественное опадение листвы.
+leaf-decay: false
 
-# Logs tree growth. Trees are linked to the player who planted the sappling.
-tree-growth: true
+# Журналы роста дерева. Деревья связаны с игроком, который посадил саженец.
+tree-growth: false
 
-# Logs mushroom growth.
-mushroom-growth: true
+# Регистрирует рост грибов.
+mushroom-growth: false
 
-# Logs natural vine growth.
-vine-growth: true
+# Регистрирует естественный рост лозы.
+vine-growth: false
 
-# Logs when portals such as Nether portals generate naturally.
-portals: true
+# Регистрирует, когда порталы генерируются естественным образом.
+portals: false
 
-# Logs water flow. If water destroys other blocks, such as torches,
-# this allows it to be properly rolled back.
+# Регистрирует движение воды.
 water-flow: true
 
-# Logs lava flow. If lava destroys other blocks, such as torches,
-# this allows it to be properly rolled back.
+# Регистрирует движение лавы.
 lava-flow: true
 
-# Allows liquid to be properly tracked and linked to players.
-# For example, if a player places water which flows and destroys torches,
-# it can all be properly restored by rolling back that single player.
+# Позволяет правильно отслеживать жидкость и связывать ее с игроками.
 liquid-tracking: true
 
-# Track item transactions, such as when a player takes items from
-# a chest, furnace, or dispenser.
+# Регистрирует транзакции с предметами.
 item-transactions: true
 
-# Logs items dropped by players.
-item-drops: true
+# Регистрирует предметы, выброшенные игроками.
+item-drops: false
 
-# Logs items picked up by players.
-item-pickups: true
+# Регистрирует предметы, поднятые игроками.
+item-pickups: false
 
-# Track all hopper transactions, such as when a hopper removes items from a
-# chest, furnace, or dispenser.
+# Регистрирует все транзакции воронки.
 hopper-transactions: true
 
-# Track player interactions, such as when a player opens a door, presses
-# a button, or opens a chest. Player interactions can't be rolled back.
+# Регистрирует взаимодействия игрока.
 player-interactions: true
 
-# Logs messages that players send in the chat.
+# Регистрирует сообщения, которые игроки отправляют в чате.
 player-messages: true
 
-# Logs all commands used by players.
+# Регистрирует все команды, используемые игроками.
 player-commands: true
 
-# Logs the logins and logouts of players.
+# Регистрирует входы и выходы игроков.
 player-sessions: true
 
-# Logs when a player changes their Minecraft username.
-username-changes: true
+# Регистрирует, когда игрок меняет свое имя пользователя Minecraft.
+username-changes: false
 
-# Logs changes made via the plugin "WorldEdit" if it's in use on your server.
+# Регистрирует изменения, сделанные через плагин WorldEdit, если он используется на Вашем сервере.
 worldedit: true
