@@ -1,35 +1,3 @@
-##############################################################################################################
-#                                                                                                            #
-# ______     _                _____                 _           _                                            #
-# |  _  \   | |              /  __ \               | |         | |                                           #
-# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
-# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
-# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
-# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
-#------------------------------------------------------------------------------------------------------------#
-#                                                                                                            #
-# Thank you for purchasing DeluxeCombat - An ultimate powerful combat resource for every server              #
-#                                                                                                            #             
-# This is one of the configuration files of the DeluxeCombat plugin.                                         #
-# Here, you can configure the basic plugin. If you want to change all messages, switch to the lang.yml       #
-#                                                                                                            #
-# The plugin supports following server versions: 1.8.3, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15  #
-#                                                                                                            #
-# Any problems? Write me a private message on spigot! Spigot: www.spigotmc.org/members/199727/               #
-# To get quick support please also consider joining my discord server: discordapp.com/invite/MGTSYjS         #
-#                                                                                                            #
-# ~ Marido, timderspieler                                                                                    #
-#                                                                                                            #
-# Useful: You can use colorcodes '&' in nearly all string configurations                                     #
-#                                                                                                            #
-##############################################################################################################
-
-#
-# !IMPORTANT!: The majority of the settings can be found in the /dc menu (Settings editor). Please do not touch the
-#              data.yml. If you do, no settings will be stored. If you need help using the ingame editor please contact
-#              me via discord or spigot pm!
-#
-
 Storage:
   
   # Following types are available: MYSQL, SQLITE
@@ -90,7 +58,7 @@ Custom_Items:
     # 'PLAYER': Fired when you hit a player
     # 'ANIMAL': Fired when you hit an animal
     # 'BOTH': Fired when you hit a player / an animal
-    enemy_mode: "BOTH"
+    enemy_mode: "PLAYER"
     
     # Following target modes are available:
     # 'ENEMY': Effects / Sounds / Potioneffects will be applied to the enemy
@@ -143,10 +111,10 @@ Kill-Streaks:
       permission-one:
       
          # Amount of kills you need to have in a row
-         streak: 5
+         streak: 30
          
          # Enable / Disable the plugins prefix for the messages
-         prefix: true
+         prefix: false
          
          # Actions that will be executed on reaching the streak
          # [BROADCAST] <args> : Sends a broadcast
@@ -155,11 +123,10 @@ Kill-Streaks:
          # [SUBTITLE] <args> : Sends a subtitle
          # [CMD] <args> : Executes a command as the console
          cmds:
-         - "[BROADCAST] %player% has reached a killstreak of %streak%!"
-         - "[TITLE] &6Killstreak!"
-         - "[SUBTITLE] &e%streak% Kills!"
-         - "[MSG] You got a diamond for reaching this streak!"
-         - "[CMD] give %player% minecraft:diamond 1"
+         - "[TITLE] &6Серия убийств!"
+         - "[SUBTITLE] &f%streak% &7убийств!"
+         - "[MSG] &7За достижение этой серии вы получили алмаз!"
+         - "[CMD] cmi give %player% minecraft:diamond 1"
 
 Rewards:
   
@@ -187,7 +154,7 @@ Rewards:
       # Chance in percent that this reward will be executed
       # when killing a %kill_mode%. 100 to always get this
       # reward
-      chance: 100
+      chance: 15
       
       # Commands executes on when killing a 'kill_mode'
       # Placeholders:
@@ -202,8 +169,8 @@ Rewards:
       # [TITLE] <message> : Sends title to the player
       # [SUBTITLE] <message> : Sends subtitle to the player
       cmds:
-      - "[TITLE] &a&l+1 Kill"
-      - "[SUBTITLE] &cYou killed %victim%"
+      - "[TITLE] &6+1 &fубийство"
+      - "[SUBTITLE] &7Ты убил&f %victim%"
       - "[CMD] give %player% diamond 1"
 
     permission-two:
@@ -216,12 +183,12 @@ Rewards:
       # 'BOTH': Rewards for killing players / animals (Placeholder: %entity%)
       # 'BOUNTY': Extra rewards for killing bounties
       # 'KILLSTREAK_BREAK:5': Reward for killing players with killstreak of e.g 5
-      kill_mode: "KILLSTREAK_BREAK:5"
+      kill_mode: "KILLSTREAK_BREAK:10"
       
       # Chance in percent that this reward will be executed
       # when killing a %kill_mode%. 100 to always get this
       # reward
-      chance: 100
+      chance: 80
       
       # Commands executes on when killing a 'kill_mode'
       # Placeholders:
@@ -236,6 +203,6 @@ Rewards:
       # [TITLE] <message> : Sends title to the player
       # [SUBTITLE] <message> : Sends subtitle to the player
       cmds:
-      - "[SUBTITLE] &c&lKILLSTREAK DENIED!"
-      - "[MSG] &eYou denied the killstreak of &c%player%&e (&c5 Kills&e)!"
-      - "[CMD] give %player% beacon 1"
+      - "[SUBTITLE] &7Серия убийств &cуничтожен&7а!"
+      - "[MSG] &7Вы уничтожили серию убийств игрока &f%player%&8 (&610 &7убийств&8)&7!"
+      - "[CMD] cmi give %player% cod 1"

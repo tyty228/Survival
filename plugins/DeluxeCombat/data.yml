@@ -1,7 +1,7 @@
 recipes:
 - dcr-gold_apple!GOLDEN_APPLE!1&GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!APPLE!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT
 - dcr-god_apple!ENCHANTED_GOLDEN_APPLE!1&GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!APPLE!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK
-language: en_EN
+language: ru_RU
 disabled-potions: []
 disabled-enchantments: []
 commands_on_rejoin_players: []
@@ -70,7 +70,7 @@ Combat:
   disabled-worlds: []
 Death:
   corpses:
-    enable: true
+    enable: false
     remove_after: 30
     despawn-in-lava: false
     despawn-empty-inventory: false
@@ -82,7 +82,7 @@ Death:
     force-load-chunk: false
     drop-items-after-removal: false
     inventory-name: '&4#%player%'
-  custom_death_messages: true
+  custom_death_messages: false
   instant_respawn: false
   respawn_at_nearest_spawnpoint: false
   drop_head:
@@ -115,11 +115,11 @@ Death:
   kill-recaps:
     broadcast-only-to-victim: false
     fill_recap_inv: true
-    broadcast: true
+    broadcast: false
     enable: true
     remove-back-item: false
     broadcast-only-to-victim-assists: false
-  custom_death_messages_prefix: true
+  custom_death_messages_prefix: false
   lightning-on-kill:
     enable: false
   respawn_at_random_spawnpoint: false
@@ -127,7 +127,7 @@ Death:
   void-tp-to-nearest-spawnpoint: false
   commands-when-no-bed-placed: []
 PvP_Settings:
-  disable_fly: false
+  disable_fly: true
   modified_knockback:
     enable: false
     ground:
@@ -176,7 +176,7 @@ PvP_Settings:
   pvptogglecommand:
     cooldown-on-kill: false
     save-on-quit: true
-    enable: true
+    enable: false
     show-in-scoreboard: false
     use-scoreboard-groups: false
     cooldown: 1800
@@ -196,7 +196,7 @@ PvP_Settings:
   display-cooldown-in-actionbar: true
   newbie-protection:
     enable: false
-    duration: 24
+    duration: 1
     disable-all-damage: true
   gold-apple-cooldown:
     enable: false
