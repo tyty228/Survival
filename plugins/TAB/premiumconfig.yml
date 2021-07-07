@@ -28,7 +28,7 @@ scoreboards:
     # if-condition-not-met: scoreboard
     title: '{#ff6666>}DRAIMCIDO{#ffd966<}'
     lines:
-    - '  {#40bf40>}Survival{#9fdf9f<} &7| &f%server_time_HH:mm:ss%'
+    - '   {#40bf40>}Survival{#9fdf9f<} &7| &f%server_time_HH:mm:ss%'
     - '&8| &7'
     - '&8|  &7Ник: {#7204e2>}%player_name%{#4dffff<}'
     - '&8|  &7Привилегия: {#f2c40d}%luckperms_suffix%'
@@ -37,7 +37,7 @@ scoreboards:
     - '&7'
     - '&8|  &7У/C: &e%statistic_player_kills%&8/&e%statistic_deaths%'
     - '&8|'
-    - '&8|        {#7204e2>}mc.draimcido.ru{#4dffff<}'
+    - '&8|     {#7204e2>}mc.draimcido.ru{#4dffff<}'
   scoreboard:
     title: '{#ff6666>}DAILYFIRE{#ffd966<}'
     lines:
